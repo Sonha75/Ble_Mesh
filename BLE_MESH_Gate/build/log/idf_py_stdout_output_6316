@@ -1,0 +1,2013 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  8 2024 14:12:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=47594h (292244) map[0m
+[0;32mI (215) esp_image: segment 1: paddr=000675bc vaddr=3ffbdb60 size=06114h ( 24852) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=0006d6d8 vaddr=40080000 size=02940h ( 10560) load[0m
+[0;32mI (230) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=11cfc0h (1167296) map[0m
+[0;32mI (653) esp_image: segment 4: paddr=0018cfe8 vaddr=40082940 size=1c7a4h (116644) load[0m
+[0;32mI (717) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (718) boot: Disabling RNG early entropy source...[0m
+[0;32mI (729) cpu_start: Multicore app[0m
+[0;32mI (730) cpu_start: Pro cpu up.[0m
+[0;32mI (730) cpu_start: Starting app cpu, entry point is 0x40081434[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (750) cpu_start: Pro cpu start user code[0m
+[0;32mI (750) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (750) cpu_start: Application information:[0m
+[0;32mI (754) cpu_start: Project name:     BLE_MESH_Gate[0m
+[0;32mI (760) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (765) cpu_start: Compile time:     Jun  8 2024 14:11:46[0m
+[0;32mI (771) cpu_start: ELF file SHA256:  7023244e81cf5005...[0m
+[0;32mI (777) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (783) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (787) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (792) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (797) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (804) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (810) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (816) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (823) heap_init: At 3FFCEF80 len 00011080 (68 KiB): DRAM[0m
+[0;32mI (829) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (835) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (841) heap_init: At 4009F0E4 len 00000F1C (3 KiB): IRAM[0m
+[0;32mI (849) spi_flash: detected chip: generic[0m
+[0;32mI (852) spi_flash: flash io: dio[0m
+[0;32mI (857) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (862) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (866) app_start: Starting scheduler on CPU1[0m
+I (866) main_task: Started on CPU0[0m
+[0;32mI (876) main_task: Calling app_main()[0m
+[0;32mI (876) MAIN: Initializing...[0m
+[0;32mI (876) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;31mE (886) esp_timer: Task is already initialized[0m
+[0;32mI (896) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (956) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (956) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:23:8e[0m
+[0;32mI (956) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;33mW (1466) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1496) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1496) MESH_CLIENT: net_idx: 0x0000, addr: 0x0030[0m
+[0;32mI (1496) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1496) MESH_CLIENT: Device provisioned[0m
+[0;32mI (1506) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1516) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (1526) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1526) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1536) MESH_CLIENT: BLE Mesh Node initialized[0m
+I (1556) wifi:wifi driver task: 3ffdca30, prio:23, stack:6656, core=0
+I (1576) wifi:wifi firmware version: 91b9630
+I (1576) wifi:wifi certification version: v7.0
+I (1576) wifi:config NVS flash: enabled
+I (1576) wifi:config nano formating: disabled
+I (1576) wifi:Init data frame dynamic rx buffer num: 32
+I (1586) wifi:Init static rx mgmt buffer num: 5
+I (1586) wifi:Init management short buffer num: 32
+I (1586) wifi:Init dynamic tx buffer num: 32
+I (1596) wifi:Init static rx buffer size: 1600
+I (1596) wifi:Init static rx buffer num: 10
+I (1606) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1606) wifi_init: rx ba win: 6[0m
+[0;32mI (1606) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1616) wifi_init: udp mbox: 6[0m
+[0;32mI (1616) wifi_init: tcp mbox: 6[0m
+[0;32mI (1626) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1626) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1626) wifi_init: tcp mss: 1440[0m
+[0;32mI (1636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1636) wifi_init: WiFi RX IRAM OP enabled[0m
+I (1686) wifi:mode : sta (b0:a7:32:28:23:8c)
+I (1686) wifi:enable tsf
+[0;32mI (1696) wifi station: wifi_init_sta finished.[0m
+I (2916) wifi:new:<6,0>, old:<1,0>, ap:<255,255>, sta:<6,0>, prof:1
+I (3186) wifi:state: init -> auth (b0)
+I (3196) wifi:state: auth -> assoc (0)
+I (3206) wifi:state: assoc -> run (10)
+I (6376) wifi:connected with MANDevices Laboratory, aid = 9, channel 6, BW20, bssid = 70:69:79:81:74:da
+I (6376) wifi:security: WPA2-PSK, phy: bgn, rssi: -61
+I (6396) wifi:pm start, type: 1
+
+I (6406) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (10216) wifi:<ba-add>idx:0 (ifx:0, 70:69:79:81:74:da), tid:6, ssn:7, winSize:64
+[0;32mI (10906) esp_netif_handlers: sta ip: 10.1.1.146, mask: 255.255.255.0, gw: 10.1.1.1[0m
+[0;32mI (10906) wifi station: connected to ap SSID:MANDevices Laboratory password:MANDevices[0m
+[0;32mI (10906) MQTT: MQTT init[0m
+[0;32mI (10916) MQTT: Other event id:7[0m
+[0;32mI (10916) main_task: Returned from app_main()[0m
+I (10936) wifi:<ba-add>idx:1 (ifx:0, 70:69:79:81:74:da), tid:0, ssn:0, winSize:64
+[0;32mI (11746) MQTT: MQTT event connected[0m
+[0;32mI (506756) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (506756) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (506756) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (506766) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (506776) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (506776) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (506786) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (506786) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (506796) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (506796) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (506806) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (507426) MQTT: MQTT event published, msg_id=52043[0m
+[0;32mI (507866) MQTT: MQTT event published, msg_id=48[0m
+[0;32mI (507876) MQTT: MQTT event published, msg_id=37131[0m
+[0;32mI (507876) MQTT: MQTT event published, msg_id=21619[0m
+[0;32mI (507886) MQTT: MQTT event published, msg_id=8820[0m
+[0;32mI (507886) MQTT: MQTT event published, msg_id=27213[0m
+[0;32mI (514776) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (514776) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (514776) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (514786) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (514796) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (514796) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (514806) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (514816) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (514816) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (514816) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (514826) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (515126) MQTT: MQTT event published, msg_id=44548[0m
+[0;32mI (515446) MQTT: MQTT event published, msg_id=45380[0m
+[0;32mI (515456) MQTT: MQTT event published, msg_id=42586[0m
+[0;32mI (515456) MQTT: MQTT event published, msg_id=40227[0m
+[0;32mI (515466) MQTT: MQTT event published, msg_id=11816[0m
+[0;32mI (515466) MQTT: MQTT event published, msg_id=10032[0m
+[0;32mI (524836) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (524836) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (524836) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (524836) MESH_CLIENT: 96 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (524846) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (524856) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (524856) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (524866) PARSED_DATA: Humidity  3  = 75.000000[0m
+[0;33mW (524866) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (524876) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (524876) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (525256) MQTT: MQTT event published, msg_id=31756[0m
+[0;32mI (525566) MQTT: MQTT event published, msg_id=61378[0m
+[0;32mI (525566) MQTT: MQTT event published, msg_id=29787[0m
+[0;32mI (525576) MQTT: MQTT event published, msg_id=24884[0m
+[0;32mI (525576) MQTT: MQTT event published, msg_id=47535[0m
+[0;32mI (525576) MQTT: MQTT event published, msg_id=43534[0m
+[0;32mI (528116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (528116) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (528116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (528126) MESH_CLIENT: 00 00 00 00 00 00 00 1a ab 40 00 00 00 00 03 00 [0m
+[0;32mI (528136) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (528136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (528146) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (528146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (528156) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (528156) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (528166) PARSED_DATA: Smoke   3     = 3469.000000[0m
+[0;32mI (528536) MQTT: MQTT event published, msg_id=13415[0m
+[0;32mI (529046) MQTT: MQTT event published, msg_id=5450[0m
+[0;32mI (529046) MQTT: MQTT event published, msg_id=53207[0m
+[0;32mI (529046) MQTT: MQTT event published, msg_id=22393[0m
+[0;32mI (529056) MQTT: MQTT event published, msg_id=50844[0m
+[0;32mI (529056) MQTT: MQTT event published, msg_id=61345[0m
+[0;32mI (534836) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (534836) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (534836) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (534846) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (534856) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (534856) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (534866) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (534876) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (534876) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (534876) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (534886) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;33mW (535116) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ccc[0m
+[0;32mI (535186) MQTT: MQTT event published, msg_id=49839[0m
+[0;32mI (535496) MQTT: MQTT event published, msg_id=41835[0m
+[0;32mI (535506) MQTT: MQTT event published, msg_id=11989[0m
+[0;32mI (535506) MQTT: MQTT event published, msg_id=35555[0m
+[0;32mI (535516) MQTT: MQTT event published, msg_id=24202[0m
+[0;32mI (535516) MQTT: MQTT event published, msg_id=20866[0m
+[0;32mI (536196) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (536206) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (536206) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (536206) MESH_CLIENT: 00 00 00 00 00 00 00 56 a5 40 00 00 00 00 03 00 [0m
+[0;32mI (536216) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (536226) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (536246) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (536246) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (536256) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (536256) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (536256) PARSED_DATA: Smoke   3     = 2731.000000[0m
+[0;32mI (536536) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (536536) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (536536) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (536556) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (536556) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (536556) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (536566) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (536576) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (536576) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (536576) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (536586) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (536616) MQTT: MQTT event published, msg_id=21727[0m
+[0;33mW (536786) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000cd5[0m
+[0;33mW (536846) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000cd6[0m
+[0;32mI (536926) MQTT: MQTT event published, msg_id=36575[0m
+[0;32mI (536936) MQTT: MQTT event published, msg_id=144[0m
+[0;32mI (536936) MQTT: MQTT event published, msg_id=45909[0m
+[0;32mI (536946) MQTT: MQTT event published, msg_id=18426[0m
+[0;32mI (536946) MQTT: MQTT event published, msg_id=40630[0m
+[0;32mI (536946) MQTT: MQTT event published, msg_id=26345[0m
+[0;32mI (536956) MQTT: MQTT event published, msg_id=49392[0m
+[0;32mI (536956) MQTT: MQTT event published, msg_id=57680[0m
+[0;32mI (536966) MQTT: MQTT event published, msg_id=42465[0m
+[0;32mI (536976) MQTT: MQTT event published, msg_id=16847[0m
+[0;32mI (536976) MQTT: MQTT event published, msg_id=5548[0m
+[0;32mI (544096) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (544096) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (544096) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (544106) MESH_CLIENT: 00 00 00 00 00 00 00 14 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (544116) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (544116) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (544126) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (544136) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (544136) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (544146) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (544146) PARSED_DATA: Smoke   3     = 2442.000000[0m
+[0;32mI (544506) MQTT: MQTT event published, msg_id=7803[0m
+[0;32mI (544806) MQTT: MQTT event published, msg_id=2612[0m
+[0;32mI (544816) MQTT: MQTT event published, msg_id=59814[0m
+[0;32mI (544816) MQTT: MQTT event published, msg_id=38554[0m
+[0;32mI (544816) MQTT: MQTT event published, msg_id=32489[0m
+[0;32mI (544826) MQTT: MQTT event published, msg_id=39657[0m
+[0;33mW (545096) BLE_MESH: Received already received fragment[0m
+[0;33mW (545186) BLE_MESH: Received already received fragment[0m
+[0;32mI (545196) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (545196) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (545196) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (545206) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (545216) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (545216) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (545226) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (545236) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (545236) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (545246) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (545246) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;33mW (545396) BLE_MESH: Received already received fragment[0m
+[0;33mW (545406) BLE_MESH: Received already received fragment[0m
+[0;33mW (545426) BLE_MESH: Received already received fragment[0m
+[0;32mI (545526) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (545526) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (545526) MQTT: MQTT event published, msg_id=35311[0m
+[0;32mI (545526) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (545536) MESH_CLIENT: 00 00 00 00 00 00 00 14 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (545546) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (545546) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (545556) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (545566) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (545566) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (545576) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (545576) PARSED_DATA: Smoke   3     = 2442.000000[0m
+[0;33mW (545586) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0006b6[0m
+[0;33mW (545696) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000cdf[0m
+[0;33mW (545716) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0006b7[0m
+[0;33mW (545766) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ce0[0m
+[0;32mI (545836) MQTT: MQTT event published, msg_id=61921[0m
+[0;32mI (545836) MQTT: MQTT event published, msg_id=13427[0m
+[0;32mI (545846) MQTT: MQTT event published, msg_id=38112[0m
+[0;32mI (545846) MQTT: MQTT event published, msg_id=12015[0m
+[0;32mI (545856) MQTT: MQTT event published, msg_id=49029[0m
+[0;33mW (546006) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ce2[0m
+[0;32mI (546156) MQTT: MQTT event published, msg_id=47219[0m
+[0;32mI (546156) MQTT: MQTT event published, msg_id=46304[0m
+[0;32mI (546166) MQTT: MQTT event published, msg_id=49291[0m
+[0;32mI (546166) MQTT: MQTT event published, msg_id=52832[0m
+[0;32mI (546166) MQTT: MQTT event published, msg_id=13469[0m
+[0;32mI (546176) MQTT: MQTT event published, msg_id=27662[0m
+[0;33mW (546306) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0006ba[0m
+[0;33mW (546436) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0006bb[0m
+[0;33mW (546576) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0006bd[0m
+[0;32mI (552116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (552116) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (552116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (552126) MESH_CLIENT: 00 00 00 00 00 00 00 74 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (552136) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (552136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (552146) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (552146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (552156) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (552166) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (552166) PARSED_DATA: Smoke   3     = 2362.000000[0m
+[0;32mI (552486) MQTT: MQTT event published, msg_id=39350[0m
+[0;32mI (552796) MQTT: MQTT event published, msg_id=25709[0m
+[0;32mI (552806) MQTT: MQTT event published, msg_id=13380[0m
+[0;32mI (552806) MQTT: MQTT event published, msg_id=11198[0m
+[0;32mI (552806) MQTT: MQTT event published, msg_id=41880[0m
+[0;32mI (552816) MQTT: MQTT event published, msg_id=26104[0m
+[0;32mI (553096) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (553106) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (553106) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (553106) MESH_CLIENT: 96 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (553116) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (553116) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (553126) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (553136) PARSED_DATA: Humidity  3  = 75.000000[0m
+[0;33mW (553136) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (553146) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (553146) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (553396) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (553396) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (553396) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (553406) MESH_CLIENT: 00 00 00 00 00 00 00 74 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (553416) MQTT: MQTT event published, msg_id=63369[0m
+[0;32mI (553416) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (553426) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (553436) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (553436) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (553446) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (553446) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (553456) PARSED_DATA: Smoke   3     = 2362.000000[0m
+[0;32mI (553726) MQTT: MQTT event published, msg_id=47968[0m
+[0;32mI (553726) MQTT: MQTT event published, msg_id=35048[0m
+[0;32mI (553736) MQTT: MQTT event published, msg_id=35149[0m
+[0;32mI (553736) MQTT: MQTT event published, msg_id=34072[0m
+[0;32mI (553736) MQTT: MQTT event published, msg_id=57873[0m
+[0;33mW (553906) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0006ce[0m
+[0;32mI (553946) MQTT: MQTT event published, msg_id=29380[0m
+[0;32mI (553956) MQTT: MQTT event published, msg_id=10759[0m
+[0;32mI (553956) MQTT: MQTT event published, msg_id=12883[0m
+[0;32mI (553956) MQTT: MQTT event published, msg_id=8067[0m
+[0;32mI (553966) MQTT: MQTT event published, msg_id=9896[0m
+[0;32mI (553966) MQTT: MQTT event published, msg_id=31004[0m
+[0;33mW (554386) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0006cf[0m
+[0;32mI (560136) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (560136) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (560136) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (560146) MESH_CLIENT: 00 00 00 00 00 00 00 64 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (560156) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (560156) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (560166) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (560166) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (560176) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (560176) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (560186) PARSED_DATA: Smoke   3     = 2354.000000[0m
+[0;32mI (560686) MQTT: MQTT event published, msg_id=11287[0m
+[0;32mI (560696) MQTT: MQTT event published, msg_id=33073[0m
+[0;32mI (560696) MQTT: MQTT event published, msg_id=23519[0m
+[0;32mI (560696) MQTT: MQTT event published, msg_id=23053[0m
+[0;32mI (560706) MQTT: MQTT event published, msg_id=44871[0m
+[0;32mI (560706) MQTT: MQTT event published, msg_id=11712[0m
+[0;32mI (562946) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (562946) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (562946) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (562956) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (562966) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (562966) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (562976) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (562986) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (562986) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (562996) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (562996) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (563346) MQTT: MQTT event published, msg_id=51182[0m
+[0;32mI (563676) MQTT: MQTT event published, msg_id=27022[0m
+[0;32mI (563676) MQTT: MQTT event published, msg_id=31891[0m
+[0;32mI (563676) MQTT: MQTT event published, msg_id=46469[0m
+[0;32mI (563686) MQTT: MQTT event published, msg_id=28111[0m
+[0;32mI (563686) MQTT: MQTT event published, msg_id=1193[0m
+[0;32mI (568116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (568116) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (568116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (568126) MESH_CLIENT: 00 00 00 00 00 00 00 6a a2 40 00 00 00 00 03 00 [0m
+[0;32mI (568136) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (568136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (568146) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (568156) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (568156) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (568156) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (568166) PARSED_DATA: Smoke   3     = 2357.000000[0m
+[0;32mI (568476) MQTT: MQTT event published, msg_id=39442[0m
+[0;32mI (568776) MQTT: MQTT event published, msg_id=33133[0m
+[0;32mI (568776) MQTT: MQTT event published, msg_id=53120[0m
+[0;32mI (568786) MQTT: MQTT event published, msg_id=63513[0m
+[0;32mI (568786) MQTT: MQTT event published, msg_id=44385[0m
+[0;32mI (568786) MQTT: MQTT event published, msg_id=57851[0m
+[0;32mI (572956) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (572956) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (572966) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (572966) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (572976) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (572976) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (572986) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (572996) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (572996) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (573006) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (573006) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (573276) MQTT: MQTT event published, msg_id=65076[0m
+[0;32mI (573586) MQTT: MQTT event published, msg_id=22382[0m
+[0;32mI (573596) MQTT: MQTT event published, msg_id=62524[0m
+[0;32mI (573596) MQTT: MQTT event published, msg_id=43699[0m
+[0;32mI (573596) MQTT: MQTT event published, msg_id=3906[0m
+[0;32mI (573606) MQTT: MQTT event published, msg_id=9391[0m
+[0;33mW (573686) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000d20[0m
+[0;32mI (576086) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (576086) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (576096) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (576096) MESH_CLIENT: 00 00 00 00 00 00 00 5e a2 40 00 00 00 00 03 00 [0m
+[0;32mI (576106) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (576106) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (576116) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (576126) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (576126) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (576136) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (576136) PARSED_DATA: Smoke   3     = 2351.000000[0m
+[0;32mI (576456) MQTT: MQTT event published, msg_id=44265[0m
+[0;32mI (576756) MQTT: MQTT event published, msg_id=9318[0m
+[0;32mI (576766) MQTT: MQTT event published, msg_id=5681[0m
+[0;32mI (576766) MQTT: MQTT event published, msg_id=1908[0m
+[0;32mI (576766) MQTT: MQTT event published, msg_id=48161[0m
+[0;32mI (576776) MQTT: MQTT event published, msg_id=57400[0m
+[0;32mI (582986) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (582986) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (582996) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (582996) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (583006) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (583006) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (583016) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (583026) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (583026) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (583036) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (583036) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (583326) MQTT: MQTT event published, msg_id=17409[0m
+[0;32mI (583726) MQTT: MQTT event published, msg_id=53915[0m
+[0;32mI (583726) MQTT: MQTT event published, msg_id=52492[0m
+[0;32mI (583736) MQTT: MQTT event published, msg_id=37892[0m
+[0;32mI (583736) MQTT: MQTT event published, msg_id=22334[0m
+[0;32mI (583746) MQTT: MQTT event published, msg_id=58065[0m
+[0;32mI (584216) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (584216) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (584216) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (584226) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (584236) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (584236) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (584246) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (584256) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (584256) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (584256) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (584266) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (584266) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (584276) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (584286) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (584286) MESH_CLIENT: 00 00 00 00 00 00 00 6c a2 40 00 00 00 00 03 00 [0m
+[0;32mI (584296) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (584306) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (584306) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (584316) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (584326) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (584336) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (584336) PARSED_DATA: Smoke   3     = 2358.000000[0m
+[0;32mI (584546) MQTT: MQTT event published, msg_id=11112[0m
+[0;33mW (584706) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000d37[0m
+[0;33mW (584766) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000d38[0m
+[0;32mI (584876) MQTT: MQTT event published, msg_id=17137[0m
+[0;32mI (584876) MQTT: MQTT event published, msg_id=6145[0m
+[0;32mI (584876) MQTT: MQTT event published, msg_id=10460[0m
+[0;32mI (584886) MQTT: MQTT event published, msg_id=20444[0m
+[0;32mI (584886) MQTT: MQTT event published, msg_id=35794[0m
+[0;32mI (584896) MQTT: MQTT event published, msg_id=54416[0m
+[0;32mI (584896) MQTT: MQTT event published, msg_id=58816[0m
+[0;32mI (584906) MQTT: MQTT event published, msg_id=29914[0m
+[0;33mW (584906) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000d39[0m
+[0;32mI (584906) MQTT: MQTT event published, msg_id=15934[0m
+[0;32mI (584926) MQTT: MQTT event published, msg_id=49975[0m
+[0;32mI (584926) MQTT: MQTT event published, msg_id=49982[0m
+[0;33mW (584936) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000d3a[0m
+[0;33mW (585096) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000711[0m
+[0;33mW (585186) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000712[0m
+[0;33mW (585276) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000713[0m
+[0;33mW (585386) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000d3b[0m
+[0;33mW (585476) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000d3c[0m
+[0;33mW (585566) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000d3d[0m
+[0;32mI (592116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (592116) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (592116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (592126) MESH_CLIENT: 00 00 00 00 00 00 00 7e a2 40 00 00 00 00 03 00 [0m
+[0;32mI (592136) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (592136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (592146) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (592156) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (592156) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (592166) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (592166) PARSED_DATA: Smoke   3     = 2367.000000[0m
+[0;32mI (592426) MQTT: MQTT event published, msg_id=63131[0m
+[0;32mI (592666) MQTT: MQTT event published, msg_id=23846[0m
+[0;32mI (592666) MQTT: MQTT event published, msg_id=41838[0m
+[0;32mI (592666) MQTT: MQTT event published, msg_id=47684[0m
+[0;32mI (592676) MQTT: MQTT event published, msg_id=3816[0m
+[0;32mI (592676) MQTT: MQTT event published, msg_id=56628[0m
+[0;33mW (592696) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000728[0m
+[0;32mI (593116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (593116) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (593116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (593126) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (593136) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (593136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (593146) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (593156) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (593156) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (593166) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (593166) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (593336) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (593336) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (593346) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (593346) MESH_CLIENT: 00 00 00 00 00 00 00 7e a2 40 00 00 00 00 03 00 [0m
+[0;32mI (593356) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (593356) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (593366) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (593376) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (593376) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (593386) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (593396) PARSED_DATA: Smoke   3     = 2367.000000[0m
+[0;32mI (593556) MQTT: MQTT event published, msg_id=45710[0m
+[0;33mW (593646) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00072b[0m
+[0;32mI (593856) MQTT: MQTT event published, msg_id=63836[0m
+[0;32mI (593866) MQTT: MQTT event published, msg_id=24880[0m
+[0;32mI (593866) MQTT: MQTT event published, msg_id=532[0m
+[0;32mI (593876) MQTT: MQTT event published, msg_id=48093[0m
+[0;32mI (593876) MQTT: MQTT event published, msg_id=7490[0m
+[0;32mI (593876) MQTT: MQTT event published, msg_id=45528[0m
+[0;32mI (593886) MQTT: MQTT event published, msg_id=21452[0m
+[0;32mI (593896) MQTT: MQTT event published, msg_id=22634[0m
+[0;32mI (593896) MQTT: MQTT event published, msg_id=5364[0m
+[0;32mI (593906) MQTT: MQTT event published, msg_id=64530[0m
+[0;32mI (593906) MQTT: MQTT event published, msg_id=17245[0m
+[0;32mI (600096) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (600096) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (600106) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (600106) MESH_CLIENT: 00 00 00 00 00 00 00 68 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (600116) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (600116) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (600126) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (600136) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (600136) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (600146) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (600146) PARSED_DATA: Smoke   3     = 2356.000000[0m
+[0;32mI (600416) MQTT: MQTT event published, msg_id=15018[0m
+[0;32mI (600646) MQTT: MQTT event published, msg_id=30309[0m
+[0;32mI (600656) MQTT: MQTT event published, msg_id=17064[0m
+[0;32mI (600656) MQTT: MQTT event published, msg_id=35891[0m
+[0;32mI (600656) MQTT: MQTT event published, msg_id=28260[0m
+[0;32mI (600666) MQTT: MQTT event published, msg_id=56836[0m
+[0;32mI (603046) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (603046) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (603046) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (603056) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (603066) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (603066) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (603076) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (603086) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (603086) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (603096) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (603096) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (603376) MQTT: MQTT event published, msg_id=42171[0m
+[0;32mI (603616) MQTT: MQTT event published, msg_id=47184[0m
+[0;32mI (603616) MQTT: MQTT event published, msg_id=53629[0m
+[0;32mI (603626) MQTT: MQTT event published, msg_id=21215[0m
+[0;32mI (603626) MQTT: MQTT event published, msg_id=10090[0m
+[0;32mI (603626) MQTT: MQTT event published, msg_id=54727[0m
+[0;32mI (608096) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (608096) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (608096) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (608106) MESH_CLIENT: 00 00 00 00 00 00 00 b6 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (608116) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (608116) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (608126) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (608126) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (608136) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (608146) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (608146) PARSED_DATA: Smoke   3     = 2395.000000[0m
+[0;32mI (608506) MQTT: MQTT event published, msg_id=47283[0m
+[0;32mI (608816) MQTT: MQTT event published, msg_id=24647[0m
+[0;32mI (608816) MQTT: MQTT event published, msg_id=18707[0m
+[0;32mI (608816) MQTT: MQTT event published, msg_id=30983[0m
+[0;32mI (608826) MQTT: MQTT event published, msg_id=17020[0m
+[0;32mI (608826) MQTT: MQTT event published, msg_id=1439[0m
+[0;32mI (613076) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (613076) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (613076) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (613086) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (613096) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (613096) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (613106) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (613106) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (613116) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (613116) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (613126) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (613526) MQTT: MQTT event published, msg_id=18926[0m
+[0;32mI (613826) MQTT: MQTT event published, msg_id=21663[0m
+[0;32mI (613826) MQTT: MQTT event published, msg_id=17423[0m
+[0;32mI (613836) MQTT: MQTT event published, msg_id=8699[0m
+[0;32mI (613836) MQTT: MQTT event published, msg_id=4786[0m
+[0;32mI (613836) MQTT: MQTT event published, msg_id=42971[0m
+[0;32mI (616116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (616116) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (616116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (616126) MESH_CLIENT: 00 00 00 00 00 00 00 80 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (616136) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (616136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (616146) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (616146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (616156) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (616156) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (616176) PARSED_DATA: Smoke   3     = 2368.000000[0m
+[0;32mI (616486) MQTT: MQTT event published, msg_id=11181[0m
+[0;32mI (616736) MQTT: MQTT event published, msg_id=31424[0m
+[0;32mI (616746) MQTT: MQTT event published, msg_id=32569[0m
+[0;32mI (616746) MQTT: MQTT event published, msg_id=30[0m
+[0;32mI (616756) MQTT: MQTT event published, msg_id=49393[0m
+[0;32mI (616756) MQTT: MQTT event published, msg_id=24329[0m
+[0;32mI (623126) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (623126) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (623136) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (623136) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (623146) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (623146) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (623156) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (623166) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (623166) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (623176) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (623176) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (623456) MQTT: MQTT event published, msg_id=15234[0m
+[0;32mI (623756) MQTT: MQTT event published, msg_id=19185[0m
+[0;32mI (623766) MQTT: MQTT event published, msg_id=16723[0m
+[0;32mI (623766) MQTT: MQTT event published, msg_id=57051[0m
+[0;32mI (623776) MQTT: MQTT event published, msg_id=12360[0m
+[0;32mI (623776) MQTT: MQTT event published, msg_id=7181[0m
+[0;32mI (624146) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (624146) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (624156) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (624156) MESH_CLIENT: 00 00 00 00 00 00 00 a6 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (624166) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (624166) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (624186) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (624186) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (624186) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (624196) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (624196) PARSED_DATA: Smoke   3     = 2387.000000[0m
+[0;33mW (624426) BLE_MESH: Received already received fragment[0m
+[0;32mI (624476) MQTT: MQTT event published, msg_id=18027[0m
+[0;32mI (624786) MQTT: MQTT event published, msg_id=9097[0m
+[0;32mI (624796) MQTT: MQTT event published, msg_id=30451[0m
+[0;32mI (624796) MQTT: MQTT event published, msg_id=31258[0m
+[0;32mI (624796) MQTT: MQTT event published, msg_id=1573[0m
+[0;32mI (624806) MQTT: MQTT event published, msg_id=50287[0m
+[0;32mI (624866) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (624866) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (624866) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (624876) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (624886) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (624886) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (624896) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (624896) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (624906) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (624916) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (624916) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;33mW (624946) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000776[0m
+[0;32mI (625196) MQTT: MQTT event published, msg_id=49978[0m
+[0;32mI (625506) MQTT: MQTT event published, msg_id=26285[0m
+[0;32mI (625506) MQTT: MQTT event published, msg_id=63147[0m
+[0;32mI (625516) MQTT: MQTT event published, msg_id=43290[0m
+[0;32mI (625516) MQTT: MQTT event published, msg_id=56832[0m
+[0;32mI (625526) MQTT: MQTT event published, msg_id=41137[0m
+[0;32mI (632086) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (632086) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (632086) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (632096) MESH_CLIENT: 00 00 00 00 00 00 00 b2 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (632106) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (632106) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (632116) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (632116) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (632126) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (632126) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (632136) PARSED_DATA: Smoke   3     = 2393.000000[0m
+[0;32mI (632466) MQTT: MQTT event published, msg_id=47766[0m
+[0;32mI (632766) MQTT: MQTT event published, msg_id=44901[0m
+[0;32mI (632776) MQTT: MQTT event published, msg_id=56776[0m
+[0;32mI (632776) MQTT: MQTT event published, msg_id=3686[0m
+[0;32mI (632776) MQTT: MQTT event published, msg_id=57441[0m
+[0;32mI (632786) MQTT: MQTT event published, msg_id=45489[0m
+[0;32mI (633306) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (633306) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (633306) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (633326) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (633326) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (633326) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (633336) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (633346) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (633346) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (633356) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (633356) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (633366) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (633366) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (633376) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (633376) MESH_CLIENT: 00 00 00 00 00 00 00 b2 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (633386) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (633396) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (633396) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (633406) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (633406) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (633416) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (633416) PARSED_DATA: Smoke   3     = 2393.000000[0m
+[0;32mI (633696) MQTT: MQTT event published, msg_id=58300[0m
+[0;32mI (633996) MQTT: MQTT event published, msg_id=10241[0m
+[0;32mI (634006) MQTT: MQTT event published, msg_id=34941[0m
+[0;32mI (634006) MQTT: MQTT event published, msg_id=47769[0m
+[0;32mI (634006) MQTT: MQTT event published, msg_id=20248[0m
+[0;32mI (634016) MQTT: MQTT event published, msg_id=23561[0m
+[0;32mI (634016) MQTT: MQTT event published, msg_id=35504[0m
+[0;32mI (634026) MQTT: MQTT event published, msg_id=27191[0m
+[0;32mI (634036) MQTT: MQTT event published, msg_id=52185[0m
+[0;32mI (634036) MQTT: MQTT event published, msg_id=30863[0m
+[0;32mI (634046) MQTT: MQTT event published, msg_id=37704[0m
+[0;32mI (634046) MQTT: MQTT event published, msg_id=32369[0m
+[0;33mW (634466) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000d97[0m
+[0;32mI (640106) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (640106) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (640106) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (640116) MESH_CLIENT: 00 00 00 00 00 00 00 ba a2 40 00 00 00 00 03 00 [0m
+[0;32mI (640126) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (640126) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (640136) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (640146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (640146) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (640156) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (640156) PARSED_DATA: Smoke   3     = 2397.000000[0m
+[0;32mI (640446) MQTT: MQTT event published, msg_id=22419[0m
+[0;32mI (640756) MQTT: MQTT event published, msg_id=3011[0m
+[0;32mI (640766) MQTT: MQTT event published, msg_id=6063[0m
+[0;32mI (640766) MQTT: MQTT event published, msg_id=913[0m
+[0;32mI (640766) MQTT: MQTT event published, msg_id=23164[0m
+[0;32mI (640776) MQTT: MQTT event published, msg_id=16148[0m
+[0;32mI (643186) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (643186) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (643186) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (643196) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (643206) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (643206) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (643216) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (643226) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (643226) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (643236) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (643236) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (643526) MQTT: MQTT event published, msg_id=9585[0m
+[0;32mI (643756) MQTT: MQTT event published, msg_id=65271[0m
+[0;32mI (643766) MQTT: MQTT event published, msg_id=29970[0m
+[0;32mI (643766) MQTT: MQTT event published, msg_id=16419[0m
+[0;32mI (643776) MQTT: MQTT event published, msg_id=35389[0m
+[0;32mI (643776) MQTT: MQTT event published, msg_id=31034[0m
+[0;32mI (648096) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (648096) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (648096) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (648106) MESH_CLIENT: 00 00 00 00 00 00 00 c8 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (648116) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (648116) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (648126) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (648136) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (648136) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (648136) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (648146) PARSED_DATA: Smoke   3     = 2404.000000[0m
+[0;33mW (648386) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0007b1[0m
+[0;32mI (648436) MQTT: MQTT event published, msg_id=35997[0m
+[0;32mI (648746) MQTT: MQTT event published, msg_id=27855[0m
+[0;32mI (648756) MQTT: MQTT event published, msg_id=32224[0m
+[0;32mI (648756) MQTT: MQTT event published, msg_id=33011[0m
+[0;32mI (648766) MQTT: MQTT event published, msg_id=34758[0m
+[0;32mI (648766) MQTT: MQTT event published, msg_id=15083[0m
+[0;32mI (653196) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (653196) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (653206) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (653206) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (653216) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (653226) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (653226) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (653236) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (653236) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (653246) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (653246) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (653556) MQTT: MQTT event published, msg_id=8382[0m
+[0;32mI (653866) MQTT: MQTT event published, msg_id=45478[0m
+[0;32mI (653866) MQTT: MQTT event published, msg_id=7775[0m
+[0;32mI (653876) MQTT: MQTT event published, msg_id=37310[0m
+[0;32mI (653876) MQTT: MQTT event published, msg_id=54224[0m
+[0;32mI (653876) MQTT: MQTT event published, msg_id=28455[0m
+[0;32mI (656116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (656116) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (656116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (656126) MESH_CLIENT: 00 00 00 00 00 00 00 de a2 40 00 00 00 00 03 00 [0m
+[0;32mI (656126) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (656136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (656146) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (656146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (656146) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (656156) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (656156) PARSED_DATA: Smoke   3     = 2415.000000[0m
+[0;32mI (656426) MQTT: MQTT event published, msg_id=51003[0m
+[0;32mI (656736) MQTT: MQTT event published, msg_id=34228[0m
+[0;32mI (656736) MQTT: MQTT event published, msg_id=49843[0m
+[0;32mI (656746) MQTT: MQTT event published, msg_id=55211[0m
+[0;32mI (656746) MQTT: MQTT event published, msg_id=35684[0m
+[0;32mI (656756) MQTT: MQTT event published, msg_id=61964[0m
+[0;32mI (663246) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (663246) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (663246) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (663256) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (663266) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (663266) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (663276) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (663286) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (663286) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (663296) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (663296) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (663596) MQTT: MQTT event published, msg_id=6563[0m
+[0;32mI (663896) MQTT: MQTT event published, msg_id=62013[0m
+[0;32mI (663906) MQTT: MQTT event published, msg_id=11183[0m
+[0;32mI (663906) MQTT: MQTT event published, msg_id=43425[0m
+[0;32mI (663916) MQTT: MQTT event published, msg_id=40240[0m
+[0;32mI (663916) MQTT: MQTT event published, msg_id=20437[0m
+[0;32mI (664186) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (664186) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (664196) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (664196) MESH_CLIENT: 00 00 00 00 00 00 00 cc a2 40 00 00 00 00 03 00 [0m
+[0;32mI (664206) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (664206) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (664216) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (664226) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (664226) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (664236) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (664236) PARSED_DATA: Smoke   3     = 2406.000000[0m
+[0;32mI (664516) MQTT: MQTT event published, msg_id=17869[0m
+[0;32mI (664636) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (664636) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (664636) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (664646) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (664646) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (664656) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (664656) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (664666) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (664666) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (664676) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (664686) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;33mW (664696) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000dd5[0m
+[0;33mW (664766) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000dd6[0m
+[0;32mI (664826) MQTT: MQTT event published, msg_id=12810[0m
+[0;32mI (664826) MQTT: MQTT event published, msg_id=44525[0m
+[0;32mI (664826) MQTT: MQTT event published, msg_id=44845[0m
+[0;32mI (664836) MQTT: MQTT event published, msg_id=35700[0m
+[0;32mI (664836) MQTT: MQTT event published, msg_id=61809[0m
+[0;32mI (665046) MQTT: MQTT event published, msg_id=32415[0m
+[0;32mI (665046) MQTT: MQTT event published, msg_id=58415[0m
+[0;32mI (665056) MQTT: MQTT event published, msg_id=28886[0m
+[0;32mI (665056) MQTT: MQTT event published, msg_id=55816[0m
+[0;32mI (665066) MQTT: MQTT event published, msg_id=18430[0m
+[0;32mI (665066) MQTT: MQTT event published, msg_id=45361[0m
+[0;32mI (672106) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (672106) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (672106) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (672116) MESH_CLIENT: 00 00 00 00 00 00 00 e4 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (672126) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (672126) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (672136) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (672146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (672146) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (672146) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (672156) PARSED_DATA: Smoke   3     = 2418.000000[0m
+[0;32mI (672506) MQTT: MQTT event published, msg_id=52172[0m
+[0;32mI (672806) MQTT: MQTT event published, msg_id=10618[0m
+[0;32mI (672816) MQTT: MQTT event published, msg_id=26072[0m
+[0;32mI (672816) MQTT: MQTT event published, msg_id=10742[0m
+[0;32mI (672816) MQTT: MQTT event published, msg_id=59812[0m
+[0;32mI (672826) MQTT: MQTT event published, msg_id=39905[0m
+[0;32mI (673546) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (673546) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (673546) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (673556) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (673556) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (673566) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (673566) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (673576) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (673576) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (673586) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (673596) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;33mW (673816) BLE_MESH: Received already received fragment[0m
+[0;33mW (673876) BLE_MESH: Received already received fragment[0m
+[0;32mI (673936) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (673936) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (673936) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (673946) MESH_CLIENT: 00 00 00 00 00 00 00 e4 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (673956) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (673956) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (673966) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (673966) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (673976) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (673976) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (673986) PARSED_DATA: Smoke   3     = 2418.000000[0m
+[0;33mW (673986) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0007f7[0m
+[0;32mI (674036) MQTT: MQTT event published, msg_id=41956[0m
+[0;32mI (674346) MQTT: MQTT event published, msg_id=55955[0m
+[0;32mI (674356) MQTT: MQTT event published, msg_id=23594[0m
+[0;32mI (674356) MQTT: MQTT event published, msg_id=45417[0m
+[0;32mI (674356) MQTT: MQTT event published, msg_id=8369[0m
+[0;32mI (674366) MQTT: MQTT event published, msg_id=45291[0m
+[0;32mI (674366) MQTT: MQTT event published, msg_id=52193[0m
+[0;32mI (674376) MQTT: MQTT event published, msg_id=63888[0m
+[0;32mI (674376) MQTT: MQTT event published, msg_id=48799[0m
+[0;32mI (674386) MQTT: MQTT event published, msg_id=38327[0m
+[0;32mI (674386) MQTT: MQTT event published, msg_id=48216[0m
+[0;32mI (674396) MQTT: MQTT event published, msg_id=47079[0m
+[0;32mI (680106) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (680106) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (680116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (680116) MESH_CLIENT: 00 00 00 00 00 00 00 de a2 40 00 00 00 00 03 00 [0m
+[0;32mI (680126) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (680126) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (680136) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (680146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (680146) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (680156) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (680156) PARSED_DATA: Smoke   3     = 2415.000000[0m
+[0;33mW (680356) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000801[0m
+[0;32mI (680486) MQTT: MQTT event published, msg_id=42611[0m
+[0;32mI (680796) MQTT: MQTT event published, msg_id=47179[0m
+[0;32mI (680806) MQTT: MQTT event published, msg_id=46513[0m
+[0;32mI (680806) MQTT: MQTT event published, msg_id=50534[0m
+[0;32mI (680806) MQTT: MQTT event published, msg_id=41686[0m
+[0;32mI (680816) MQTT: MQTT event published, msg_id=5737[0m
+[0;32mI (683276) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (683276) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (683276) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (683286) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (683296) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (683296) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (683306) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (683306) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (683316) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (683316) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (683326) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (683666) MQTT: MQTT event published, msg_id=14654[0m
+[0;32mI (683976) MQTT: MQTT event published, msg_id=15365[0m
+[0;32mI (683976) MQTT: MQTT event published, msg_id=10515[0m
+[0;32mI (683976) MQTT: MQTT event published, msg_id=16468[0m
+[0;32mI (683986) MQTT: MQTT event published, msg_id=43771[0m
+[0;32mI (683986) MQTT: MQTT event published, msg_id=19195[0m
+[0;32mI (688136) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (688136) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (688136) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (688146) MESH_CLIENT: 00 00 00 00 00 00 00 e4 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (688156) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (688156) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (688166) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (688176) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (688176) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (688176) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (688186) PARSED_DATA: Smoke   3     = 2418.000000[0m
+[0;32mI (688476) MQTT: MQTT event published, msg_id=37954[0m
+[0;32mI (688786) MQTT: MQTT event published, msg_id=40200[0m
+[0;32mI (688796) MQTT: MQTT event published, msg_id=8591[0m
+[0;32mI (688796) MQTT: MQTT event published, msg_id=34827[0m
+[0;32mI (688796) MQTT: MQTT event published, msg_id=11077[0m
+[0;32mI (688806) MQTT: MQTT event published, msg_id=688[0m
+[0;32mI (693316) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (693316) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (693316) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (693326) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (693336) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (693336) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (693346) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (693346) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (693356) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (693366) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (693366) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (693696) MQTT: MQTT event published, msg_id=6932[0m
+[0;32mI (694006) MQTT: MQTT event published, msg_id=37798[0m
+[0;32mI (694006) MQTT: MQTT event published, msg_id=26415[0m
+[0;32mI (694006) MQTT: MQTT event published, msg_id=42655[0m
+[0;32mI (694016) MQTT: MQTT event published, msg_id=53529[0m
+[0;32mI (694016) MQTT: MQTT event published, msg_id=41436[0m
+[0;32mI (696106) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (696106) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (696106) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (696116) MESH_CLIENT: 00 00 00 00 00 00 00 12 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (696126) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (696126) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (696136) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (696146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (696146) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (696156) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (696156) PARSED_DATA: Smoke   3     = 2441.000000[0m
+[0;32mI (696456) MQTT: MQTT event published, msg_id=20331[0m
+[0;32mI (696776) MQTT: MQTT event published, msg_id=887[0m
+[0;32mI (696776) MQTT: MQTT event published, msg_id=26828[0m
+[0;32mI (696786) MQTT: MQTT event published, msg_id=49608[0m
+[0;32mI (696786) MQTT: MQTT event published, msg_id=61043[0m
+[0;32mI (696796) MQTT: MQTT event published, msg_id=15495[0m
+[0;32mI (703336) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (703336) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (703346) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (703346) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (703356) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (703356) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (703366) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (703376) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (703376) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (703376) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (703386) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (703736) MQTT: MQTT event published, msg_id=27342[0m
+[0;32mI (704046) MQTT: MQTT event published, msg_id=4509[0m
+[0;32mI (704046) MQTT: MQTT event published, msg_id=42876[0m
+[0;32mI (704046) MQTT: MQTT event published, msg_id=59880[0m
+[0;32mI (704056) MQTT: MQTT event published, msg_id=59330[0m
+[0;32mI (704056) MQTT: MQTT event published, msg_id=30088[0m
+[0;33mW (704326) BLE_MESH: Received already received fragment[0m
+[0;33mW (704436) BLE_MESH: Received already received fragment[0m
+[0;33mW (704496) BLE_MESH: Received already received fragment[0m
+[0;32mI (704536) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (704536) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (704546) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (704546) MESH_CLIENT: 00 00 00 00 00 00 00 f2 a2 40 00 00 00 00 03 00 [0m
+[0;32mI (704556) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (704556) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (704566) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (704576) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (704576) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (704586) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (704586) PARSED_DATA: Smoke   3     = 2425.000000[0m
+[0;33mW (704806) BLE_MESH: Received already received fragment[0m
+[0;32mI (704856) MQTT: MQTT event published, msg_id=57008[0m
+[0;32mI (704936) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (704936) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (704956) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (704956) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (704966) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (704966) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (704976) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (704976) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (704986) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (704986) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (704996) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (705166) MQTT: MQTT event published, msg_id=55935[0m
+[0;32mI (705166) MQTT: MQTT event published, msg_id=60010[0m
+[0;32mI (705176) MQTT: MQTT event published, msg_id=51668[0m
+[0;32mI (705176) MQTT: MQTT event published, msg_id=51602[0m
+[0;32mI (705186) MQTT: MQTT event published, msg_id=33574[0m
+[0;33mW (705236) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00083e[0m
+[0;32mI (705476) MQTT: MQTT event published, msg_id=56335[0m
+[0;32mI (705476) MQTT: MQTT event published, msg_id=51460[0m
+[0;32mI (705486) MQTT: MQTT event published, msg_id=52015[0m
+[0;32mI (705486) MQTT: MQTT event published, msg_id=43509[0m
+[0;32mI (705486) MQTT: MQTT event published, msg_id=49350[0m
+[0;32mI (705496) MQTT: MQTT event published, msg_id=41992[0m
+[0;32mI (712126) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (712126) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (712136) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (712136) MESH_CLIENT: 00 00 00 00 00 00 00 fe a2 40 00 00 00 00 03 00 [0m
+[0;32mI (712146) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (712146) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (712166) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (712176) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (712176) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (712176) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (712186) PARSED_DATA: Smoke   3     = 2431.000000[0m
+[0;32mI (712436) MQTT: MQTT event published, msg_id=21688[0m
+[0;32mI (712686) MQTT: MQTT event published, msg_id=23417[0m
+[0;32mI (712686) MQTT: MQTT event published, msg_id=40978[0m
+[0;32mI (712686) MQTT: MQTT event published, msg_id=797[0m
+[0;32mI (712696) MQTT: MQTT event published, msg_id=27160[0m
+[0;32mI (712696) MQTT: MQTT event published, msg_id=13533[0m
+[0;32mI (713416) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (713416) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (713416) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (713426) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (713436) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (713436) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (713446) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (713456) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (713456) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (713466) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (713466) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (713706) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (713706) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (713706) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (713716) MESH_CLIENT: 00 00 00 00 00 00 00 fe a2 40 00 00 00 00 03 00 [0m
+[0;32mI (713726) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (713726) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (713736) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (713736) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (713746) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (713746) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (713756) PARSED_DATA: Smoke   3     = 2431.000000[0m
+[0;32mI (713776) MQTT: MQTT event published, msg_id=57836[0m
+[0;33mW (713966) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000859[0m
+[0;33mW (713976) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00085a[0m
+[0;32mI (714086) MQTT: MQTT event published, msg_id=45219[0m
+[0;32mI (714086) MQTT: MQTT event published, msg_id=8539[0m
+[0;32mI (714096) MQTT: MQTT event published, msg_id=63994[0m
+[0;32mI (714096) MQTT: MQTT event published, msg_id=27779[0m
+[0;32mI (714096) MQTT: MQTT event published, msg_id=36635[0m
+[0;32mI (714106) MQTT: MQTT event published, msg_id=60933[0m
+[0;32mI (714106) MQTT: MQTT event published, msg_id=8642[0m
+[0;33mW (714246) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000e30[0m
+[0;32mI (714256) MQTT: MQTT event published, msg_id=22052[0m
+[0;32mI (715096) MQTT: MQTT event published, msg_id=39901[0m
+[0;32mI (715106) MQTT: MQTT event published, msg_id=21518[0m
+[0;32mI (715116) MQTT: MQTT event published, msg_id=1762[0m
+[0;32mI (720076) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (720076) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (720076) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (720086) MESH_CLIENT: 00 00 00 00 00 00 00 1c a3 40 00 00 00 00 03 00 [0m
+[0;32mI (720096) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (720096) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (720106) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (720116) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (720116) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (720126) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (720126) PARSED_DATA: Smoke   3     = 2446.000000[0m
+[0;32mI (720426) MQTT: MQTT event published, msg_id=19252[0m
+[0;32mI (720656) MQTT: MQTT event published, msg_id=31918[0m
+[0;32mI (720656) MQTT: MQTT event published, msg_id=42674[0m
+[0;32mI (720666) MQTT: MQTT event published, msg_id=38409[0m
+[0;32mI (720666) MQTT: MQTT event published, msg_id=21771[0m
+[0;32mI (720666) MQTT: MQTT event published, msg_id=17565[0m
+[0;32mI (723436) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (723446) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (723446) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (723446) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (723456) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (723466) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (723466) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (723476) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (723486) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (723486) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (723496) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;33mW (723676) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000e44[0m
+[0;32mI (723906) MQTT: MQTT event published, msg_id=36136[0m
+[0;32mI (724216) MQTT: MQTT event published, msg_id=62844[0m
+[0;32mI (724226) MQTT: MQTT event published, msg_id=43317[0m
+[0;32mI (724226) MQTT: MQTT event published, msg_id=9132[0m
+[0;32mI (724236) MQTT: MQTT event published, msg_id=8280[0m
+[0;32mI (724236) MQTT: MQTT event published, msg_id=10035[0m
+[0;32mI (728076) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (728076) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (728076) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (728086) MESH_CLIENT: 00 00 00 00 00 00 00 0a a3 40 00 00 00 00 03 00 [0m
+[0;32mI (728096) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (728096) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (728106) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (728106) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (728116) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (728126) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (728126) PARSED_DATA: Smoke   3     = 2437.000000[0m
+[0;32mI (728516) MQTT: MQTT event published, msg_id=25468[0m
+[0;32mI (728826) MQTT: MQTT event published, msg_id=47788[0m
+[0;32mI (728826) MQTT: MQTT event published, msg_id=46192[0m
+[0;32mI (728836) MQTT: MQTT event published, msg_id=2309[0m
+[0;32mI (728836) MQTT: MQTT event published, msg_id=29454[0m
+[0;32mI (728846) MQTT: MQTT event published, msg_id=22814[0m
+[0;32mI (733446) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (733446) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (733446) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (733456) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (733466) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (733466) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (733476) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (733486) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (733486) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (733496) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (733496) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (733846) MQTT: MQTT event published, msg_id=59227[0m
+[0;32mI (734146) MQTT: MQTT event published, msg_id=19251[0m
+[0;32mI (734156) MQTT: MQTT event published, msg_id=11970[0m
+[0;32mI (734156) MQTT: MQTT event published, msg_id=20563[0m
+[0;32mI (734156) MQTT: MQTT event published, msg_id=10153[0m
+[0;32mI (734166) MQTT: MQTT event published, msg_id=63241[0m
+[0;32mI (736116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (736116) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (736116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (736126) MESH_CLIENT: 00 00 00 00 00 00 00 08 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (736136) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (736136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (736146) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (736146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (736156) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (736166) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (736166) PARSED_DATA: Smoke   3     = 2436.000000[0m
+[0;32mI (736496) MQTT: MQTT event published, msg_id=17242[0m
+[0;32mI (736806) MQTT: MQTT event published, msg_id=20229[0m
+[0;32mI (736816) MQTT: MQTT event published, msg_id=61475[0m
+[0;32mI (736816) MQTT: MQTT event published, msg_id=42469[0m
+[0;32mI (736826) MQTT: MQTT event published, msg_id=10130[0m
+[0;32mI (736826) MQTT: MQTT event published, msg_id=53458[0m
+[0;32mI (743466) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (743466) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (743476) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (743476) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (743486) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (743486) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (743496) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (743506) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (743506) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (743516) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (743516) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (743876) MQTT: MQTT event published, msg_id=57332[0m
+[0;32mI (744176) MQTT: MQTT event published, msg_id=10900[0m
+[0;32mI (744186) MQTT: MQTT event published, msg_id=6445[0m
+[0;32mI (744186) MQTT: MQTT event published, msg_id=26285[0m
+[0;32mI (744196) MQTT: MQTT event published, msg_id=35367[0m
+[0;32mI (744196) MQTT: MQTT event published, msg_id=59988[0m
+[0;32mI (744356) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (744356) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (744356) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (744366) MESH_CLIENT: 00 00 00 00 00 00 00 1e a3 40 00 00 00 00 03 00 [0m
+[0;32mI (744376) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (744376) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (744396) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (744396) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (744396) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (744396) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (744406) PARSED_DATA: Smoke   3     = 2447.000000[0m
+[0;33mW (744626) BLE_MESH: Received already received fragment[0m
+[0;32mI (744696) MQTT: MQTT event published, msg_id=27941[0m
+[0;33mW (744886) BLE_MESH: Received already received fragment[0m
+[0;32mI (744916) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (744916) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (744916) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (744926) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (744936) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (744936) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (744946) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (744946) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (744956) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (744966) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (744966) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (744996) MQTT: MQTT event published, msg_id=64948[0m
+[0;32mI (745006) MQTT: MQTT event published, msg_id=17170[0m
+[0;32mI (745006) MQTT: MQTT event published, msg_id=28887[0m
+[0;32mI (745016) MQTT: MQTT event published, msg_id=23584[0m
+[0;32mI (745016) MQTT: MQTT event published, msg_id=57185[0m
+[0;32mI (745306) MQTT: MQTT event published, msg_id=35498[0m
+[0;32mI (745316) MQTT: MQTT event published, msg_id=55373[0m
+[0;32mI (745316) MQTT: MQTT event published, msg_id=8591[0m
+[0;32mI (745316) MQTT: MQTT event published, msg_id=42306[0m
+[0;32mI (745326) MQTT: MQTT event published, msg_id=23306[0m
+[0;32mI (745326) MQTT: MQTT event published, msg_id=62742[0m
+[0;33mW (745586) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000e74[0m
+[0;32mI (752076) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (752076) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (752076) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (752086) MESH_CLIENT: 00 00 00 00 00 00 00 1e a3 40 00 00 00 00 03 00 [0m
+[0;32mI (752096) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (752096) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (752106) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (752106) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (752116) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (752116) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (752126) PARSED_DATA: Smoke   3     = 2447.000000[0m
+[0;33mW (752266) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008b4[0m
+[0;32mI (752476) MQTT: MQTT event published, msg_id=34417[0m
+[0;32mI (752786) MQTT: MQTT event published, msg_id=50439[0m
+[0;32mI (752786) MQTT: MQTT event published, msg_id=30202[0m
+[0;32mI (752786) MQTT: MQTT event published, msg_id=21321[0m
+[0;32mI (752796) MQTT: MQTT event published, msg_id=24281[0m
+[0;32mI (752796) MQTT: MQTT event published, msg_id=34117[0m
+[0;32mI (753766) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (753766) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (753766) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;33mW (753776) BLE_MESH: Received already received fragment[0m
+[0;32mI (753786) MESH_CLIENT: 00 00 00 00 00 00 00 1e a3 40 00 00 00 00 03 00 [0m
+[0;32mI (753796) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (753796) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (753806) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (753806) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (753816) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (753816) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (753826) PARSED_DATA: Smoke   3     = 2447.000000[0m
+[0;33mW (753876) BLE_MESH: Received already received fragment[0m
+[0;32mI (753936) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (753936) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (753936) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (753946) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (753956) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (753956) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (753966) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (753976) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (753976) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (753986) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (753986) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (754046) MQTT: MQTT event published, msg_id=25561[0m
+[0;33mW (754066) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008bf[0m
+[0;32mI (754326) MQTT: MQTT event published, msg_id=58627[0m
+[0;32mI (754326) MQTT: MQTT event published, msg_id=53792[0m
+[0;32mI (754336) MQTT: MQTT event published, msg_id=2251[0m
+[0;32mI (754336) MQTT: MQTT event published, msg_id=13512[0m
+[0;32mI (754336) MQTT: MQTT event published, msg_id=30273[0m
+[0;32mI (754346) MQTT: MQTT event published, msg_id=30698[0m
+[0;32mI (754346) MQTT: MQTT event published, msg_id=46258[0m
+[0;32mI (754356) MQTT: MQTT event published, msg_id=23106[0m
+[0;32mI (754366) MQTT: MQTT event published, msg_id=22444[0m
+[0;32mI (754366) MQTT: MQTT event published, msg_id=13733[0m
+[0;32mI (754376) MQTT: MQTT event published, msg_id=52556[0m
+[0;32mI (760076) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (760076) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (760076) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (760086) MESH_CLIENT: 00 00 00 00 00 00 00 20 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (760096) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (760096) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (760106) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (760106) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (760116) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (760116) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (760126) PARSED_DATA: Smoke   3     = 2448.000000[0m
+[0;32mI (760466) MQTT: MQTT event published, msg_id=13580[0m
+[0;33mW (760706) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008cc[0m
+[0;32mI (760766) MQTT: MQTT event published, msg_id=16270[0m
+[0;32mI (760776) MQTT: MQTT event published, msg_id=7698[0m
+[0;32mI (760776) MQTT: MQTT event published, msg_id=24760[0m
+[0;32mI (760776) MQTT: MQTT event published, msg_id=53906[0m
+[0;32mI (760786) MQTT: MQTT event published, msg_id=3265[0m
+[0;32mI (763516) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (763516) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (763526) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (763526) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (763536) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (763536) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (763546) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (763556) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (763556) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (763566) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (763566) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (763836) MQTT: MQTT event published, msg_id=10049[0m
+[0;32mI (764146) MQTT: MQTT event published, msg_id=56738[0m
+[0;32mI (764156) MQTT: MQTT event published, msg_id=3930[0m
+[0;32mI (764156) MQTT: MQTT event published, msg_id=20427[0m
+[0;32mI (764156) MQTT: MQTT event published, msg_id=62245[0m
+[0;32mI (764166) MQTT: MQTT event published, msg_id=36110[0m
+[0;32mI (768116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (768116) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (768116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (768126) MESH_CLIENT: 00 00 00 00 00 00 00 1e a3 40 00 00 00 00 03 00 [0m
+[0;32mI (768136) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (768136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (768146) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (768146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (768156) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (768156) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (768166) PARSED_DATA: Smoke   3     = 2447.000000[0m
+[0;32mI (768446) MQTT: MQTT event published, msg_id=46909[0m
+[0;32mI (768856) MQTT: MQTT event published, msg_id=55553[0m
+[0;32mI (768866) MQTT: MQTT event published, msg_id=24114[0m
+[0;32mI (768866) MQTT: MQTT event published, msg_id=17901[0m
+[0;32mI (768866) MQTT: MQTT event published, msg_id=27177[0m
+[0;32mI (768876) MQTT: MQTT event published, msg_id=59699[0m
+[0;32mI (768936) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (768936) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (768946) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 50 00 00 00 00 00 [0m
+[0;32mI (768946) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (768956) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (768956) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (768966) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (768976) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (768976) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (768986) PARSED_DATA: Light   3     = 80[0m
+[0;33mW (768986) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (769276) MQTT: MQTT event published, msg_id=15837[0m
+[0;33mW (769436) BLE_MESH: Received already received fragment[0m
+[0;32mI (769536) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (769536) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (769546) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;33mW (769546) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008e2[0m
+[0;32mI (769556) MESH_CLIENT: 00 00 00 00 00 00 00 1e a3 40 00 00 00 00 03 00 [0m
+[0;32mI (769566) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (769566) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;32mI (769576) MQTT: MQTT event published, msg_id=32290[0m
+[0;33mW (769576) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;32mI (769586) MQTT: MQTT event published, msg_id=30589[0m
+[0;33mW (769586) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;32mI (769596) MQTT: MQTT event published, msg_id=20221[0m
+[0;33mW (769596) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;32mI (769606) MQTT: MQTT event published, msg_id=18896[0m
+[0;33mW (769616) PARSED_DATA: Light   3     = 0[0m
+[0;32mI (769616) MQTT: MQTT event published, msg_id=56361[0m
+[0;33mW (769626) PARSED_DATA: Smoke   3     = 2447.000000[0m
+[0;32mI (769886) MQTT: MQTT event published, msg_id=52907[0m
+[0;33mW (769976) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008e1[0m
+[0;32mI (770186) MQTT: MQTT event published, msg_id=28008[0m
+[0;32mI (770196) MQTT: MQTT event published, msg_id=23411[0m
+[0;32mI (770196) MQTT: MQTT event published, msg_id=53574[0m
+[0;32mI (770206) MQTT: MQTT event published, msg_id=58461[0m
+[0;32mI (770206) MQTT: MQTT event published, msg_id=13727[0m
+[0;33mW (770346) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008e3[0m
+[0;33mW (770416) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x005290[0m
+[0;33mW (770426) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x005294[0m
+[0;33mW (770526) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x005291[0m
+[0;33mW (770626) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x005292[0m
+[0;33mW (770786) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x005293[0m
+[0;33mW (771436) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008e6[0m
+[0;33mW (771506) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008eb[0m
+[0;33mW (771606) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008e7[0m
+[0;33mW (771706) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x005294[0m
+[0;33mW (771786) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x005298[0m
+[0;32mI (773546) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (773546) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (773546) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (773556) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (773566) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (773566) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (773576) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (773586) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (773586) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (773596) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (773596) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;33mW (773746) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ea7[0m
+[0;32mI (773876) MQTT: MQTT event published, msg_id=55795[0m
+[0;32mI (774186) MQTT: MQTT event published, msg_id=5437[0m
+[0;32mI (774196) MQTT: MQTT event published, msg_id=28558[0m
+[0;32mI (774196) MQTT: MQTT event published, msg_id=6708[0m
+[0;32mI (774206) MQTT: MQTT event published, msg_id=49978[0m
+[0;32mI (774206) MQTT: MQTT event published, msg_id=40564[0m
+[0;33mW (774356) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ead[0m
+[0;32mI (776036) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (776036) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (776036) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 51 00 00 00 00 00 [0m
+[0;32mI (776046) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (776056) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (776056) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (776066) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (776066) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (776076) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (776086) PARSED_DATA: Light   3     = 81[0m
+[0;33mW (776086) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (776236) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (776236) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (776236) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (776236) MESH_CLIENT: 00 00 00 00 00 00 00 38 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (776246) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (776256) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (776256) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (776266) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (776266) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (776276) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (776276) PARSED_DATA: Smoke   3     = 2460.000000[0m
+[0;32mI (776436) MQTT: MQTT event published, msg_id=52934[0m
+[0;32mI (776746) MQTT: MQTT event published, msg_id=17320[0m
+[0;32mI (776746) MQTT: MQTT event published, msg_id=48920[0m
+[0;32mI (776746) MQTT: MQTT event published, msg_id=5555[0m
+[0;32mI (776756) MQTT: MQTT event published, msg_id=16021[0m
+[0;32mI (776756) MQTT: MQTT event published, msg_id=35351[0m
+[0;32mI (776766) MQTT: MQTT event published, msg_id=38058[0m
+[0;32mI (776766) MQTT: MQTT event published, msg_id=52352[0m
+[0;32mI (776776) MQTT: MQTT event published, msg_id=59004[0m
+[0;32mI (776776) MQTT: MQTT event published, msg_id=40914[0m
+[0;32mI (776786) MQTT: MQTT event published, msg_id=28132[0m
+[0;32mI (776796) MQTT: MQTT event published, msg_id=8278[0m
+[0;33mW (776956) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f1[0m
+[0;33mW (777156) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008ed[0m
+[0;33mW (777156) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052a7[0m
+[0;33mW (777266) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008ee[0m
+[0;33mW (777446) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052a2[0m
+[0;33mW (777526) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008ef[0m
+[0;33mW (777606) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052a8[0m
+[0;33mW (777616) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052a3[0m
+[0;33mW (777696) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052a9[0m
+[0;33mW (777746) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f0[0m
+[0;33mW (777786) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052aa[0m
+[0;33mW (777806) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052a4[0m
+[0;33mW (777926) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052ab[0m
+[0;33mW (777936) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f1[0m
+[0;33mW (777996) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052a5[0m
+[0;33mW (778016) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f6[0m
+[0;33mW (778136) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f7[0m
+[0;33mW (778246) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052a6[0m
+[0;33mW (778336) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052ac[0m
+[0;33mW (778366) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052a7[0m
+[0;33mW (778456) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052ad[0m
+[0;33mW (778556) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052af[0m
+[0;33mW (778656) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f9[0m
+[0;33mW (778726) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f2[0m
+[0;33mW (778746) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008fa[0m
+[0;33mW (778826) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f5[0m
+[0;33mW (778836) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008fb[0m
+[0;33mW (778976) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052b1[0m
+[0;33mW (779006) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f3[0m
+[0;33mW (779166) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052b2[0m
+[0;33mW (779186) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052a8[0m
+[0;33mW (779246) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052b3[0m
+[0;33mW (779366) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052a9[0m
+[0;33mW (779446) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f7[0m
+[0;33mW (779546) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052aa[0m
+[0;33mW (779636) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052ae[0m
+[0;33mW (779726) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052ab[0m
+[0;33mW (779926) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f8[0m
+[0;33mW (780006) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f6[0m
+[0;33mW (780166) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008f9[0m
+[0;33mW (780336) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008fa[0m
+[0;33mW (780426) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008fb[0m
+[0;33mW (780546) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052ac[0m
+[0;33mW (780716) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052ad[0m
+[0;33mW (780926) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052af[0m
+[0;33mW (781246) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008fc[0m
+[0;33mW (781556) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x0008fd[0m
+[0;32mI (783226) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (783226) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (783226) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 51 00 00 00 00 00 [0m
+[0;32mI (783236) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (783246) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (783246) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (783256) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (783256) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (783266) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (783276) PARSED_DATA: Light   3     = 81[0m
+[0;33mW (783276) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (783606) MQTT: MQTT event published, msg_id=64555[0m
+[0;32mI (783866) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (783866) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (783866) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (783876) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (783886) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (783886) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (783896) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (783906) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (783916) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;32mI (783916) MQTT: MQTT event published, msg_id=42741[0m
+[0;33mW (783926) PARSED_DATA: Light   3     = 0[0m
+[0;32mI (783936) MQTT: MQTT event published, msg_id=20038[0m
+[0;33mW (783936) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (783946) MQTT: MQTT event published, msg_id=41304[0m
+[0;32mI (783946) MQTT: MQTT event published, msg_id=4160[0m
+[0;32mI (783946) MQTT: MQTT event published, msg_id=14605[0m
+[0;33mW (784136) BLE_MESH: Received already received fragment[0m
+[0;32mI (784226) MQTT: MQTT event published, msg_id=13425[0m
+[0;32mI (784226) MQTT: MQTT event published, msg_id=26390[0m
+[0;33mW (784276) BLE_MESH: Received already received fragment[0m
+[0;32mI (784426) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (784426) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (784426) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;33mW (784436) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ebb[0m
+[0;32mI (784446) MESH_CLIENT: 00 00 00 00 00 00 00 48 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (784456) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (784456) BLE_MESH: Received already received fragment[0m
+[0;33mW (784466) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (784466) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (784476) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (784476) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (784486) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (784486) PARSED_DATA: Smoke   3     = 2468.000000[0m
+[0;33mW (784506) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ebc[0m
+[0;32mI (784526) MQTT: MQTT event published, msg_id=19720[0m
+[0;32mI (784536) MQTT: MQTT event published, msg_id=30094[0m
+[0;32mI (784536) MQTT: MQTT event published, msg_id=41203[0m
+[0;32mI (784536) MQTT: MQTT event published, msg_id=46832[0m
+[0;33mW (784596) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ebd[0m
+[0;32mI (784626) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (784626) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (784626) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 51 00 00 00 00 00 [0m
+[0;32mI (784636) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (784636) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (784646) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (784646) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (784656) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (784656) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (784666) PARSED_DATA: Light   3     = 81[0m
+[0;33mW (784676) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;33mW (784686) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000900[0m
+[0;33mW (784776) BLE_MESH: Received already received fragment[0m
+[0;32mI (784836) MQTT: MQTT event published, msg_id=15435[0m
+[0;32mI (784836) MQTT: MQTT event published, msg_id=1463[0m
+[0;32mI (784846) MQTT: MQTT event published, msg_id=49734[0m
+[0;32mI (784846) MQTT: MQTT event published, msg_id=4293[0m
+[0;32mI (784856) MQTT: MQTT event published, msg_id=52468[0m
+[0;32mI (784856) MQTT: MQTT event published, msg_id=13594[0m
+[0;33mW (784886) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000901[0m
+[0;33mW (785016) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000902[0m
+[0;32mI (785066) MQTT: MQTT event published, msg_id=13196[0m
+[0;32mI (785076) MQTT: MQTT event published, msg_id=32936[0m
+[0;32mI (785076) MQTT: MQTT event published, msg_id=33982[0m
+[0;32mI (785076) MQTT: MQTT event published, msg_id=65446[0m
+[0;32mI (785086) MQTT: MQTT event published, msg_id=9875[0m
+[0;32mI (785086) MQTT: MQTT event published, msg_id=57648[0m
+[0;32mI (785326) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (785336) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (785336) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (785336) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (785346) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (785356) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (785356) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (785366) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (785366) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (785376) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (785376) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;33mW (785406) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000903[0m
+[0;33mW (785526) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000904[0m
+[0;33mW (785606) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052ba[0m
+[0;33mW (785636) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000905[0m
+[0;32mI (785646) MQTT: MQTT event published, msg_id=28705[0m
+[0;33mW (785726) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000eba[0m
+[0;33mW (785746) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000906[0m
+[0;33mW (785806) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052bb[0m
+[0;33mW (785826) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000907[0m
+[0;33mW (785826) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ebb[0m
+[0;33mW (785836) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052bc[0m
+[0;33mW (785866) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ebc[0m
+[0;33mW (785906) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052bd[0m
+[0;32mI (785956) MQTT: MQTT event published, msg_id=1872[0m
+[0;32mI (785966) MQTT: MQTT event published, msg_id=51377[0m
+[0;32mI (785966) MQTT: MQTT event published, msg_id=12212[0m
+[0;32mI (785966) MQTT: MQTT event published, msg_id=60662[0m
+[0;32mI (785976) MQTT: MQTT event published, msg_id=30176[0m
+[0;33mW (786026) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c0[0m
+[0;33mW (786036) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ebf[0m
+[0;33mW (786126) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ebd[0m
+[0;33mW (786156) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec0[0m
+[0;33mW (786176) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c2[0m
+[0;33mW (786236) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec1[0m
+[0;33mW (786266) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052be[0m
+[0;33mW (786326) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ebe[0m
+[0;33mW (786386) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c3[0m
+[0;33mW (786466) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000903[0m
+[0;33mW (786496) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c1[0m
+[0;33mW (786546) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052bf[0m
+[0;33mW (786646) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000904[0m
+[0;33mW (787006) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec0[0m
+[0;33mW (787056) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000905[0m
+[0;33mW (787156) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000906[0m
+[0;33mW (787246) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000908[0m
+[0;33mW (787356) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000909[0m
+[0;33mW (787356) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000907[0m
+[0;33mW (787426) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090a[0m
+[0;33mW (787446) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c4[0m
+[0;33mW (787506) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec3[0m
+[0;33mW (787516) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090b[0m
+[0;33mW (787606) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ebf[0m
+[0;33mW (787626) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec4[0m
+[0;33mW (787716) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c6[0m
+[0;33mW (787756) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c0[0m
+[0;33mW (787786) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec1[0m
+[0;33mW (787826) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c7[0m
+[0;33mW (787846) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c1[0m
+[0;33mW (787866) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec5[0m
+[0;33mW (787966) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec2[0m
+[0;33mW (787976) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec6[0m
+[0;33mW (788026) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c2[0m
+[0;33mW (788116) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c3[0m
+[0;33mW (788246) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090c[0m
+[0;33mW (788256) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c5[0m
+[0;33mW (788346) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090d[0m
+[0;33mW (788426) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090e[0m
+[0;33mW (788426) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c4[0m
+[0;33mW (788546) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090f[0m
+[0;33mW (788586) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c7[0m
+[0;33mW (788606) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000908[0m
+[0;33mW (788696) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000909[0m
+[0;33mW (788786) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec3[0m
+[0;33mW (788896) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec4[0m
+[0;33mW (788986) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090a[0m
+[0;33mW (789086) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec5[0m
+[0;33mW (789156) BLE_MESH: Replay: src 0x0033 dst 0xffff seq 0x000ec6[0m
+[0;33mW (789246) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000910[0m
+[0;33mW (789346) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000911[0m
+[0;33mW (789426) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000912[0m
+[0;33mW (789516) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000913[0m
+[0;33mW (789566) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090b[0m
+[0;33mW (789606) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090c[0m
+[0;33mW (789656) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052c6[0m
+[0;33mW (790066) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090d[0m
+[0;33mW (790196) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090e[0m
+[0;33mW (790236) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00090f[0m
+[0;32mI (790906) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (790906) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (790906) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 50 00 00 00 00 00 [0m
+[0;32mI (790916) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (790926) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (790926) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (790936) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (790946) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (790946) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (790956) PARSED_DATA: Light   3     = 80[0m
+[0;33mW (790956) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (791216) MQTT: MQTT event published, msg_id=25535[0m
+[0;33mW (791336) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x000913[0m
+[0;32mI (791486) MQTT: MQTT event published, msg_id=4106[0m
+[0;32mI (791496) MQTT: MQTT event published, msg_id=56706[0m
+[0;32mI (791496) MQTT: MQTT event published, msg_id=29314[0m
+[0;32mI (791496) MQTT: MQTT event published, msg_id=35553[0m
+[0;32mI (791506) MQTT: MQTT event published, msg_id=47107[0m
+[0;32mI (792276) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (792276) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (792286) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (792286) MESH_CLIENT: 00 00 00 00 00 00 00 34 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (792296) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (792296) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (792306) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (792316) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (792316) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (792326) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (792326) PARSED_DATA: Smoke   3     = 2458.000000[0m
+[0;32mI (792486) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (792486) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (792486) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 50 00 00 00 00 00 [0m
+[0;32mI (792496) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (792506) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (792506) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (792516) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (792516) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (792526) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (792526) PARSED_DATA: Light   3     = 80[0m
+[0;33mW (792536) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (792816) MQTT: MQTT event published, msg_id=16957[0m
+[0;32mI (793126) MQTT: MQTT event published, msg_id=51092[0m
+[0;32mI (793136) MQTT: MQTT event published, msg_id=49890[0m
+[0;32mI (793136) MQTT: MQTT event published, msg_id=11930[0m
+[0;32mI (793136) MQTT: MQTT event published, msg_id=37766[0m
+[0;32mI (793146) MQTT: MQTT event published, msg_id=37670[0m
+[0;32mI (793146) MQTT: MQTT event published, msg_id=33655[0m
+[0;32mI (793156) MQTT: MQTT event published, msg_id=51786[0m
+[0;32mI (793156) MQTT: MQTT event published, msg_id=32810[0m
+[0;32mI (793166) MQTT: MQTT event published, msg_id=25419[0m
+[0;32mI (793176) MQTT: MQTT event published, msg_id=613[0m
+[0;32mI (793176) MQTT: MQTT event published, msg_id=7765[0m
+[0;33mW (793346) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052d6[0m
+[0;33mW (793416) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052d7[0m
+[0;32mI (793786) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (793796) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (793796) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (793796) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (793806) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (793816) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (793816) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (793826) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (793826) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (793836) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (793836) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (794156) MQTT: MQTT event published, msg_id=29248[0m
+[0;33mW (794226) BLE_MESH: Received already received fragment[0m
+[0;33mW (794326) BLE_MESH: Received already received fragment[0m
+[0;32mI (794366) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (794366) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (794366) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (794376) MESH_CLIENT: 00 00 00 00 00 00 00 34 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (794386) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (794386) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (794396) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (794396) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (794406) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (794416) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (794416) PARSED_DATA: Smoke   3     = 2458.000000[0m
+[0;33mW (794446) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00091e[0m
+[0;32mI (794456) MQTT: MQTT event published, msg_id=57575[0m
+[0;32mI (794466) MQTT: MQTT event published, msg_id=7306[0m
+[0;32mI (794466) MQTT: MQTT event published, msg_id=27170[0m
+[0;32mI (794476) MQTT: MQTT event published, msg_id=60922[0m
+[0;32mI (794476) MQTT: MQTT event published, msg_id=17688[0m
+[0;32mI (794766) MQTT: MQTT event published, msg_id=34472[0m
+[0;32mI (794766) MQTT: MQTT event published, msg_id=55138[0m
+[0;32mI (794776) MQTT: MQTT event published, msg_id=49683[0m
+[0;32mI (794776) MQTT: MQTT event published, msg_id=15903[0m
+[0;32mI (794786) MQTT: MQTT event published, msg_id=42548[0m
+[0;32mI (794786) MQTT: MQTT event published, msg_id=4395[0m
+[0;33mW (794866) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00091d[0m
+[0;33mW (794986) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00091f[0m
+[0;32mI (797606) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (797606) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (797606) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 50 00 00 00 00 00 [0m
+[0;32mI (797616) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (797626) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (797626) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (797636) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (797636) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (797646) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (797656) PARSED_DATA: Light   3     = 80[0m
+[0;33mW (797656) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (797936) MQTT: MQTT event published, msg_id=21571[0m
+[0;32mI (798246) MQTT: MQTT event published, msg_id=37954[0m
+[0;32mI (798246) MQTT: MQTT event published, msg_id=57043[0m
+[0;32mI (798256) MQTT: MQTT event published, msg_id=56789[0m
+[0;32mI (798256) MQTT: MQTT event published, msg_id=21025[0m
+[0;32mI (798256) MQTT: MQTT event published, msg_id=43539[0m
+[0;32mI (800116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (800116) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (800116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (800126) MESH_CLIENT: 00 00 00 00 00 00 00 20 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (800136) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (800136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (800146) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (800146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (800156) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (800156) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (800166) PARSED_DATA: Smoke   3     = 2448.000000[0m
+[0;32mI (800496) MQTT: MQTT event published, msg_id=59910[0m
+[0;32mI (800816) MQTT: MQTT event published, msg_id=7290[0m
+[0;32mI (800816) MQTT: MQTT event published, msg_id=36234[0m
+[0;32mI (800816) MQTT: MQTT event published, msg_id=36803[0m
+[0;32mI (800826) MQTT: MQTT event published, msg_id=20865[0m
+[0;32mI (800826) MQTT: MQTT event published, msg_id=30298[0m
+[0;32mI (803676) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (803676) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (803676) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (803686) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (803696) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (803696) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (803706) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (803716) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (803716) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (803726) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (803726) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (804086) MQTT: MQTT event published, msg_id=32255[0m
+[0;32mI (804396) MQTT: MQTT event published, msg_id=19304[0m
+[0;32mI (804416) MQTT: MQTT event published, msg_id=14477[0m
+[0;32mI (804416) MQTT: MQTT event published, msg_id=52554[0m
+[0;32mI (804426) MQTT: MQTT event published, msg_id=51668[0m
+[0;32mI (804426) MQTT: MQTT event published, msg_id=49734[0m
+[0;32mI (804926) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (804926) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (804926) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 50 00 00 00 00 00 [0m
+[0;32mI (804936) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (804946) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (804946) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (804956) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (804956) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (804966) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (804976) PARSED_DATA: Light   3     = 80[0m
+[0;33mW (804976) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;33mW (805236) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052f4[0m
+[0;32mI (805326) MQTT: MQTT event published, msg_id=58688[0m
+[0;33mW (805386) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x0052f5[0m
+[0;32mI (805626) MQTT: MQTT event published, msg_id=16918[0m
+[0;32mI (805626) MQTT: MQTT event published, msg_id=22983[0m
+[0;32mI (805636) MQTT: MQTT event published, msg_id=49931[0m
+[0;32mI (805636) MQTT: MQTT event published, msg_id=58173[0m
+[0;32mI (805636) MQTT: MQTT event published, msg_id=3769[0m
+[0;32mI (808136) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (808136) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (808136) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (808146) MESH_CLIENT: 00 00 00 00 00 00 00 36 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (808156) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (808156) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (808166) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (808176) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (808176) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (808176) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (808186) PARSED_DATA: Smoke   3     = 2459.000000[0m
+[0;32mI (808486) MQTT: MQTT event published, msg_id=56482[0m
+[0;32mI (808796) MQTT: MQTT event published, msg_id=6781[0m
+[0;32mI (808796) MQTT: MQTT event published, msg_id=20848[0m
+[0;32mI (808806) MQTT: MQTT event published, msg_id=10631[0m
+[0;32mI (808806) MQTT: MQTT event published, msg_id=3817[0m
+[0;32mI (808816) MQTT: MQTT event published, msg_id=51692[0m
+[0;32mI (811986) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (811986) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (811986) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 50 00 00 00 00 00 [0m
+[0;32mI (811996) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (812006) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (812006) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (812016) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (812026) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (812026) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (812036) PARSED_DATA: Light   3     = 80[0m
+[0;33mW (812036) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (812376) MQTT: MQTT event published, msg_id=2934[0m
+[0;32mI (812686) MQTT: MQTT event published, msg_id=15534[0m
+[0;32mI (812696) MQTT: MQTT event published, msg_id=37484[0m
+[0;32mI (812696) MQTT: MQTT event published, msg_id=31916[0m
+[0;32mI (812706) MQTT: MQTT event published, msg_id=3966[0m
+[0;32mI (812706) MQTT: MQTT event published, msg_id=18841[0m
+[0;33mW (812786) BLE_MESH: Replay: src 0x0031 dst 0xffff seq 0x00530e[0m
+[0;33mW (813476) BLE_MESH: Duplicate SDU from src 0x0033[0m
+[0;32mI (813776) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (813776) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (813776) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (813786) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (813796) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (813796) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (813806) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (813816) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (813816) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (813816) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (813826) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (814116) MQTT: MQTT event published, msg_id=11153[0m
+[0;32mI (814356) MQTT: MQTT event published, msg_id=35220[0m
+[0;32mI (814356) MQTT: MQTT event published, msg_id=63033[0m
+[0;32mI (814356) MQTT: MQTT event published, msg_id=32741[0m
+[0;32mI (814366) MQTT: MQTT event published, msg_id=51630[0m
+[0;32mI (814366) MQTT: MQTT event published, msg_id=19266[0m
+[0;32mI (816116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (816116) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (816116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (816126) MESH_CLIENT: 00 00 00 00 00 00 00 4c a3 40 00 00 00 00 03 00 [0m
+[0;32mI (816136) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (816136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (816146) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (816146) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (816156) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (816166) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (816166) PARSED_DATA: Smoke   3     = 2470.000000[0m
+[0;32mI (816476) MQTT: MQTT event published, msg_id=47817[0m
+[0;33mW (816646) BLE_MESH: Replay: src 0x0034 dst 0xffff seq 0x00094f[0m
+[0;32mI (816776) MQTT: MQTT event published, msg_id=35637[0m
+[0;32mI (816786) MQTT: MQTT event published, msg_id=2778[0m
+[0;32mI (816786) MQTT: MQTT event published, msg_id=60661[0m
+[0;32mI (816796) MQTT: MQTT event published, msg_id=48623[0m
+[0;32mI (816796) MQTT: MQTT event published, msg_id=33805[0m
+[0;33mW (818906) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;32mI (819176) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (819176) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (819176) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 50 00 00 00 00 00 [0m
+[0;32mI (819186) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (819196) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (819196) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (819206) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;33mW (819216) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;33mW (819216) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (819216) PARSED_DATA: Light   3     = 80[0m
+[0;33mW (819226) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (819556) MQTT: MQTT event published, msg_id=55039[0m
+[0;32mI (819856) MQTT: MQTT event published, msg_id=1061[0m
+[0;32mI (819856) MQTT: MQTT event published, msg_id=55233[0m
+[0;32mI (819866) MQTT: MQTT event published, msg_id=25915[0m
+[0;32mI (819866) MQTT: MQTT event published, msg_id=472[0m
+[0;32mI (819866) MQTT: MQTT event published, msg_id=31551[0m
+[0;32mI (823716) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (823716) MESH_CLIENT: src: 0x0033, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (823716) MESH_CLIENT: 65 73 70 5f 33 00 00 00 e0 41 00 00 00 00 00 00 [0m
+[0;32mI (823726) MESH_CLIENT: 94 42 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (823736) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (823736) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (823746) PARSED_DATA: Temperature 3= 28.000000[0m
+[0;33mW (823746) PARSED_DATA: Humidity  3  = 74.000000[0m
+[0;33mW (823756) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;33mW (823766) PARSED_DATA: Light   3     = 0[0m
+[0;33mW (823766) PARSED_DATA: Smoke   3     = 0.000000[0m
+[0;32mI (824056) MQTT: MQTT event published, msg_id=44443[0m
+[0;32mI (824326) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (824326) MESH_CLIENT: src: 0x0034, dst: 0xffff,ttl recv: 2[0m
+[0;32mI (824326) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (824336) MESH_CLIENT: 00 00 00 00 00 00 00 32 a3 40 00 00 00 00 03 00 [0m
+[0;32mI (824346) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (824346) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (824356) PARSED_DATA: Temperature 3= 0.000000[0m
+[0;32mI (824366) MQTT: MQTT event published, msg_id=37135[0m
+[0;33mW (824366) PARSED_DATA: Humidity  3  = 0.000000[0m
+[0;32mI (824376) MQTT: MQTT event published, msg_id=3440[0m
+[0;33mW (824376) PARSED_DATA: temp_ADC   3     = 0.000000[0m
+[0;32mI (824376) MQTT: MQTT event published, msg_id=62651[0m
+[0;33mW (824386) PARSED_DATA: Light   3     = 0[0m
+[0;32mI (824396) MQTT: MQTT event published, msg_id=25833[0m
+[0;33mW (824396) PARSED_DATA: Smoke   3     = 2457.000000[0m
+[0;32mI (824406) MQTT: MQTT event published, msg_id=53608[0m
+
+Brownout detector was triggered
+
+ets Jul 29 2019 12:21:46
+
+rst:0xc (SW_CPU_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  8 2024 14:12:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=47594h (292244) map[0m

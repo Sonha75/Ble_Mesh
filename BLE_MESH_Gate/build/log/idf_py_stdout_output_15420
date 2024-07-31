@@ -1,0 +1,116 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  8 2024 14:12:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=4755ch (292188) map[0m
+[0;32mI (215) esp_image: segment 1: paddr=00067584 vaddr=3ffbdb60 size=06114h ( 24852) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=0006d6a0 vaddr=40080000 size=02978h ( 10616) load[0m
+[0;32mI (230) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=11cfb4h (1167284) map[0m
+[0;32mI (653) esp_image: segment 4: paddr=0018cfdc vaddr=40082978 size=1c76ch (116588) load[0m
+[0;32mI (717) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (718) boot: Disabling RNG early entropy source...[0m
+[0;32mI (729) cpu_start: Multicore app[0m
+[0;32mI (730) cpu_start: Pro cpu up.[0m
+[0;32mI (730) cpu_start: Starting app cpu, entry point is 0x40081434[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (750) cpu_start: Pro cpu start user code[0m
+[0;32mI (750) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (750) cpu_start: Application information:[0m
+[0;32mI (754) cpu_start: Project name:     BLE_MESH_Gate[0m
+[0;32mI (760) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (765) cpu_start: Compile time:     Jun  8 2024 14:11:46[0m
+[0;32mI (771) cpu_start: ELF file SHA256:  29f21a006f550aa6...[0m
+[0;32mI (777) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (783) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (787) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (792) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (797) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (804) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (810) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (816) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (822) heap_init: At 3FFCEF80 len 00011080 (68 KiB): DRAM[0m
+[0;32mI (829) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (835) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (841) heap_init: At 4009F0E4 len 00000F1C (3 KiB): IRAM[0m
+[0;32mI (849) spi_flash: detected chip: generic[0m
+[0;32mI (852) spi_flash: flash io: dio[0m
+[0;32mI (857) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (862) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (866) app_start: Starting scheduler on CPU1[0m
+I (866) main_task: Started on CPU0[0m
+[0;32mI (876) main_task: Calling app_main()[0m
+[0;32mI (876) MAIN: Initializing...[0m
+[0;32mI (876) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;31mE (886) esp_timer: Task is already initialized[0m
+[0;32mI (896) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (916) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (916) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:23:8e[0m
+[0;32mI (926) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;33mW (926) phy_init: failed to load RF calibration data (0x1102), falling back to full calibration[0m
+[0;32mI (1446) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1456) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;32mI (1456) MESH_CLIENT: BLE Mesh Node initialized[0m
+[0;32mI (1476) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code 0[0m
+I (1496) wifi:wifi driver task: 3ffdc7a0, prio:23, stack:6656, core=0
+I (1496) wifi:wifi firmware version: 91b9630
+I (1496) wifi:wifi certification version: v7.0
+I (1496) wifi:config NVS flash: enabled
+I (1496) wifi:config nano formating: disabled
+I (1506) wifi:Init data frame dynamic rx buffer num: 32
+I (1506) wifi:Init static rx mgmt buffer num: 5
+I (1516) wifi:Init management short buffer num: 32
+I (1516) wifi:Init dynamic tx buffer num: 32
+I (1516) wifi:Init static rx buffer size: 1600
+I (1526) wifi:Init static rx buffer num: 10
+I (1526) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1536) wifi_init: rx ba win: 6[0m
+[0;32mI (1536) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1536) wifi_init: udp mbox: 6[0m
+[0;32mI (1546) wifi_init: tcp mbox: 6[0m
+[0;32mI (1546) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1556) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1556) wifi_init: tcp mss: 1440[0m
+[0;32mI (1556) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1566) wifi_init: WiFi RX IRAM OP enabled[0m
+I (1606) wifi:mode : sta (b0:a7:32:28:23:8c)
+I (1606) wifi:enable tsf
+[0;32mI (1606) wifi station: wifi_init_sta finished.[0m
+[0;32mI (71416) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_LINK_OPEN_EVT, bearer PB-GATT[0m
+[0;33mW (76296) BLE_MESH: No Health Server context provided[0m
+[0;33mW (90296) BLE_MESH: No Health Server context provided[0m
+[0;32mI (90326) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_LINK_CLOSE_EVT, bearer PB-GATT[0m
+[0;32mI (90326) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (90326) MESH_CLIENT: net_idx: 0x0000, addr: 0x0030[0m
+[0;32mI (90336) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (90346) MESH_CLIENT: Device provisioned[0m
+[0;33mW (91416) BT_HCI: hcif disc complete: hdl 0x0, rsn 0x13[0m
+[0;33mW (97226) BLE_MESH: No matching TX context for ack[0m
+[0;32mI (100816) MESH_CLIENT: ESP_BLE_MESH_MODEL_OP_APP_KEY_ADD[0m
+[0;32mI (100816) MESH_CLIENT: net_idx 0x0000, app_idx 0x0000[0m
+[0;32mI (100826) AppKey: 7b 49 db 58 24 3d 1f 0e 48 d1 02 c5 cc c5 53 4c [0m
+[0;32mI (109476) MESH_CLIENT: ESP_BLE_MESH_MODEL_OP_MODEL_APP_BIND[0m
+[0;32mI (109486) MESH_CLIENT: elem_addr 0x0030, app_idx 0x0000, cid 0x02e5, mod_id 0x1415[0m

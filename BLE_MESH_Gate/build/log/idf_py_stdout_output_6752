@@ -1,0 +1,672 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  8 2024 14:12:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=476ech (292588) map[0m
+[0;32mI (215) esp_image: segment 1: paddr=00067714 vaddr=3ffbdb60 size=06114h ( 24852) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=0006d830 vaddr=40080000 size=027e8h ( 10216) load[0m
+[0;32mI (230) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=11d240h (1167936) map[0m
+[0;32mI (653) esp_image: segment 4: paddr=0018d268 vaddr=400827e8 size=1c8fch (116988) load[0m
+[0;32mI (718) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (718) boot: Disabling RNG early entropy source...[0m
+[0;32mI (730) cpu_start: Multicore app[0m
+[0;32mI (730) cpu_start: Pro cpu up.[0m
+[0;32mI (730) cpu_start: Starting app cpu, entry point is 0x40081434[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (750) cpu_start: Pro cpu start user code[0m
+[0;32mI (750) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (750) cpu_start: Application information:[0m
+[0;32mI (755) cpu_start: Project name:     BLE_MESH_Gate[0m
+[0;32mI (760) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (766) cpu_start: Compile time:     Jun  8 2024 14:11:46[0m
+[0;32mI (772) cpu_start: ELF file SHA256:  f95a6c4d291f894e...[0m
+[0;32mI (778) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (783) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (788) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (793) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (798) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (805) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (811) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (817) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (823) heap_init: At 3FFCEFB8 len 00011048 (68 KiB): DRAM[0m
+[0;32mI (829) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (835) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (842) heap_init: At 4009F0E4 len 00000F1C (3 KiB): IRAM[0m
+[0;32mI (850) spi_flash: detected chip: generic[0m
+[0;32mI (853) spi_flash: flash io: dio[0m
+[0;32mI (858) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (863) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (867) app_start: Starting scheduler on CPU1[0m
+mI (867) main_task: Started on CPU0[0m
+[0;32mI (877) main_task: Calling app_main()[0m
+[0;32mI (877) MAIN: Initializing...[0m
+[0;32mI (877) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;31mE (887) esp_timer: Task is already initialized[0m
+[0;32mI (897) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (957) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (957) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:23:8e[0m
+[0;32mI (967) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;33mW (1477) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1507) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1507) MESH_CLIENT: net_idx: 0x0000, addr: 0x0020[0m
+[0;32mI (1507) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1507) MESH_CLIENT: Device provisioned[0m
+[0;32mI (1517) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1527) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (1527) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1537) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1547) MESH_CLIENT: BLE Mesh Node initialized[0m
+I (1567) wifi:wifi driver task: 3ffdc9d8, prio:23, stack:6656, core=0
+I (1587) wifi:wifi firmware version: 91b9630
+I (1587) wifi:wifi certification version: v7.0
+I (1587) wifi:config NVS flash: enabled
+I (1587) wifi:config nano formating: disabled
+I (1587) wifi:Init data frame dynamic rx buffer num: 32
+I (1597) wifi:Init static rx mgmt buffer num: 5
+I (1597) wifi:Init management short buffer num: 32
+I (1597) wifi:Init dynamic tx buffer num: 32
+I (1607) wifi:Init static rx buffer size: 1600
+I (1607) wifi:Init static rx buffer num: 10
+I (1617) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1617) wifi_init: rx ba win: 6[0m
+[0;32mI (1617) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1627) wifi_init: udp mbox: 6[0m
+[0;32mI (1627) wifi_init: tcp mbox: 6[0m
+[0;32mI (1637) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1637) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1637) wifi_init: tcp mss: 1440[0m
+[0;32mI (1647) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1647) wifi_init: WiFi RX IRAM OP enabled[0m
+I (1657) wifi:mode : sta (b0:a7:32:28:23:8c)
+I (1667) wifi:enable tsf
+[0;32mI (1667) wifi station: wifi_init_sta finished.[0m
+I (1757) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (1757) wifi:state: init -> auth (b0)
+I (1787) wifi:state: auth -> assoc (0)
+I (1797) wifi:state: assoc -> run (10)
+I (1817) wifi:connected with SonHa, aid = 2, channel 11, BW20, bssid = 86:5b:53:f8:4e:62
+I (1817) wifi:security: WPA2-PSK, phy: bgn, rssi: -21
+I (1827) wifi:pm start, type: 1
+
+I (1847) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (2827) esp_netif_handlers: sta ip: 192.168.193.96, mask: 255.255.255.0, gw: 192.168.193.168[0m
+[0;32mI (2827) wifi station: connected to ap SSID:SonHa password:07052003[0m
+[0;32mI (2827) MQTT: MQTT init[0m
+[0;32mI (2837) MQTT: Other event id:7[0m
+[0;32mI (2837) main_task: Returned from app_main()[0m
+I (2887) wifi:<ba-add>idx:0 (ifx:0, 86:5b:53:f8:4e:62), tid:0, ssn:3, winSize:64
+[0;32mI (3707) MQTT: MQTT event connected[0m
+[0;32mI (4017) MQTT: MQTT event subcribed, msg_id=41673[0m
+[0;32mI (4317) MQTT: MQTT event subcribed, msg_id=46424[0m
+[0;32mI (28727) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (28727) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (28727) MESH_CLIENT: 4e 6f 64 65 20 31 00 00 c8 41 00 00 00 00 00 00 [0m
+[0;32mI (28747) MESH_CLIENT: 8a 42 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (28747) PARSED_DATA: DEVICE NAME = Node 1[0m
+[0;33mW (28747) PARSED_DATA: Temperature 1= 25.000000[0m
+[0;33mW (28757) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (28767) PARSED_DATA: Humidity  1  = 69.000000[0m
+[0;33mW (28767) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (28767) PARSED_DATA: eCO2   1     = 0[0m
+[0;31mE (29317) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (29317) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (29327) MQTT: MQTT event error[0m
+[0;31mE (29327) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (29337) MQTT: MQTT event disconnected[0m
+[0;32mI (29337) mqtt_client: Client force reconnect requested[0m
+[0;32mI (29347) MQTT: Other event id:7[0m
+[0;32mI (30127) MQTT: MQTT event connected[0m
+[0;32mI (30427) MQTT: MQTT event subcribed, msg_id=55104[0m
+[0;32mI (30737) MQTT: MQTT event subcribed, msg_id=37288[0m
+[0;31mE (31047) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (31047) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (31047) MQTT: MQTT event error[0m
+[0;31mE (31057) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (31067) MQTT: MQTT event disconnected[0m
+[0;32mI (31067) mqtt_client: Client force reconnect requested[0m
+[0;32mI (31077) MQTT: Other event id:7[0m
+[0;32mI (31667) MQTT: MQTT event connected[0m
+[0;32mI (31967) MQTT: MQTT event subcribed, msg_id=23112[0m
+[0;32mI (32277) MQTT: MQTT event subcribed, msg_id=51885[0m
+[0;31mE (32577) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (32587) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (32587) MQTT: MQTT event error[0m
+[0;31mE (32587) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (32597) MQTT: MQTT event disconnected[0m
+[0;32mI (32607) mqtt_client: Client force reconnect requested[0m
+[0;32mI (32607) MQTT: Other event id:7[0m
+[0;32mI (33197) MQTT: MQTT event connected[0m
+[0;32mI (33507) MQTT: MQTT event subcribed, msg_id=30026[0m
+[0;32mI (33807) MQTT: MQTT event subcribed, msg_id=17868[0m
+[0;31mE (34137) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (34137) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (34137) MQTT: MQTT event error[0m
+[0;31mE (34147) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (34157) MQTT: MQTT event disconnected[0m
+[0;32mI (34157) mqtt_client: Client force reconnect requested[0m
+[0;32mI (34167) MQTT: Other event id:7[0m
+[0;32mI (36387) MQTT: MQTT event connected[0m
+[0;32mI (36677) MQTT: MQTT event subcribed, msg_id=13640[0m
+[0;32mI (37017) MQTT: MQTT event subcribed, msg_id=29918[0m
+[0;31mE (37287) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (37297) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (37297) MQTT: MQTT event error[0m
+[0;31mE (37297) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (37317) MQTT: MQTT event disconnected[0m
+[0;32mI (37317) mqtt_client: Client force reconnect requested[0m
+[0;32mI (37317) MQTT: Other event id:7[0m
+[0;32mI (38117) MQTT: MQTT event connected[0m
+[0;32mI (38417) MQTT: MQTT event subcribed, msg_id=15017[0m
+[0;32mI (38827) MQTT: MQTT event subcribed, msg_id=17322[0m
+[0;32mI (39087) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (39087) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (39087) MESH_CLIENT: 4e 6f 64 65 20 31 00 00 c8 41 00 00 00 00 00 00 [0m
+[0;32mI (39097) MESH_CLIENT: 8a 42 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (39107) PARSED_DATA: DEVICE NAME = Node 1[0m
+[0;33mW (39107) PARSED_DATA: Temperature 1= 25.000000[0m
+[0;33mW (39117) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (39117) PARSED_DATA: Humidity  1  = 69.000000[0m
+[0;33mW (39127) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (39127) PARSED_DATA: eCO2   1     = 0[0m
+[0;31mE (39267) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (39267) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (39277) MQTT: MQTT event error[0m
+[0;31mE (39277) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (39287) MQTT: MQTT event disconnected[0m
+[0;32mI (39287) mqtt_client: Client force reconnect requested[0m
+[0;32mI (39297) MQTT: Other event id:7[0m
+[0;32mI (39987) MQTT: MQTT event connected[0m
+[0;32mI (40127) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (40127) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (40127) MESH_CLIENT: 4e 6f 64 65 20 31 00 00 c8 41 00 00 00 00 00 00 [0m
+[0;32mI (40147) MESH_CLIENT: 8a 42 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (40147) PARSED_DATA: DEVICE NAME = Node 1[0m
+[0;33mW (40157) PARSED_DATA: Temperature 1= 25.000000[0m
+[0;33mW (40157) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (40167) PARSED_DATA: Humidity  1  = 69.000000[0m
+[0;33mW (40167) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (40167) PARSED_DATA: eCO2   1     = 0[0m
+[0;32mI (40257) MQTT: MQTT event subcribed, msg_id=18423[0m
+[0;33mW (40317) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (40437) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (40497) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (40567) MQTT: MQTT event subcribed, msg_id=64970[0m
+[0;31mE (40577) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (40577) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (40577) MQTT: MQTT event error[0m
+[0;31mE (40587) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (40597) MQTT: MQTT event disconnected[0m
+[0;32mI (40597) mqtt_client: Client force reconnect requested[0m
+[0;32mI (40607) MQTT: Other event id:7[0m
+[0;33mW (40857) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (40947) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (41037) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (41297) MQTT: MQTT event connected[0m
+[0;32mI (41687) MQTT: MQTT event subcribed, msg_id=49993[0m
+[0;32mI (42017) MQTT: MQTT event subcribed, msg_id=33010[0m
+[0;31mE (42417) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (42417) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (42417) MQTT: MQTT event error[0m
+[0;31mE (42427) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (42427) MQTT: MQTT event disconnected[0m
+[0;32mI (42437) mqtt_client: Client force reconnect requested[0m
+[0;32mI (42437) MQTT: Other event id:7[0m
+[0;32mI (43047) MQTT: MQTT event connected[0m
+[0;32mI (43337) MQTT: MQTT event subcribed, msg_id=56703[0m
+[0;32mI (43677) MQTT: MQTT event subcribed, msg_id=34229[0m
+[0;31mE (44047) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (44047) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (44057) MQTT: MQTT event error[0m
+[0;31mE (44057) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (44067) MQTT: MQTT event disconnected[0m
+[0;32mI (44067) mqtt_client: Client force reconnect requested[0m
+[0;32mI (44077) MQTT: Other event id:7[0m
+[0;32mI (44767) MQTT: MQTT event connected[0m
+[0;32mI (45077) MQTT: MQTT event subcribed, msg_id=59682[0m
+[0;32mI (45387) MQTT: MQTT event subcribed, msg_id=8680[0m
+[0;31mE (45687) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (45687) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (45697) MQTT: MQTT event error[0m
+[0;31mE (45697) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (45707) MQTT: MQTT event disconnected[0m
+[0;32mI (45707) mqtt_client: Client force reconnect requested[0m
+[0;32mI (45717) MQTT: Other event id:7[0m
+[0;32mI (46517) MQTT: MQTT event connected[0m
+[0;32mI (47117) MQTT: MQTT event subcribed, msg_id=46277[0m
+[0;32mI (47457) MQTT: MQTT event subcribed, msg_id=16045[0m
+[0;31mE (47837) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (47837) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (47847) MQTT: MQTT event error[0m
+[0;31mE (47847) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (47857) MQTT: MQTT event disconnected[0m
+[0;32mI (47857) mqtt_client: Client force reconnect requested[0m
+[0;32mI (47867) MQTT: Other event id:7[0m
+[0;32mI (48577) MQTT: MQTT event connected[0m
+[0;32mI (48897) MQTT: MQTT event subcribed, msg_id=6356[0m
+[0;32mI (49047) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (49047) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (49047) MESH_CLIENT: 4e 6f 64 65 20 31 00 00 c8 41 00 00 00 00 00 00 [0m
+[0;32mI (49057) MESH_CLIENT: 8a 42 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (49067) PARSED_DATA: DEVICE NAME = Node 1[0m
+[0;33mW (49067) PARSED_DATA: Temperature 1= 25.000000[0m
+[0;33mW (49077) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (49087) PARSED_DATA: Humidity  1  = 69.000000[0m
+[0;33mW (49087) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (49097) PARSED_DATA: eCO2   1     = 0[0m
+[0;32mI (49167) MQTT: MQTT event subcribed, msg_id=9089[0m
+[0;31mE (49477) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (49477) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (49487) MQTT: MQTT event error[0m
+[0;31mE (49487) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (49497) MQTT: MQTT event disconnected[0m
+[0;32mI (49497) mqtt_client: Client force reconnect requested[0m
+[0;32mI (49507) MQTT: Other event id:7[0m
+[0;32mI (50197) MQTT: MQTT event connected[0m
+[0;32mI (50517) MQTT: MQTT event subcribed, msg_id=18194[0m
+[0;32mI (50817) MQTT: MQTT event subcribed, msg_id=890[0m
+[0;32mI (50887) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (50887) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (50887) MESH_CLIENT: 4e 6f 64 65 20 31 00 00 c8 41 00 00 00 00 00 00 [0m
+[0;32mI (50897) MESH_CLIENT: 8a 42 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (50907) PARSED_DATA: DEVICE NAME = Node 1[0m
+[0;33mW (50907) PARSED_DATA: Temperature 1= 25.000000[0m
+[0;33mW (50917) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (50917) PARSED_DATA: Humidity  1  = 69.000000[0m
+[0;33mW (50927) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (50927) PARSED_DATA: eCO2   1     = 0[0m
+[0;31mE (51147) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (51147) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (51147) MQTT: MQTT event error[0m
+[0;31mE (51157) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (51167) MQTT: MQTT event disconnected[0m
+[0;32mI (51167) mqtt_client: Client force reconnect requested[0m
+[0;32mI (51167) MQTT: Other event id:7[0m
+[0;32mI (51957) MQTT: MQTT event connected[0m
+[0;32mI (52137) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (52137) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (52137) MESH_CLIENT: 4e 6f 64 65 20 31 00 00 c8 41 00 00 00 00 00 00 [0m
+[0;32mI (52137) MESH_CLIENT: 8a 42 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (52147) PARSED_DATA: DEVICE NAME = Node 1[0m
+[0;33mW (52157) PARSED_DATA: Temperature 1= 25.000000[0m
+[0;33mW (52157) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (52167) PARSED_DATA: Humidity  1  = 69.000000[0m
+[0;33mW (52167) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (52177) PARSED_DATA: eCO2   1     = 0[0m
+[0;32mI (52347) MQTT: MQTT event subcribed, msg_id=45289[0m
+[0;33mW (52497) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (52577) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (52637) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (52777) MQTT: MQTT event subcribed, msg_id=57650[0m
+[0;31mE (52777) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (52777) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (52787) MQTT: MQTT event error[0m
+[0;31mE (52787) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (52797) MQTT: MQTT event disconnected[0m
+[0;32mI (52797) mqtt_client: Client force reconnect requested[0m
+[0;32mI (52807) MQTT: Other event id:7[0m
+[0;32mI (53487) MQTT: MQTT event connected[0m
+[0;32mI (53777) MQTT: MQTT event subcribed, msg_id=21402[0m
+[0;32mI (54117) MQTT: MQTT event subcribed, msg_id=57566[0m
+[0;31mE (54497) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (54497) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (54497) MQTT: MQTT event error[0m
+[0;31mE (54507) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (54517) MQTT: MQTT event disconnected[0m
+[0;32mI (54517) mqtt_client: Client force reconnect requested[0m
+[0;32mI (54517) MQTT: Other event id:7[0m
+[0;32mI (55217) MQTT: MQTT event connected[0m
+[0;32mI (55517) MQTT: MQTT event subcribed, msg_id=5024[0m
+[0;32mI (55927) MQTT: MQTT event subcribed, msg_id=42688[0m
+[0;31mE (56237) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (56237) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (56237) MQTT: MQTT event error[0m
+[0;31mE (56247) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (56257) MQTT: MQTT event disconnected[0m
+[0;32mI (56257) mqtt_client: Client force reconnect requested[0m
+[0;32mI (56267) MQTT: Other event id:7[0m
+[0;32mI (56957) MQTT: MQTT event connected[0m
+[0;32mI (57267) MQTT: MQTT event subcribed, msg_id=19691[0m
+[0;32mI (57567) MQTT: MQTT event subcribed, msg_id=47210[0m
+[0;31mE (57897) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (57897) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (57897) MQTT: MQTT event error[0m
+[0;31mE (57907) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (57917) MQTT: MQTT event disconnected[0m
+[0;32mI (57917) mqtt_client: Client force reconnect requested[0m
+[0;32mI (57927) MQTT: Other event id:7[0m
+[0;32mI (58617) MQTT: MQTT event connected[0m
+[0;32mI (58897) MQTT: MQTT event subcribed, msg_id=42103[0m
+[0;32mI (59207) MQTT: MQTT event subcribed, msg_id=35379[0m
+[0;31mE (59617) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (59617) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (59617) MQTT: MQTT event error[0m
+[0;31mE (59627) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (59637) MQTT: MQTT event disconnected[0m
+[0;32mI (59637) mqtt_client: Client force reconnect requested[0m
+[0;32mI (59647) MQTT: Other event id:7[0m
+[0;32mI (60237) MQTT: MQTT event connected[0m
+[0;32mI (60537) MQTT: MQTT event subcribed, msg_id=49068[0m
+[0;32mI (60867) MQTT: MQTT event subcribed, msg_id=25190[0m
+[0;31mE (61147) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (61147) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (61157) MQTT: MQTT event error[0m
+[0;31mE (61157) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (61167) MQTT: MQTT event disconnected[0m
+[0;32mI (61177) mqtt_client: Client force reconnect requested[0m
+[0;32mI (61177) MQTT: Other event id:7[0m
+[0;32mI (61867) MQTT: MQTT event connected[0m
+[0;32mI (62047) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (62047) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (62047) MESH_CLIENT: 4e 6f 64 65 20 31 00 00 c8 41 00 00 00 00 00 00 [0m
+[0;32mI (62067) MESH_CLIENT: 8a 42 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (62067) PARSED_DATA: DEVICE NAME = Node 1[0m
+[0;33mW (62067) PARSED_DATA: Temperature 1= 25.000000[0m
+[0;33mW (62077) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (62087) PARSED_DATA: Humidity  1  = 69.000000[0m
+[0;33mW (62087) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (62087) PARSED_DATA: eCO2   1     = 0[0m
+[0;32mI (62177) MQTT: MQTT event subcribed, msg_id=37096[0m
+[0;32mI (62487) MQTT: MQTT event subcribed, msg_id=34396[0m
+[0;31mE (62487) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (62487) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (62497) MQTT: MQTT event error[0m
+[0;31mE (62497) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (62507) MQTT: MQTT event disconnected[0m
+[0;32mI (62517) mqtt_client: Client force reconnect requested[0m
+[0;32mI (62517) MQTT: Other event id:7[0m
+[0;32mI (63207) MQTT: MQTT event connected[0m
+[0;32mI (63507) MQTT: MQTT event subcribed, msg_id=56294[0m
+[0;32mI (63837) MQTT: MQTT event subcribed, msg_id=50081[0m
+[0;31mE (64117) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (64117) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (64127) MQTT: MQTT event error[0m
+[0;31mE (64127) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (64137) MQTT: MQTT event disconnected[0m
+[0;32mI (64147) mqtt_client: Client force reconnect requested[0m
+[0;32mI (64147) MQTT: Other event id:7[0m
+[0;32mI (64737) MQTT: MQTT event connected[0m
+[0;32mI (65037) MQTT: MQTT event subcribed, msg_id=61363[0m
+[0;32mI (65347) MQTT: MQTT event subcribed, msg_id=37612[0m
+[0;31mE (65657) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (65657) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (65667) MQTT: MQTT event error[0m
+[0;31mE (65667) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (65677) MQTT: MQTT event disconnected[0m
+[0;32mI (65677) mqtt_client: Client force reconnect requested[0m
+[0;32mI (65687) MQTT: Other event id:7[0m
+[0;32mI (66267) MQTT: MQTT event connected[0m
+[0;32mI (66577) MQTT: MQTT event subcribed, msg_id=32713[0m
+[0;32mI (66887) MQTT: MQTT event subcribed, msg_id=60993[0m
+[0;31mE (67187) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (67187) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (67197) MQTT: MQTT event error[0m
+[0;31mE (67197) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (67207) MQTT: MQTT event disconnected[0m
+[0;32mI (67217) mqtt_client: Client force reconnect requested[0m
+[0;32mI (67217) MQTT: Other event id:7[0m
+[0;32mI (67947) MQTT: MQTT event connected[0m
+[0;32mI (68217) MQTT: MQTT event subcribed, msg_id=60290[0m
+[0;32mI (68527) MQTT: MQTT event subcribed, msg_id=36632[0m
+[0;31mE (68827) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (68827) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (68837) MQTT: MQTT event error[0m
+[0;31mE (68837) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (68847) MQTT: MQTT event disconnected[0m
+[0;32mI (68857) mqtt_client: Client force reconnect requested[0m
+[0;32mI (68857) MQTT: Other event id:7[0m
+[0;32mI (69447) MQTT: MQTT event connected[0m
+[0;32mI (69747) MQTT: MQTT event subcribed, msg_id=62141[0m
+[0;32mI (70057) MQTT: MQTT event subcribed, msg_id=62783[0m
+[0;31mE (70367) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (70367) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (70377) MQTT: MQTT event error[0m
+[0;31mE (70377) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (70387) MQTT: MQTT event disconnected[0m
+[0;32mI (70387) mqtt_client: Client force reconnect requested[0m
+[0;32mI (70397) MQTT: Other event id:7[0m
+[0;32mI (71007) MQTT: MQTT event connected[0m
+[0;32mI (71387) MQTT: MQTT event subcribed, msg_id=61326[0m
+[0;32mI (71697) MQTT: MQTT event subcribed, msg_id=24651[0m
+[0;31mE (72017) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (72017) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (72017) MQTT: MQTT event error[0m
+[0;31mE (72027) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (72027) MQTT: MQTT event disconnected[0m
+[0;32mI (72037) mqtt_client: Client force reconnect requested[0m
+[0;32mI (72037) MQTT: Other event id:7[0m
+[0;32mI (72737) MQTT: MQTT event connected[0m
+[0;32mI (73027) MQTT: MQTT event subcribed, msg_id=65206[0m
+[0;32mI (73097) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (73097) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (73097) MESH_CLIENT: 4e 6f 64 65 20 31 00 00 c8 41 00 00 00 00 00 00 [0m
+[0;32mI (73107) MESH_CLIENT: 8a 42 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (73117) PARSED_DATA: DEVICE NAME = Node 1[0m
+[0;33mW (73127) PARSED_DATA: Temperature 1= 25.000000[0m
+[0;33mW (73127) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (73127) PARSED_DATA: Humidity  1  = 69.000000[0m
+[0;33mW (73137) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (73137) PARSED_DATA: eCO2   1     = 0[0m
+[0;32mI (73367) MQTT: MQTT event subcribed, msg_id=22899[0m
+[0;31mE (73747) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (73747) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (73757) MQTT: MQTT event error[0m
+[0;31mE (73757) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (73767) MQTT: MQTT event disconnected[0m
+[0;32mI (73767) mqtt_client: Client force reconnect requested[0m
+[0;32mI (73777) MQTT: Other event id:7[0m
+[0;32mI (74367) MQTT: MQTT event connected[0m
+[0;32mI (74667) MQTT: MQTT event subcribed, msg_id=52185[0m
+[0;32mI (74987) MQTT: MQTT event subcribed, msg_id=43017[0m
+[0;31mE (75277) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (75277) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (75287) MQTT: MQTT event error[0m
+[0;31mE (75287) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (75297) MQTT: MQTT event disconnected[0m
+[0;32mI (75307) mqtt_client: Client force reconnect requested[0m
+[0;32mI (75307) MQTT: Other event id:7[0m
+[0;32mI (76007) MQTT: MQTT event connected[0m
+[0;32mI (76337) MQTT: MQTT event subcribed, msg_id=27154[0m
+[0;32mI (76617) MQTT: MQTT event subcribed, msg_id=57929[0m
+[0;31mE (76917) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (76917) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (76927) MQTT: MQTT event error[0m
+[0;31mE (76927) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (76937) MQTT: MQTT event disconnected[0m
+[0;32mI (76937) mqtt_client: Client force reconnect requested[0m
+[0;32mI (76947) MQTT: Other event id:7[0m
+[0;32mI (77537) MQTT: MQTT event connected[0m
+[0;32mI (77857) MQTT: MQTT event subcribed, msg_id=11089[0m
+[0;32mI (78247) MQTT: MQTT event subcribed, msg_id=33479[0m
+[0;31mE (78587) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (78587) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (78587) MQTT: MQTT event error[0m
+[0;31mE (78597) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (78607) MQTT: MQTT event disconnected[0m
+[0;32mI (78607) mqtt_client: Client force reconnect requested[0m
+[0;32mI (78607) MQTT: Other event id:7[0m
+[0;32mI (79307) MQTT: MQTT event connected[0m
+[0;32mI (79687) MQTT: MQTT event subcribed, msg_id=28579[0m
+[0;32mI (80027) MQTT: MQTT event subcribed, msg_id=10173[0m
+[0;31mE (80297) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (80297) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (80307) MQTT: MQTT event error[0m
+[0;31mE (80307) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (80317) MQTT: MQTT event disconnected[0m
+[0;32mI (80317) mqtt_client: Client force reconnect requested[0m
+[0;32mI (80327) MQTT: Other event id:7[0m
+[0;32mI (81017) MQTT: MQTT event connected[0m
+[0;32mI (81327) MQTT: MQTT event subcribed, msg_id=34031[0m
+[0;32mI (81647) MQTT: MQTT event subcribed, msg_id=35121[0m
+[0;31mE (81967) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (81967) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (81967) MQTT: MQTT event error[0m
+[0;31mE (81977) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (81987) MQTT: MQTT event disconnected[0m
+[0;32mI (81987) mqtt_client: Client force reconnect requested[0m
+[0;32mI (81997) MQTT: Other event id:7[0m
+[0;32mI (82657) MQTT: MQTT event connected[0m
+[0;32mI (82997) MQTT: MQTT event subcribed, msg_id=53104[0m
+[0;32mI (83367) MQTT: MQTT event subcribed, msg_id=55303[0m
+[0;31mE (83717) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (83717) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (83717) MQTT: MQTT event error[0m
+[0;31mE (83727) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (83737) MQTT: MQTT event disconnected[0m
+[0;32mI (83737) mqtt_client: Client force reconnect requested[0m
+[0;32mI (83747) MQTT: Other event id:7[0m
+[0;32mI (84297) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (84297) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (84297) MESH_CLIENT: 4e 6f 64 65 20 31 00 00 c8 41 00 00 00 00 00 00 [0m
+[0;32mI (84307) MESH_CLIENT: 8a 42 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (84317) PARSED_DATA: DEVICE NAME = Node 1[0m
+[0;32mI (84397) MQTT: MQTT event connected[0m
+[0;33mW (84407) PARSED_DATA: Temperature 1= 25.000000[0m
+[0;33mW (84407) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (84407) PARSED_DATA: Humidity  1  = 69.000000[0m
+[0;33mW (84407) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (84417) PARSED_DATA: eCO2   1     = 0[0m
+[0;32mI (84707) MQTT: MQTT event subcribed, msg_id=3668[0m
+[0;32mI (85007) MQTT: MQTT event subcribed, msg_id=53881[0m
+[0;31mE (85017) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (85017) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (85017) MQTT: MQTT event error[0m
+[0;31mE (85027) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (85037) MQTT: MQTT event disconnected[0m
+[0;32mI (85037) mqtt_client: Client force reconnect requested[0m
+[0;32mI (85047) MQTT: Other event id:7[0m
+[0;32mI (85707) MQTT: MQTT event connected[0m
+[0;32mI (86047) MQTT: MQTT event subcribed, msg_id=61624[0m
+[0;32mI (86337) MQTT: MQTT event subcribed, msg_id=27162[0m
+[0;31mE (86597) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (86607) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (86607) MQTT: MQTT event error[0m
+[0;31mE (86607) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (86617) MQTT: MQTT event disconnected[0m
+[0;32mI (86627) mqtt_client: Client force reconnect requested[0m
+[0;32mI (86627) MQTT: Other event id:7[0m
+[0;32mI (88307) MQTT: MQTT event connected[0m
+[0;32mI (88587) MQTT: MQTT event subcribed, msg_id=55459[0m
+[0;32mI (88927) MQTT: MQTT event subcribed, msg_id=65253[0m
+[0;31mE (89307) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (89307) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (89317) MQTT: MQTT event error[0m
+[0;31mE (89317) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (89327) MQTT: MQTT event disconnected[0m
+[0;32mI (89337) mqtt_client: Client force reconnect requested[0m
+[0;32mI (89337) MQTT: Other event id:7[0m
+[0;32mI (90137) MQTT: MQTT event connected[0m
+[0;32mI (90467) MQTT: MQTT event subcribed, msg_id=43853[0m
+[0;32mI (90747) MQTT: MQTT event subcribed, msg_id=26011[0m
+[0;31mE (91047) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (91047) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (91057) MQTT: MQTT event error[0m
+[0;31mE (91057) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (91067) MQTT: MQTT event disconnected[0m
+[0;32mI (91067) mqtt_client: Client force reconnect requested[0m
+[0;32mI (91077) MQTT: Other event id:7[0m
+[0;32mI (91667) MQTT: MQTT event connected[0m
+[0;32mI (91997) MQTT: MQTT event subcribed, msg_id=23815[0m
+[0;32mI (92387) MQTT: MQTT event subcribed, msg_id=58370[0m
+[0;31mE (92807) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (92807) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (92807) MQTT: MQTT event error[0m
+[0;31mE (92817) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (92827) MQTT: MQTT event disconnected[0m
+[0;32mI (92827) mqtt_client: Client force reconnect requested[0m
+[0;32mI (92827) MQTT: Other event id:7[0m
+[0;32mI (93527) MQTT: MQTT event connected[0m
+[0;32mI (93907) MQTT: MQTT event subcribed, msg_id=60114[0m
+[0;32mI (94237) MQTT: MQTT event subcribed, msg_id=64547[0m
+[0;31mE (94627) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (94627) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (94637) MQTT: MQTT event error[0m
+[0;31mE (94637) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (94647) MQTT: MQTT event disconnected[0m
+[0;32mI (94647) mqtt_client: Client force reconnect requested[0m
+[0;32mI (94657) MQTT: Other event id:7[0m
+[0;32mI (95407) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (95407) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (95407) MESH_CLIENT: 4e 6f 64 65 20 31 00 00 c8 41 00 00 00 00 00 00 [0m
+[0;32mI (95417) MESH_CLIENT: 8a 42 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (95427) PARSED_DATA: DEVICE NAME = Node 1[0m
+[0;32mI (95457) MQTT: MQTT event connected[0m
+[0;33mW (95457) PARSED_DATA: Temperature 1= 25.000000[0m
+[0;33mW (95467) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (95467) PARSED_DATA: Humidity  1  = 69.000000[0m
+[0;33mW (95467) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (95477) PARSED_DATA: eCO2   1     = 0[0m
+[0;32mI (95827) MQTT: MQTT event subcribed, msg_id=53738[0m
+[0;32mI (96167) MQTT: MQTT event subcribed, msg_id=42202[0m
+[0;31mE (96177) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (96177) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (96187) MQTT: MQTT event error[0m
+[0;31mE (96187) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (96197) MQTT: MQTT event disconnected[0m
+[0;32mI (96197) mqtt_client: Client force reconnect requested[0m
+[0;32mI (96207) MQTT: Other event id:7[0m
+[0;32mI (96887) MQTT: MQTT event connected[0m
+[0;32mI (97217) MQTT: MQTT event subcribed, msg_id=57442[0m
+[0;32mI (97497) MQTT: MQTT event subcribed, msg_id=62080[0m
+[0;31mE (97807) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (97807) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (97817) MQTT: MQTT event error[0m
+[0;31mE (97817) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (97827) MQTT: MQTT event disconnected[0m
+[0;32mI (97827) mqtt_client: Client force reconnect requested[0m
+[0;32mI (97837) MQTT: Other event id:7[0m
+[0;32mI (98427) MQTT: MQTT event connected[0m
+[0;32mI (98747) MQTT: MQTT event subcribed, msg_id=13942[0m
+[0;32mI (99037) MQTT: MQTT event subcribed, msg_id=62726[0m
+[0;31mE (99347) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (99347) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (99347) MQTT: MQTT event error[0m
+[0;31mE (99357) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (99367) MQTT: MQTT event disconnected[0m
+[0;32mI (99367) mqtt_client: Client force reconnect requested[0m
+[0;32mI (99377) MQTT: Other event id:7[0m
+[0;32mI (99967) MQTT: MQTT event connected[0m
+[0;32mI (100367) MQTT: MQTT event subcribed, msg_id=55218[0m
+[0;32mI (100677) MQTT: MQTT event subcribed, msg_id=27482[0m
+[0;31mE (100987) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (100987) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (100987) MQTT: MQTT event error[0m
+[0;31mE (100997) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (101007) MQTT: MQTT event disconnected[0m
+[0;32mI (101007) mqtt_client: Client force reconnect requested[0m
+[0;32mI (101017) MQTT: Other event id:7[0m
+[0;32mI (101607) MQTT: MQTT event connected[0m
+[0;32mI (101907) MQTT: MQTT event subcribed, msg_id=10329[0m
+[0;32mI (102217) MQTT: MQTT event subcribed, msg_id=65215[0m
+[0;31mE (102517) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (102517) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (102527) MQTT: MQTT event error[0m
+[0;31mE (102527) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (102537) MQTT: MQTT event disconnected[0m
+[0;32mI (102537) mqtt_client: Client force reconnect requested[0m
+[0;32mI (102547) MQTT: Other event id:7[0m
+[0;32mI (103137) MQTT: MQTT event connected[0m
+[0;32mI (103437) MQTT: MQTT event subcribed, msg_id=44134[0m

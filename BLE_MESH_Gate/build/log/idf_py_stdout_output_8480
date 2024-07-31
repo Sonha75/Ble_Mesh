@@ -1,0 +1,118 @@
+[1/10] Performing build step for 'bootloader'
+[1/1] cmd.exe /C "cd /D "D:\ESP_IDF\Ble mesh\esp32_btmesh\ble-mesh-custom-sensor-model-code\BLE_MESH_Gate\build\bootloader\esp-idf\esptool_py" && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[2/8] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/wifi_config.c.obj
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/wifi_config.c: In function 'event_handler':
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/wifi_config.c:40:28: warning: unused variable 'event' [-Wunused-variable]
+   40 |         ip_event_got_ip_t* event = (ip_event_got_ip_t*) event_data;
+      |                            ^~~~~
+[3/8] Linking C static library esp-idf\main\libmain.a
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable BLE_MESH_Gate.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/BLE_MESH_Gate.bin
+[7/8] cmd.exe /C "cd /D "D:\ESP_IDF\Ble mesh\esp32_btmesh\ble-mesh-custom-sensor-model-code\BLE_MESH_Gate\build\esp-idf\esptool_py" && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/partition_table/partition-table.bin" "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/BLE_MESH_Gate.bin""
+BLE_MESH_Gate.bin binary size 0x1897c0 bytes. Smallest app partition is 0x220000 bytes. 0x96840 bytes (28%) free.
+[7/8] cmd.exe /C "cd /D D:\ESP_IDF\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && D:\ESP_IDF\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=D:/ESP_IDF/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build" -P D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM5 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x20000 BLE_MESH_Gate.bin 0x8000 partition_table/partition-table.bin 0xf000 ota_data_initial.bin
+esptool.py v4.7.dev3
+Serial port COM5
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b0:a7:32:28:23:8c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00020000 to 0x001a9fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000f000 to 0x00010fff...
+Compressed 26640 bytes to 16691...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768a... (100 %)
+Wrote 26640 bytes (16691 compressed) at 0x00001000 in 0.5 seconds (effective 407.1 kbit/s)...
+Hash of data verified.
+Compressed 1611712 bytes to 989644...
+Writing at 0x00020000... (1 %)
+Writing at 0x0002ce83... (3 %)
+Writing at 0x0003e183... (4 %)
+Writing at 0x0004b781... (6 %)
+Writing at 0x00053f75... (8 %)
+Writing at 0x00059003... (9 %)
+Writing at 0x00062e5b... (11 %)
+Writing at 0x0006f286... (13 %)
+Writing at 0x0007528c... (14 %)
+Writing at 0x0007ade6... (16 %)
+Writing at 0x00080814... (18 %)
+Writing at 0x00085d58... (19 %)
+Writing at 0x0008ba34... (21 %)
+Writing at 0x000918f4... (22 %)
+Writing at 0x00097561... (24 %)
+Writing at 0x0009d79c... (26 %)
+Writing at 0x000a5301... (27 %)
+Writing at 0x000abc9e... (29 %)
+Writing at 0x000b1d93... (31 %)
+Writing at 0x000b791a... (32 %)
+Writing at 0x000bd234... (34 %)
+Writing at 0x000c29d6... (36 %)
+Writing at 0x000c87fa... (37 %)
+Writing at 0x000cf38c... (39 %)
+Writing at 0x000d5407... (40 %)
+Writing at 0x000db390... (42 %)
+Writing at 0x000e14d5... (44 %)
+Writing at 0x000e70dc... (45 %)
+Writing at 0x000ed463... (47 %)
+Writing at 0x000f3381... (49 %)
+Writing at 0x000f9522... (50 %)
+Writing at 0x000ff0d3... (52 %)
+Writing at 0x00104c6d... (54 %)
+Writing at 0x0010a6e2... (55 %)
+Writing at 0x00110c71... (57 %)
+Writing at 0x00116756... (59 %)
+Writing at 0x0011c08e... (60 %)
+Writing at 0x00121723... (62 %)
+Writing at 0x001269dc... (63 %)
+Writing at 0x0012bea2... (65 %)
+Writing at 0x001311db... (67 %)
+Writing at 0x00136819... (68 %)
+Writing at 0x0013bf8d... (70 %)
+Writing at 0x00141eb6... (72 %)
+Writing at 0x001475c4... (73 %)
+Writing at 0x0014cb2b... (75 %)
+Writing at 0x001522ce... (77 %)
+Writing at 0x00157ca5... (78 %)
+Writing at 0x0015d36a... (80 %)
+Writing at 0x00162d49... (81 %)
+Writing at 0x001687e7... (83 %)
+Writing at 0x0016df80... (85 %)
+Writing at 0x0017711f... (86 %)
+Writing at 0x0017d3e9... (88 %)
+Writing at 0x0018557e... (90 %)
+Writing at 0x0018b28c... (91 %)
+Writing at 0x00190c42... (93 %)
+Writing at 0x001969c7... (95 %)
+Writing at 0x0019c35d... (96 %)
+Writing at 0x001a1ee8... (98 %)
+Writing at 0x001a7132... (100 %)
+Wrote 1611712 bytes (989644 compressed) at 0x00020000 in 22.4 seconds (effective 575.7 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1123.7 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000f000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000f000 in 0.0 seconds (effective 2227.0 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...

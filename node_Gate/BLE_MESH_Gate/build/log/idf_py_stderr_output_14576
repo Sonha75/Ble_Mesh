@@ -1,0 +1,11 @@
+Compiler supported targets: xtensa-esp32-elf
+
+CMake Error at D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/tools/cmake/component.cmake:313 (message):
+  Include directory 'D:/ESP_IDF/Ble
+  mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/node_Gate/BLE_MESH_Node/main'
+  is not a directory.
+Call Stack (most recent call first):
+  D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/tools/cmake/component.cmake:481 (__component_add_include_dirs)
+  main/CMakeLists.txt:7 (idf_component_register)
+
+

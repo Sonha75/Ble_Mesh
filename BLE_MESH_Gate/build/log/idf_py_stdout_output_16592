@@ -1,0 +1,411 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  8 2024 14:12:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=4757ch (292220) map[0m
+[0;32mI (215) esp_image: segment 1: paddr=000675a4 vaddr=3ffbdb60 size=06114h ( 24852) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=0006d6c0 vaddr=40080000 size=02958h ( 10584) load[0m
+[0;32mI (230) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=11cf48h (1167176) map[0m
+[0;32mI (653) esp_image: segment 4: paddr=0018cf70 vaddr=40082958 size=1c78ch (116620) load[0m
+[0;32mI (717) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (718) boot: Disabling RNG early entropy source...[0m
+[0;32mI (729) cpu_start: Multicore app[0m
+[0;32mI (729) cpu_start: Pro cpu up.[0m
+[0;32mI (730) cpu_start: Starting app cpu, entry point is 0x40081434[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (750) cpu_start: Pro cpu start user code[0m
+[0;32mI (750) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (750) cpu_start: Application information:[0m
+[0;32mI (754) cpu_start: Project name:     BLE_MESH_Gate[0m
+[0;32mI (760) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (765) cpu_start: Compile time:     Jun  8 2024 14:11:46[0m
+[0;32mI (771) cpu_start: ELF file SHA256:  3d045f9cef428195...[0m
+[0;32mI (777) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (783) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (787) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (792) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (797) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (804) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (810) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (816) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (822) heap_init: At 3FFCEF80 len 00011080 (68 KiB): DRAM[0m
+[0;32mI (829) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (835) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (841) heap_init: At 4009F0E4 len 00000F1C (3 KiB): IRAM[0m
+[0;32mI (849) spi_flash: detected chip: generic[0m
+[0;32mI (852) spi_flash: flash io: dio[0m
+[0;32mI (857) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (862) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (866) app_start: Starting scheduler on CPU1[0m
+I (866) main_task: Started on CPU0[0m
+[0;32mI (876) main_task: Calling app_main()[0m
+[0;32mI (876) MAIN: Initializing...[0m
+[0;32mI (876) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;31mE (886) esp_timer: Task is already initialized[0m
+[0;32mI (896) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (956) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (956) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:23:8e[0m
+[0;32mI (966) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;33mW (1466) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1496) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1496) MESH_CLIENT: net_idx: 0x0000, addr: 0x0020[0m
+[0;32mI (1496) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1506) MESH_CLIENT: Device provisioned[0m
+[0;32mI (1516) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1516) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (1526) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1536) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1536) MESH_CLIENT: BLE Mesh Node initialized[0m
+I (1556) wifi:wifi driver task: 3ffdc9a0, prio:23, stack:6656, core=0
+I (1576) wifi:wifi firmware version: 91b9630
+I (1576) wifi:wifi certification version: v7.0
+I (1576) wifi:config NVS flash: enabled
+I (1576) wifi:config nano formating: disabled
+I (1576) wifi:Init data frame dynamic rx buffer num: 32
+I (1586) wifi:Init static rx mgmt buffer num: 5
+I (1586) wifi:Init management short buffer num: 32
+I (1596) wifi:Init dynamic tx buffer num: 32
+I (1596) wifi:Init static rx buffer size: 1600
+I (1596) wifi:Init static rx buffer num: 10
+I (1606) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1606) wifi_init: rx ba win: 6[0m
+[0;32mI (1616) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1616) wifi_init: udp mbox: 6[0m
+[0;32mI (1616) wifi_init: tcp mbox: 6[0m
+[0;32mI (1626) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1626) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1636) wifi_init: tcp mss: 1440[0m
+[0;32mI (1636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1636) wifi_init: WiFi RX IRAM OP enabled[0m
+I (1656) wifi:mode : sta (b0:a7:32:28:23:8c)
+I (1656) wifi:enable tsf
+[0;32mI (1656) wifi station: wifi_init_sta finished.[0m
+I (1666) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (1666) wifi:state: init -> auth (b0)
+I (1676) wifi:state: auth -> assoc (0)
+I (1686) wifi:state: assoc -> run (10)
+I (1716) wifi:connected with SonHa, aid = 7, channel 11, BW20, bssid = 86:5b:53:f8:4e:62
+I (1716) wifi:security: WPA2-PSK, phy: bgn, rssi: -33
+I (1716) wifi:pm start, type: 1
+
+I (1816) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (2726) esp_netif_handlers: sta ip: 192.168.193.96, mask: 255.255.255.0, gw: 192.168.193.168[0m
+[0;32mI (2726) wifi station: connected to ap SSID:SonHa password:07052003[0m
+[0;32mI (2726) MQTT: MQTT init[0m
+[0;32mI (2736) MQTT: Other event id:7[0m
+[0;32mI (2746) main_task: Returned from app_main()[0m
+I (2766) wifi:<ba-add>idx:0 (ifx:0, 86:5b:53:f8:4e:62), tid:0, ssn:3, winSize:64
+[0;32mI (3556) MQTT: MQTT event connected[0m
+[0;32mI (14446) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (14446) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (14446) MESH_CLIENT: 4e 6f 64 65 20 31 00 00 c8 41 00 00 00 00 00 00 [0m
+[0;32mI (14456) MESH_CLIENT: 88 42 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (14466) PARSED_DATA: DEVICE NAME = Node 1[0m
+[0;33mW (14466) PARSED_DATA: Temperature 1= 25.000000[0m
+[0;33mW (14476) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (14476) PARSED_DATA: Humidity  1  = 68.000000[0m
+[0;33mW (14486) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (14486) PARSED_DATA: eCO2   1     = 0[0m
+[0;31mE (15026) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (15026) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (15036) MQTT: MQTT event error[0m
+[0;31mE (15036) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (15046) MQTT: MQTT event disconnected[0m
+[0;32mI (15056) mqtt_client: Client force reconnect requested[0m
+[0;32mI (15056) MQTT: Other event id:7[0m
+[0;32mI (15646) MQTT: MQTT event connected[0m
+[0;31mE (17076) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (17076) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (17086) MQTT: MQTT event error[0m
+[0;31mE (17086) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (17096) MQTT: MQTT event disconnected[0m
+[0;32mI (17106) mqtt_client: Client force reconnect requested[0m
+[0;32mI (17106) MQTT: Other event id:7[0m
+[0;32mI (18206) MQTT: MQTT event connected[0m
+[0;31mE (19636) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (19636) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (19646) MQTT: MQTT event error[0m
+[0;31mE (19646) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (19656) MQTT: MQTT event disconnected[0m
+[0;32mI (19656) mqtt_client: Client force reconnect requested[0m
+[0;32mI (19666) MQTT: Other event id:7[0m
+[0;32mI (20246) MQTT: MQTT event connected[0m
+[0;31mE (21586) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (21586) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (21586) MQTT: MQTT event error[0m
+[0;31mE (21596) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (21606) MQTT: MQTT event disconnected[0m
+[0;32mI (21606) mqtt_client: Client force reconnect requested[0m
+[0;32mI (21616) MQTT: Other event id:7[0m
+[0;32mI (22196) MQTT: MQTT event connected[0m
+[0;31mE (23526) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (23526) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (23536) MQTT: MQTT event error[0m
+[0;31mE (23536) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (23546) MQTT: MQTT event disconnected[0m
+[0;32mI (23546) mqtt_client: Client force reconnect requested[0m
+[0;32mI (23556) MQTT: Other event id:7[0m
+[0;32mI (24256) MQTT: MQTT event connected[0m
+[0;31mE (25586) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (25586) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (25596) MQTT: MQTT event error[0m
+[0;31mE (25596) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (25606) MQTT: MQTT event disconnected[0m
+[0;32mI (25616) mqtt_client: Client force reconnect requested[0m
+[0;32mI (25616) MQTT: Other event id:7[0m
+[0;32mI (26296) MQTT: MQTT event connected[0m
+[0;31mE (27626) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (27626) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (27636) MQTT: MQTT event error[0m
+[0;31mE (27636) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (27646) MQTT: MQTT event disconnected[0m
+[0;32mI (27646) mqtt_client: Client force reconnect requested[0m
+[0;32mI (27656) MQTT: Other event id:7[0m
+[0;32mI (28336) MQTT: MQTT event connected[0m
+[0;31mE (29676) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (29676) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (29686) MQTT: MQTT event error[0m
+[0;31mE (29686) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (29696) MQTT: MQTT event disconnected[0m
+[0;32mI (29696) mqtt_client: Client force reconnect requested[0m
+[0;32mI (29706) MQTT: Other event id:7[0m
+[0;32mI (30386) MQTT: MQTT event connected[0m
+[0;31mE (31826) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (31826) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (31836) MQTT: MQTT event error[0m
+[0;31mE (31836) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (31846) MQTT: MQTT event disconnected[0m
+[0;32mI (31846) mqtt_client: Client force reconnect requested[0m
+[0;32mI (31856) MQTT: Other event id:7[0m
+[0;32mI (32646) MQTT: MQTT event connected[0m
+[0;31mE (34076) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (34076) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (34086) MQTT: MQTT event error[0m
+[0;31mE (34086) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (34096) MQTT: MQTT event disconnected[0m
+[0;32mI (34096) mqtt_client: Client force reconnect requested[0m
+[0;32mI (34106) MQTT: Other event id:7[0m
+[0;32mI (34796) MQTT: MQTT event connected[0m
+[0;31mE (36126) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (36126) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (36126) MQTT: MQTT event error[0m
+[0;31mE (36136) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (36146) MQTT: MQTT event disconnected[0m
+[0;32mI (36146) mqtt_client: Client force reconnect requested[0m
+[0;32mI (36156) MQTT: Other event id:7[0m
+[0;32mI (36846) MQTT: MQTT event connected[0m
+[0;31mE (38296) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (38296) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (38306) MQTT: MQTT event error[0m
+[0;31mE (38306) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (38316) MQTT: MQTT event disconnected[0m
+[0;32mI (38316) mqtt_client: Client force reconnect requested[0m
+[0;32mI (38326) MQTT: Other event id:7[0m
+[0;32mI (38646) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (38646) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (38646) MESH_CLIENT: 65 73 70 5f 31 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (38656) MESH_CLIENT: 00 00 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (38666) PARSED_DATA: DEVICE NAME = esp_1[0m
+[0;32mI (39096) MQTT: MQTT event connected[0m
+[0;33mW (39106) PARSED_DATA: Temperature 1= 0.000000[0m
+[0;33mW (39106) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (39106) PARSED_DATA: Humidity  1  = 0.000000[0m
+[0;33mW (39106) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (39116) PARSED_DATA: eCO2   1     = 0[0m
+[0;32mI (39436) MQTT: MQTT event published, msg_id=37552[0m
+[0;32mI (39826) MQTT: MQTT event published, msg_id=21386[0m
+[0;32mI (39826) MQTT: MQTT event published, msg_id=49637[0m
+[0;32mI (39826) MQTT: MQTT event published, msg_id=19379[0m
+[0;32mI (39836) MQTT: MQTT event published, msg_id=56526[0m
+[0;32mI (39836) MQTT: MQTT event published, msg_id=4005[0m
+[0;31mE (40236) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (40236) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (40246) MQTT: MQTT event error[0m
+[0;31mE (40246) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (40256) MQTT: MQTT event disconnected[0m
+[0;32mI (40256) mqtt_client: Client force reconnect requested[0m
+[0;32mI (40266) MQTT: Other event id:7[0m
+[0;32mI (40956) MQTT: MQTT event connected[0m
+[0;31mE (42266) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (42266) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (42276) MQTT: MQTT event error[0m
+[0;31mE (42276) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (42286) MQTT: MQTT event disconnected[0m
+[0;32mI (42286) mqtt_client: Client force reconnect requested[0m
+[0;32mI (42296) MQTT: Other event id:7[0m
+[0;32mI (43086) MQTT: MQTT event connected[0m
+[0;31mE (44416) transport_base: tcp_read error, errno=Socket is not connected[0m
+[0;31mE (44416) mqtt_client: esp_mqtt_handle_transport_read_error: transport_read() error: errno=128[0m
+[0;32mI (44426) MQTT: MQTT event error[0m
+[0;31mE (44426) mqtt_client: mqtt_process_receive: mqtt_message_receive() returned -1[0m
+[0;32mI (44436) MQTT: MQTT event disconnected[0m
+[0;32mI (44436) mqtt_client: Client force reconnect requested[0m
+[0;32mI (44446) MQTT: Other event id:7[0m
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  8 2024 14:12:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=4757ch (292220) map[0m
+[0;32mI (215) esp_image: segment 1: paddr=000675a4 vaddr=3ffbdb60 size=06114h ( 24852) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=0006d6c0 vaddr=40080000 size=02958h ( 10584) load[0m
+[0;32mI (230) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=11cf48h (1167176) map[0m
+[0;32mI (653) esp_image: segment 4: paddr=0018cf70 vaddr=40082958 size=1c78ch (116620) load[0m
+[0;32mI (717) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (718) boot: Disabling RNG early entropy source...[0m
+[0;32mI (729) cpu_start: Multicore app[0m
+[0;32mI (729) cpu_start: Pro cpu up.[0m
+[0;32mI (730) cpu_start: Starting app cpu, entry point is 0x40081434[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (749) cpu_start: Pro cpu start user code[0m
+[0;32mI (750) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (750) cpu_start: Application information:[0m
+[0;32mI (754) cpu_start: Project name:     BLE_MESH_Gate[0m
+[0;32mI (760) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (765) cpu_start: Compile time:     Jun  8 2024 14:11:46[0m
+[0;32mI (771) cpu_start: ELF file SHA256:  3d045f9cef428195...[0m
+[0;32mI (777) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (783) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (787) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (792) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (797) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (804) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (810) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (816) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (822) heap_init: At 3FFCEF80 len 00011080 (68 KiB): DRAM[0m
+[0;32mI (829) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (835) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (841) heap_init: At 4009F0E4 len 00000F1C (3 KiB): IRAM[0m
+[0;32mI (849) spi_flash: detected chip: generic[0m
+[0;32mI (852) spi_flash: flash io: dio[0m
+[0;32mI (857) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (862) app_start: Starting scheduler on CPU0[0m
+[0;32m[0;32mI (866) app_start: Starting scheduler on CPU1[0m
+I (866) main_task: Started on CPU0[0m
+[0;32mI (876) main_task: Calling app_main()[0m
+[0;32mI (876) MAIN: Initializing...[0m
+[0;32mI (876) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;31mE (886) esp_timer: Task is already initialized[0m
+[0;32mI (896) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (956) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (956) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:23:8e[0m
+[0;32mI (966) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;33mW (1476) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1506) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1506) MESH_CLIENT: net_idx: 0x0000, addr: 0x0020[0m
+[0;32mI (1506) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1516) MESH_CLIENT: Device provisioned[0m
+[0;32mI (1516) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1526) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (1536) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1546) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1546) MESH_CLIENT: BLE Mesh Node initialized[0m
+I (1566) wifi:wifi driver task: 3ffdc9a0, prio:23, stack:6656, core=0
+I (1586) wifi:wifi firmware version: 91b9630
+I (1586) wifi:wifi certification version: v7.0
+I (1586) wifi:config NVS flash: enabled
+I (1586) wifi:config nano formating: disabled
+I (1586) wifi:Init data frame dynamic rx buffer num: 32
+I (1596) wifi:Init static rx mgmt buffer num: 5
+I (1596) wifi:Init management short buffer num: 32
+I (1606) wifi:Init dynamic tx buffer num: 32
+I (1606) wifi:Init static rx buffer size: 1600
+I (1606) wifi:Init static rx buffer num: 10
+I (1616) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1616) wifi_init: rx ba win: 6[0m
+[0;32mI (1626) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1626) wifi_init: udp mbox: 6[0m
+[0;32mI (1626) wifi_init: tcp mbox: 6[0m
+[0;32mI (1636) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1636) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1646) wifi_init: tcp mss: 1440[0m
+[0;32mI (1646) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1646) wifi_init: WiFi RX IRAM OP enabled[0m
+I (1666) wifi:mode : sta (b0:a7:32:28:23:8c)
+I (1666) wifi:enable tsf
+[0;32mI (1666) wifi station: wifi_init_sta finished.[0m
+I (1676) wifi:new:<11,0>, old:<1,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (1676) wifi:state: init -> auth (b0)
+I (1686) wifi:state: auth -> init (1c0)
+I (1686) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+[0;32mI (1686) wifi station: retry to connect to the AP[0m
+[0;32mI (5076) wifi station: retry to connect to the AP[0m
+I (5086) wifi:new:<11,0>, old:<11,0>, ap:<255,255>, sta:<11,0>, prof:1
+I (5086) wifi:state: init -> auth (b0)
+I (5096) wifi:state: auth -> assoc (0)
+I (5106) wifi:state: assoc -> run (10)
+I (5126) wifi:connected with SonHa, aid = 8, channel 11, BW20, bssid = 86:5b:53:f8:4e:62
+I (5126) wifi:security: WPA2-PSK, phy: bgn, rssi: -31
+I (5136) wifi:pm start, type: 1
+
+I (5186) wifi:AP's beacon interval = 102400 us, DTIM period = 2
+[0;32mI (6146) esp_netif_handlers: sta ip: 192.168.193.96, mask: 255.255.255.0, gw: 192.168.193.168[0m
+[0;32mI (6146) wifi station: connected to ap SSID:SonHa password:07052003[0m
+[0;32mI (6146) MQTT: MQTT init[0m
+[0;32mI (6156) MQTT: Other event id:7[0m
+[0;32mI (6166) main_task: Returned from app_main()[0m
+I (6256) wifi:<ba-add>idx:0 (ifx:0, 86:5b:53:f8:4e:62), tid:0, ssn:3, winSize:64
+[0;32mI (6966) MQTT: MQTT event connected[0m
+[0;32mI (20246) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (20246) MESH_CLIENT: src: 0x0021, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (20246) MESH_CLIENT: 65 73 70 5f 31 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (20246) MESH_CLIENT: 00 00 00 00 00 00 01 00 00 00 00 [0m
+[0;33mW (20256) PARSED_DATA: DEVICE NAME = esp_1[0m
+[0;33mW (20266) PARSED_DATA: Temperature 1= 0.000000[0m
+[0;33mW (20266) PARSED_DATA: Pressure 1   = 0.000000[0m
+[0;33mW (20276) PARSED_DATA: Humidity  1  = 0.000000[0m
+[0;33mW (20276) PARSED_DATA: TVOC   1     = 0[0m
+[0;33mW (20286) PARSED_DATA: eCO2   1     = 0[0m
+[0;32mI (20766) MQTT: MQTT event published, msg_id=44422[0m
+[0;32mI (21066) MQTT: MQTT event published, msg_id=3062[0m
+[0;32mI (21076) MQTT: MQTT event published, msg_id=4022[0m
+[0;32mI (21076) MQTT: MQTT event published, msg_id=58423[0m
+[0;32mI (21076) MQTT: MQTT event published, msg_id=40559[0m
+[0;32mI (21086) MQTT: MQTT event published, msg_id=57738[0m

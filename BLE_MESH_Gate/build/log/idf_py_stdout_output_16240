@@ -1,0 +1,158 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  8 2024 14:12:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=4759ch (292252) map[0m
+[0;32mI (215) esp_image: segment 1: paddr=000675c4 vaddr=3ffbdb60 size=06114h ( 24852) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=0006d6e0 vaddr=40080000 size=02938h ( 10552) load[0m
+[0;32mI (230) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=11d000h (1167360) map[0m
+[0;32mI (653) esp_image: segment 4: paddr=0018d028 vaddr=40082938 size=1c7ach (116652) load[0m
+[0;32mI (718) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (718) boot: Disabling RNG early entropy source...[0m
+[0;32mI (729) cpu_start: Multicore app[0m
+[0;32mI (730) cpu_start: Pro cpu up.[0m
+[0;32mI (730) cpu_start: Starting app cpu, entry point is 0x40081434[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (750) cpu_start: Pro cpu start user code[0m
+[0;32mI (750) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (750) cpu_start: Application information:[0m
+[0;32mI (754) cpu_start: Project name:     BLE_MESH_Gate[0m
+[0;32mI (760) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (765) cpu_start: Compile time:     Jun  8 2024 14:11:46[0m
+[0;32mI (771) cpu_start: ELF file SHA256:  3e65a3e7d5285594...[0m
+[0;32mI (777) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (783) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (787) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (792) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (797) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (804) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (810) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (816) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (823) heap_init: At 3FFCEF80 len 00011080 (68 KiB): DRAM[0m
+[0;32mI (829) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (835) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (841) heap_init: At 4009F0E4 len 00000F1C (3 KiB): IRAM[0m
+[0;32mI (849) spi_flash: detected chip: generic[0m
+[0;32mI (852) spi_flash: flash io: dio[0m
+[0;32mI (857) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (862) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (866) app_start: Starting scheduler on CPU1[0m
+mI (866) main_task: Started on CPU0[0m
+[0;32mI (876) main_task: Calling app_main()[0m
+[0;32mI (876) MAIN: Initializing...[0m
+[0;32mI (876) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;31mE (886) esp_timer: Task is already initialized[0m
+[0;32mI (896) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (956) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (956) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:23:8e[0m
+[0;32mI (956) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;33mW (1466) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1496) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1496) MESH_CLIENT: net_idx: 0x0000, addr: 0x0030[0m
+[0;32mI (1496) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1506) MESH_CLIENT: Device provisioned[0m
+[0;32mI (1506) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1516) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (1526) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1536) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1536) MESH_CLIENT: BLE Mesh Node initialized[0m
+I (1556) wifi:wifi driver task: 3ffdca30, prio:23, stack:6656, core=0
+I (1576) wifi:wifi firmware version: 91b9630
+I (1576) wifi:wifi certification version: v7.0
+I (1576) wifi:config NVS flash: enabled
+I (1576) wifi:config nano formating: disabled
+I (1576) wifi:Init data frame dynamic rx buffer num: 32
+I (1586) wifi:Init static rx mgmt buffer num: 5
+I (1586) wifi:Init management short buffer num: 32
+I (1586) wifi:Init dynamic tx buffer num: 32
+I (1596) wifi:Init static rx buffer size: 1600
+I (1596) wifi:Init static rx buffer num: 10
+I (1606) wifi:Init dynamic rx buffer num: 32
+[0;32mI (1606) wifi_init: rx ba win: 6[0m
+[0;32mI (1616) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1616) wifi_init: udp mbox: 6[0m
+[0;32mI (1616) wifi_init: tcp mbox: 6[0m
+[0;32mI (1626) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1626) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1626) wifi_init: tcp mss: 1440[0m
+[0;32mI (1636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1636) wifi_init: WiFi RX IRAM OP enabled[0m
+I (1646) wifi:mode : sta (b0:a7:32:28:23:8c)
+I (1656) wifi:enable tsf
+[0;32mI (1656) wifi station: wifi_init_sta finished.[0m
+I (1666) wifi:new:<1,0>, old:<1,0>, ap:<255,255>, sta:<1,0>, prof:1
+I (1666) wifi:state: init -> auth (b0)
+I (1676) wifi:state: auth -> assoc (0)
+I (1676) wifi:state: assoc -> run (10)
+I (1796) wifi:connected with VIETTEL_2.4G_UC4H7U, aid = 3, channel 1, BW20, bssid = 44:13:d0:af:b0:7e
+I (1796) wifi:security: WPA2-PSK, phy: bgn, rssi: -46
+I (1806) wifi:pm start, type: 1
+
+I (1816) wifi:AP's beacon interval = 102400 us, DTIM period = 1
+I (1836) wifi:<ba-add>idx:0 (ifx:0, 44:13:d0:af:b0:7e), tid:0, ssn:0, winSize:64
+[0;32mI (3306) esp_netif_handlers: sta ip: 192.168.0.112, mask: 255.255.255.0, gw: 192.168.0.1[0m
+[0;32mI (3306) wifi station: connected to ap SSID:VIETTEL_2.4G_UC4H7U password:QcAMEKbf[0m
+[0;32mI (3306) MQTT: MQTT init[0m
+[0;32mI (3316) MQTT: Other event id:7[0m
+[0;32mI (3326) main_task: Returned from app_main()[0m
+I (3676) wifi:<ba-add>idx:1 (ifx:0, 44:13:d0:af:b0:7e), tid:1, ssn:0, winSize:64
+[0;33mW (3936) BLE_MESH: Received already received fragment[0m
+[0;32mI (3986) MQTT: MQTT event connected[0m
+[0;32mI (4066) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (4076) MESH_CLIENT: src: 0x0032, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (4076) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (4076) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 c1 a8 ef 41 03 00 [0m
+[0;32mI (4086) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (4086) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (4096) PARSED_DATA: Temperature 100417280= 0.000000[0m
+[0;33mW (4106) PARSED_DATA: Humidity  100417280  = 0.000000[0m
+[0;33mW (4106) PARSED_DATA: temp_ADC   100417280     = 0.000000[0m
+[0;33mW (4116) PARSED_DATA: Light   100417280     = 0[0m
+[0;33mW (4116) PARSED_DATA: smoke   100417280     = 4249225216.000000[0m
+[0;32mI (4396) MQTT: MQTT event published, msg_id=46689[0m
+[0;32mI (4706) MQTT: MQTT event published, msg_id=59934[0m
+[0;32mI (4716) MQTT: MQTT event published, msg_id=2573[0m
+[0;32mI (4716) MQTT: MQTT event published, msg_id=2750[0m
+[0;32mI (4716) MQTT: MQTT event published, msg_id=8417[0m
+[0;32mI (4726) MQTT: MQTT event published, msg_id=3664[0m
+[0;32mI (8876) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (8876) MESH_CLIENT: src: 0x0032, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (8886) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 00 00 00 00 00 00 [0m
+[0;32mI (8886) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 b0 03 ef 41 03 00 [0m
+[0;32mI (8896) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (8896) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (8906) PARSED_DATA: Temperature 3161856= 0.000000[0m
+[0;33mW (8916) PARSED_DATA: Humidity  3161856  = 0.000000[0m
+[0;33mW (8916) PARSED_DATA: temp_ADC   3161856     = 0.000000[0m
+[0;33mW (8926) PARSED_DATA: Light   3161856     = 0[0m
+[0;33mW (8926) PARSED_DATA: smoke   3161856     = 4162682880.000000[0m
+[0;32mI (9206) MQTT: MQTT event published, msg_id=62503[0m
+[0;32mI (9516) MQTT: MQTT event published, msg_id=15293[0m
+[0;32mI (9516) MQTT: MQTT event published, msg_id=13724[0m
+[0;32mI (9526) MQTT: MQTT event published, msg_id=2925[0m
+[0;32mI (9526) MQTT: MQTT event published, msg_id=53952[0m
+[0;32mI (9526) MQTT: MQTT event published, msg_id=32421[0m

@@ -1,0 +1,2251 @@
+ets Jul 29 2019 12:21:46
+
+rst:0x1 (POWERON_RESET),boot:0x13 (SPI_FAST_FLASH_BOOT)
+configsip: 0, SPIWP:0xee
+clk_drv:0x00,q_drv:0x00,d_drv:0x00,cs0_drv:0x00,hd_drv:0x00,wp_drv:0x00
+mode:DIO, clock div:2
+load:0x3fff0030,len:7084
+ho 0 tail 12 room 4
+load:0x40078000,len:15584
+load:0x40080400,len:4
+load:0x40080404,len:3876
+entry 0x4008064c
+[0;32mI (31) boot: ESP-IDF v5.1.2-dirty 2nd stage bootloader[0m
+[0;32mI (31) boot: compile time Jun  8 2024 14:12:16[0m
+[0;32mI (31) boot: Multicore bootloader[0m
+[0;32mI (36) boot: chip revision: v3.1[0m
+[0;32mI (40) boot.esp32: SPI Speed      : 40MHz[0m
+[0;32mI (44) boot.esp32: SPI Mode       : DIO[0m
+[0;32mI (49) boot.esp32: SPI Flash Size : 4MB[0m
+[0;32mI (53) boot: Enabling RNG early entropy source...[0m
+[0;32mI (59) boot: Partition Table:[0m
+[0;32mI (62) boot: ## Label            Usage          Type ST Offset   Length[0m
+[0;32mI (70) boot:  0 nvs              WiFi data        01 02 00009000 00006000[0m
+[0;32mI (77) boot:  1 otadata          OTA data         01 00 0000f000 00002000[0m
+[0;32mI (85) boot:  2 factory          factory app      00 00 00020000 00220000[0m
+[0;32mI (92) boot: End of partition table[0m
+[0;32mI (96) boot: Defaulting to factory image[0m
+[0;32mI (101) esp_image: segment 0: paddr=00020020 vaddr=3f400020 size=47594h (292244) map[0m
+[0;32mI (215) esp_image: segment 1: paddr=000675bc vaddr=3ffbdb60 size=06114h ( 24852) load[0m
+[0;32mI (225) esp_image: segment 2: paddr=0006d6d8 vaddr=40080000 size=02940h ( 10560) load[0m
+[0;32mI (230) esp_image: segment 3: paddr=00070020 vaddr=400d0020 size=11cfe0h (1167328) map[0m
+[0;32mI (653) esp_image: segment 4: paddr=0018d008 vaddr=40082940 size=1c7a4h (116644) load[0m
+[0;32mI (717) boot: Loaded app from partition at offset 0x20000[0m
+[0;32mI (718) boot: Disabling RNG early entropy source...[0m
+[0;32mI (729) cpu_start: Multicore app[0m
+[0;32mI (730) cpu_start: Pro cpu up.[0m
+[0;32mI (730) cpu_start: Starting app cpu, entry point is 0x40081434[0m
+[0;32mI (0) cpu_start: App cpu up.[0m
+[0;32mI (750) cpu_start: Pro cpu start user code[0m
+[0;32mI (750) cpu_start: cpu freq: 160000000 Hz[0m
+[0;32mI (750) cpu_start: Application information:[0m
+[0;32mI (754) cpu_start: Project name:     BLE_MESH_Gate[0m
+[0;32mI (760) cpu_start: App version:      aa62094-dirty[0m
+[0;32mI (765) cpu_start: Compile time:     Jun  8 2024 14:11:46[0m
+[0;32mI (771) cpu_start: ELF file SHA256:  ff36c0881cce4bf2...[0m
+[0;32mI (777) cpu_start: ESP-IDF:          v5.1.2-dirty[0m
+[0;32mI (783) cpu_start: Min chip rev:     v0.0[0m
+[0;32mI (787) cpu_start: Max chip rev:     v3.99 [0m
+[0;32mI (792) cpu_start: Chip rev:         v3.1[0m
+[0;32mI (797) heap_init: Initializing. RAM available for dynamic allocation:[0m
+[0;32mI (804) heap_init: At 3FFAFF10 len 000000F0 (0 KiB): DRAM[0m
+[0;32mI (810) heap_init: At 3FFB6388 len 00001C78 (7 KiB): DRAM[0m
+[0;32mI (816) heap_init: At 3FFB9A20 len 00004108 (16 KiB): DRAM[0m
+[0;32mI (823) heap_init: At 3FFCEF80 len 00011080 (68 KiB): DRAM[0m
+[0;32mI (829) heap_init: At 3FFE0440 len 00003AE0 (14 KiB): D/IRAM[0m
+[0;32mI (835) heap_init: At 3FFE4350 len 0001BCB0 (111 KiB): D/IRAM[0m
+[0;32mI (841) heap_init: At 4009F0E4 len 00000F1C (3 KiB): IRAM[0m
+[0;32mI (849) spi_flash: detected chip: generic[0m
+[0;32mI (852) spi_flash: flash io: dio[0m
+[0;32mI (857) coexist: coex firmware version: b6d5e8c[0m
+[0;32mI (862) app_start: Starting scheduler on CPU0[0m
+[0;32[0;32mI (866) app_start: Starting scheduler on CPU1[0m
+mI (866) main_task: Started on CPU0[0m
+[0;32mI (876) main_task: Calling app_main()[0m
+[0;32mI (876) MAIN: Initializing...[0m
+[0;32mI (876) gpio: GPIO[0]| InputEn: 0| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:0 [0m
+use esp timer !!!
+[0;31mE (886) esp_timer: Task is already initialized[0m
+[0;32mI (896) gpio: GPIO[0]| InputEn: 1| OutputEn: 0| OpenDrain: 0| Pullup: 1| Pulldown: 0| Intr:3 [0m
+[0;32mI (956) BTDM_INIT: BT controller compile version [ec4ac65][0m
+[0;32mI (956) BTDM_INIT: Bluetooth MAC: b0:a7:32:28:23:8e[0m
+[0;32mI (956) phy_init: phy_version 4780,16b31a7,Sep 22 2023,20:42:16[0m
+[0;33mW (1456) BLE_MESH: bt_mesh_proxy_server_prov_disable, Already[0m
+[0;32mI (1486) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_COMPLETE_EVT[0m
+[0;32mI (1496) MESH_CLIENT: net_idx: 0x0000, addr: 0x0030[0m
+[0;32mI (1496) MESH_CLIENT: flags: 0x00, iv_index: 0x00000000[0m
+[0;32mI (1496) MESH_CLIENT: Device provisioned[0m
+[0;32mI (1506) MESH_CLIENT: ESP_BLE_MESH_PROV_REGISTER_COMP_EVT, err_code 0[0m
+[0;32mI (1516) MESH_CLIENT: ESP_BLE_MESH_NODE_SET_UNPROV_DEV_NAME_COMP_EVT, Name: BLE Mesh, err_code 0[0m
+[0;33mW (1526) BLE_MESH: bt_mesh_prov_enable, Already[0m
+[0;32mI (1526) MESH_CLIENT: ESP_BLE_MESH_NODE_PROV_ENABLE_COMP_EVT, err_code -120[0m
+[0;32mI (1536) MESH_CLIENT: BLE Mesh Node initialized[0m
+I (1556) wifi:wifi driver task: 3ffdc9a0, prio:23, stack:6656, core=0
+I (1576) wifi:wifi firmware version: 91b9630
+I (1576) wifi:wifi certification version: v7.0
+I (1576) wifi:config NVS flash: enabled
+I (1576) wifi:config nano formating: disabled
+I (1576) wifi:Init data frame dynamic rx buffer num: 32
+I (1586) wifi:Init static rx mgmt buffer num: 5
+I (1586) wifi:Init management short buffer num: 32
+I (1596) wifi:Init dynamic tx buffer num: 32
+I (1596) wifi:Init static rx buffer size: 1600
+I (1596) wifi:Init static rx buffer num: 10
+I (1606) wifi:Init dynamic rx buffer num: 32
+[0;33mW (1606) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;32mI (1616) wifi_init: rx ba win: 6[0m
+[0;32mI (1616) wifi_init: tcpip mbox: 32[0m
+[0;32mI (1616) wifi_init: udp mbox: 6[0m
+[0;32mI (1626) wifi_init: tcp mbox: 6[0m
+[0;32mI (1626) wifi_init: tcp tx win: 5744[0m
+[0;32mI (1636) wifi_init: tcp rx win: 5744[0m
+[0;32mI (1636) wifi_init: tcp mss: 1440[0m
+[0;32mI (1636) wifi_init: WiFi IRAM OP enabled[0m
+[0;32mI (1646) wifi_init: WiFi RX IRAM OP enabled[0m
+I (1686) wifi:mode : sta (b0:a7:32:28:23:8c)
+I (1686) wifi:enable tsf
+[0;32mI (1686) wifi station: wifi_init_sta finished.[0m
+[0;33mW (2086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (2146) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (2316) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (2326) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;32mI (2616) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (2616) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (2616) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 20 00 00 00 00 00 [0m
+[0;32mI (2626) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (2636) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (2636) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (2646) mqtt_client: Client was not initialized[0m
+[0;33mW (2646) PARSED_DATA: Temperature 62996224= 0.000000[0m
+[0;31mE (2656) mqtt_client: Client was not initialized[0m
+[0;33mW (2656) PARSED_DATA: Humidity  62996224  = 0.000000[0m
+[0;31mE (2666) mqtt_client: Client was not initialized[0m
+[0;33mW (2666) PARSED_DATA: temp_ADC   62996224     = 0.000000[0m
+[0;31mE (2676) mqtt_client: Client was not initialized[0m
+[0;33mW (2676) PARSED_DATA: Light   3424000     = 32[0m
+[0;31mE (2686) mqtt_client: Client was not initialized[0m
+[0;33mW (2686) PARSED_DATA: smoke   3424000     = 0.000000[0m
+[0;31mE (2696) mqtt_client: Client was not initialized[0m
+[0;33mW (3036) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;32mI (3336) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (3336) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (3336) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (3346) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (3356) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (3356) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (3366) mqtt_client: Client was not initialized[0m
+[0;33mW (3366) PARSED_DATA: Temperature 28655360= 0.000000[0m
+[0;31mE (3376) mqtt_client: Client was not initialized[0m
+[0;33mW (3376) PARSED_DATA: Humidity  28655360  = 0.000000[0m
+[0;31mE (3386) mqtt_client: Client was not initialized[0m
+[0;33mW (3386) PARSED_DATA: temp_ADC   28655360     = 0.000000[0m
+[0;31mE (3396) mqtt_client: Client was not initialized[0m
+[0;33mW (3396) PARSED_DATA: Light   28655360     = 30[0m
+[0;31mE (3406) mqtt_client: Client was not initialized[0m
+[0;33mW (3406) PARSED_DATA: smoke   28655360     = 0.000000[0m
+[0;31mE (3416) mqtt_client: Client was not initialized[0m
+[0;33mW (3766) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (3866) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (4016) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (4046) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (4266) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (4306) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (4506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (4606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (4746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (4786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (5086) wifi station: retry to connect to the AP[0m
+[0;33mW (5226) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (5326) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (5466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (5506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (5706) BLE_MESH: Received already received fragment[0m
+[0;33mW (5756) BLE_MESH: Received already received fragment[0m
+[0;33mW (5946) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (6036) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (6206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (6226) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (6466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (6506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (6706) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;32mI (6956) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (6956) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (6956) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (6966) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (6976) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (6976) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (6986) mqtt_client: Client was not initialized[0m
+[0;33mW (6986) PARSED_DATA: Temperature 28655360= 0.000000[0m
+[0;31mE (6996) mqtt_client: Client was not initialized[0m
+[0;33mW (6996) PARSED_DATA: Humidity  28655360  = 0.000000[0m
+[0;31mE (7006) mqtt_client: Client was not initialized[0m
+[0;33mW (7006) PARSED_DATA: temp_ADC   28655360     = 0.000000[0m
+[0;31mE (7016) mqtt_client: Client was not initialized[0m
+[0;33mW (7016) PARSED_DATA: Light   28655360     = 30[0m
+[0;31mE (7026) mqtt_client: Client was not initialized[0m
+[0;33mW (7036) PARSED_DATA: smoke   28655360     = 0.000000[0m
+[0;31mE (7036) mqtt_client: Client was not initialized[0m
+[0;33mW (7446) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (7486) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (7666) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (7746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (7906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (7926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (8466) BLE_MESH: Received already received fragment[0m
+[0;32mI (8486) wifi station: retry to connect to the AP[0m
+[0;33mW (8626) BLE_MESH: Received already received fragment[0m
+[0;32mI (8656) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (8656) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (8656) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (8666) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (8676) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (8676) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (8686) mqtt_client: Client was not initialized[0m
+[0;33mW (8686) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (8696) mqtt_client: Client was not initialized[0m
+[0;33mW (8696) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (8706) mqtt_client: Client was not initialized[0m
+[0;33mW (8706) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (8716) mqtt_client: Client was not initialized[0m
+[0;33mW (8716) PARSED_DATA: Light   0     = 30[0m
+[0;31mE (8726) mqtt_client: Client was not initialized[0m
+[0;33mW (8726) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (8736) mqtt_client: Client was not initialized[0m
+[0;33mW (8926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (9126) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (9606) BLE_MESH: Received already received fragment[0m
+[0;33mW (9656) BLE_MESH: Received already received fragment[0m
+[0;32mI (9856) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (9856) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (9856) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (9866) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (9876) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (9876) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (9886) mqtt_client: Client was not initialized[0m
+[0;33mW (9886) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (9896) mqtt_client: Client was not initialized[0m
+[0;33mW (9896) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (9906) mqtt_client: Client was not initialized[0m
+[0;33mW (9906) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (9916) mqtt_client: Client was not initialized[0m
+[0;33mW (9916) PARSED_DATA: Light   0     = 30[0m
+[0;31mE (9926) mqtt_client: Client was not initialized[0m
+[0;33mW (9926) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (9936) mqtt_client: Client was not initialized[0m
+[0;33mW (9946) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (10076) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (10126) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (10616) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (10616) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (10616) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (10626) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (10636) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (10636) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (10646) mqtt_client: Client was not initialized[0m
+[0;33mW (10646) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (10656) mqtt_client: Client was not initialized[0m
+[0;33mW (10656) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (10666) mqtt_client: Client was not initialized[0m
+[0;33mW (10666) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (10676) mqtt_client: Client was not initialized[0m
+[0;33mW (10676) PARSED_DATA: Light   0     = 30[0m
+[0;31mE (10686) mqtt_client: Client was not initialized[0m
+[0;33mW (10686) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (10696) mqtt_client: Client was not initialized[0m
+[0;33mW (11066) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (11116) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (11306) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (11406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (11546) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (11586) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (11876) wifi station: retry to connect to the AP[0m
+[0;33mW (12116) BLE_MESH: Received already received fragment[0m
+[0;33mW (12266) BLE_MESH: Received already received fragment[0m
+[0;32mI (12316) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (12316) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (12316) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (12326) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (12336) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (12336) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (12346) mqtt_client: Client was not initialized[0m
+[0;33mW (12346) PARSED_DATA: Temperature 868096= 0.000000[0m
+[0;31mE (12356) mqtt_client: Client was not initialized[0m
+[0;33mW (12356) PARSED_DATA: Humidity  868096  = 0.000000[0m
+[0;31mE (12366) mqtt_client: Client was not initialized[0m
+[0;33mW (12366) PARSED_DATA: temp_ADC   868096     = 0.000000[0m
+[0;31mE (12376) mqtt_client: Client was not initialized[0m
+[0;33mW (12376) PARSED_DATA: Light   868096     = 30[0m
+[0;31mE (12386) mqtt_client: Client was not initialized[0m
+[0;33mW (12396) PARSED_DATA: smoke   868096     = 0.000000[0m
+[0;31mE (12396) mqtt_client: Client was not initialized[0m
+[0;33mW (12506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (12566) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (12746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (12846) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (13026) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (13556) BLE_MESH: Received already received fragment[0m
+[0;33mW (13726) BLE_MESH: Received already received fragment[0m
+[0;32mI (13756) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (13756) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (13756) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (13766) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (13776) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (13776) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (13786) mqtt_client: Client was not initialized[0m
+[0;33mW (13786) PARSED_DATA: Temperature 868096= 0.000000[0m
+[0;31mE (13796) mqtt_client: Client was not initialized[0m
+[0;33mW (13796) PARSED_DATA: Humidity  868096  = 0.000000[0m
+[0;31mE (13806) mqtt_client: Client was not initialized[0m
+[0;33mW (13806) PARSED_DATA: temp_ADC   868096     = 0.000000[0m
+[0;31mE (13816) mqtt_client: Client was not initialized[0m
+[0;33mW (13826) PARSED_DATA: Light   868096     = 30[0m
+[0;31mE (13826) mqtt_client: Client was not initialized[0m
+[0;33mW (13836) PARSED_DATA: smoke   868096     = 0.000000[0m
+[0;31mE (13836) mqtt_client: Client was not initialized[0m
+[0;33mW (14006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (14006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (14226) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (14576) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (14576) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (14576) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (14586) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (14596) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (14596) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (14606) mqtt_client: Client was not initialized[0m
+[0;33mW (14606) PARSED_DATA: Temperature 1392384= 0.000000[0m
+[0;31mE (14616) mqtt_client: Client was not initialized[0m
+[0;33mW (14616) PARSED_DATA: Humidity  1392384  = 0.000000[0m
+[0;31mE (14626) mqtt_client: Client was not initialized[0m
+[0;33mW (14626) PARSED_DATA: temp_ADC   1392384     = 0.000000[0m
+[0;31mE (14636) mqtt_client: Client was not initialized[0m
+[0;33mW (14646) PARSED_DATA: Light   1392384     = 30[0m
+[0;31mE (14646) mqtt_client: Client was not initialized[0m
+[0;33mW (14656) PARSED_DATA: smoke   1392384     = 0.000000[0m
+[0;31mE (14656) mqtt_client: Client was not initialized[0m
+[0;33mW (14696) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (14746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (14946) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (15286) wifi station: retry to connect to the AP[0m
+[0;33mW (15426) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (15466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (15666) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (15716) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (15906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (16006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (16186) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (16256) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (16406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (16446) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (16666) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (16726) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (16906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (16986) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (17146) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (17456) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (17456) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (17456) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1f 00 00 00 00 00 [0m
+[0;32mI (17466) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (17476) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (17476) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (17486) mqtt_client: Client was not initialized[0m
+[0;33mW (17486) PARSED_DATA: Temperature 1392384= 0.000000[0m
+[0;31mE (17496) mqtt_client: Client was not initialized[0m
+[0;33mW (17496) PARSED_DATA: Humidity  1392384  = 0.000000[0m
+[0;31mE (17506) mqtt_client: Client was not initialized[0m
+[0;33mW (17506) PARSED_DATA: temp_ADC   1392384     = 0.000000[0m
+[0;31mE (17516) mqtt_client: Client was not initialized[0m
+[0;33mW (17526) PARSED_DATA: Light   1392384     = 31[0m
+[0;31mE (17526) mqtt_client: Client was not initialized[0m
+[0;33mW (17536) PARSED_DATA: smoke   1392384     = 0.000000[0m
+[0;31mE (17536) mqtt_client: Client was not initialized[0m
+[0;33mW (17636) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (17706) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (18366) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (18416) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (18596) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (18606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (18696) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (18706) wifi station: retry to connect to the AP[0m
+[0;33mW (18866) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (18886) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (19086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (19206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (19346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (19366) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (19576) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (19626) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (19866) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (19906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (20066) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (20066) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (20166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (20296) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (20346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (20546) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (20626) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (20786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (21076) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (21076) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (21076) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (21086) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (21096) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (21096) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (21106) mqtt_client: Client was not initialized[0m
+[0;33mW (21106) PARSED_DATA: Temperature 7159552= 0.000000[0m
+[0;31mE (21116) mqtt_client: Client was not initialized[0m
+[0;33mW (21116) PARSED_DATA: Humidity  7159552  = 0.000000[0m
+[0;31mE (21126) mqtt_client: Client was not initialized[0m
+[0;33mW (21126) PARSED_DATA: temp_ADC   7159552     = 0.000000[0m
+[0;31mE (21136) mqtt_client: Client was not initialized[0m
+[0;33mW (21146) PARSED_DATA: Light   7159552     = 28[0m
+[0;31mE (21146) mqtt_client: Client was not initialized[0m
+[0;33mW (21156) PARSED_DATA: smoke   7159552     = 0.000000[0m
+[0;31mE (21156) mqtt_client: Client was not initialized[0m
+[0;33mW (21516) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (21596) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (21766) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (21786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (22026) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (22046) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (22106) wifi station: retry to connect to the AP[0m
+[0;33mW (22246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (22346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (22526) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (22746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (22806) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (22966) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (23006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (23056) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (23246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (23786) BLE_MESH: Received already received fragment[0m
+[0;33mW (23946) BLE_MESH: Received already received fragment[0m
+[0;32mI (23976) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (23976) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (23976) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (23986) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (23996) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (23996) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (24006) mqtt_client: Client was not initialized[0m
+[0;33mW (24006) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (24016) mqtt_client: Client was not initialized[0m
+[0;33mW (24016) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (24026) mqtt_client: Client was not initialized[0m
+[0;33mW (24026) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (24036) mqtt_client: Client was not initialized[0m
+[0;33mW (24036) PARSED_DATA: Light   0     = 27[0m
+[0;31mE (24046) mqtt_client: Client was not initialized[0m
+[0;33mW (24046) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (24056) mqtt_client: Client was not initialized[0m
+[0;33mW (24206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (24246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (24786) BLE_MESH: Received already received fragment[0m
+[0;33mW (24926) BLE_MESH: Received already received fragment[0m
+[0;32mI (24976) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (24976) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (24976) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (24986) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (24996) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (24996) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (25006) mqtt_client: Client was not initialized[0m
+[0;33mW (25006) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (25016) mqtt_client: Client was not initialized[0m
+[0;33mW (25016) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (25026) mqtt_client: Client was not initialized[0m
+[0;33mW (25026) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (25036) mqtt_client: Client was not initialized[0m
+[0;33mW (25036) PARSED_DATA: Light   0     = 27[0m
+[0;31mE (25046) mqtt_client: Client was not initialized[0m
+[0;33mW (25046) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (25056) mqtt_client: Client was not initialized[0m
+[0;33mW (25166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (25226) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (25406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (25506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (25506) wifi station: retry to connect to the AP[0m
+[0;33mW (25666) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (25686) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (26226) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (26366) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (26406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (26626) BLE_MESH: Received already received fragment[0m
+[0;33mW (26666) BLE_MESH: Received already received fragment[0m
+[0;33mW (26866) BLE_MESH: Received already received fragment[0m
+[0;33mW (26946) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (27126) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (27206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (27346) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;33mW (27666) BLE_MESH: Received already received fragment[0m
+[0;32mI (27866) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (27866) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (27866) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (27876) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (27886) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (27886) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (27896) mqtt_client: Client was not initialized[0m
+[0;33mW (27896) PARSED_DATA: Temperature 84934656= 0.000000[0m
+[0;31mE (27906) mqtt_client: Client was not initialized[0m
+[0;33mW (27906) PARSED_DATA: Humidity  84934656  = 0.000000[0m
+[0;31mE (27916) mqtt_client: Client was not initialized[0m
+[0;33mW (27916) PARSED_DATA: temp_ADC   84934656     = 0.000000[0m
+[0;31mE (27936) mqtt_client: Client was not initialized[0m
+[0;33mW (27936) PARSED_DATA: Light   84934656     = 27[0m
+[0;31mE (27936) mqtt_client: Client was not initialized[0m
+[0;33mW (27946) PARSED_DATA: smoke   84934656     = 0.000000[0m
+[0;31mE (27946) mqtt_client: Client was not initialized[0m
+[0;33mW (28066) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (28106) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (28306) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (28786) BLE_MESH: Received already received fragment[0m
+[0;32mI (28836) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (28836) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (28836) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (28846) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (28856) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (28856) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (28866) mqtt_client: Client was not initialized[0m
+[0;33mW (28866) PARSED_DATA: Temperature 84934656= 0.000000[0m
+[0;31mE (28876) mqtt_client: Client was not initialized[0m
+[0;33mW (28876) PARSED_DATA: Humidity  84934656  = 0.000000[0m
+[0;31mE (28886) mqtt_client: Client was not initialized[0m
+[0;33mW (28886) PARSED_DATA: temp_ADC   84934656     = 0.000000[0m
+[0;32mI (28906) wifi station: retry to connect to the AP[0m
+[0;31mE (28906) mqtt_client: Client was not initialized[0m
+[0;33mW (28906) PARSED_DATA: Light   84934656     = 27[0m
+[0;31mE (28916) mqtt_client: Client was not initialized[0m
+[0;33mW (28916) PARSED_DATA: smoke   84934656     = 0.000000[0m
+[0;31mE (28926) mqtt_client: Client was not initialized[0m
+[0;33mW (29096) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (29286) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (29386) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (29526) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (29576) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (29766) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (30286) BLE_MESH: Received already received fragment[0m
+[0;33mW (30306) BLE_MESH: Received already received fragment[0m
+[0;32mI (30516) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (30516) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (30516) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (30526) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (30536) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (30536) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (30546) mqtt_client: Client was not initialized[0m
+[0;33mW (30546) PARSED_DATA: Temperature 3227392= 0.000000[0m
+[0;31mE (30556) mqtt_client: Client was not initialized[0m
+[0;33mW (30556) PARSED_DATA: Humidity  3227392  = 0.000000[0m
+[0;31mE (30566) mqtt_client: Client was not initialized[0m
+[0;33mW (30566) PARSED_DATA: temp_ADC   3227392     = 0.000000[0m
+[0;31mE (30576) mqtt_client: Client was not initialized[0m
+[0;33mW (30586) PARSED_DATA: Light   3227392     = 27[0m
+[0;33mW (30586) BLE_MESH: Ignoring old SeqAuth[0m
+[0;31mE (30596) mqtt_client: Client was not initialized[0m
+[0;33mW (30596) PARSED_DATA: smoke   3227392     = 0.000000[0m
+[0;31mE (30606) mqtt_client: Client was not initialized[0m
+[0;33mW (30746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (30766) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (30846) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (30986) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (31016) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (31226) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (31566) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (31576) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (31576) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (31576) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (31586) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (31596) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (31596) mqtt_client: Client was not initialized[0m
+[0;33mW (31606) PARSED_DATA: Temperature 3227392= 0.000000[0m
+[0;31mE (31606) mqtt_client: Client was not initialized[0m
+[0;33mW (31616) PARSED_DATA: Humidity  3227392  = 0.000000[0m
+[0;31mE (31616) mqtt_client: Client was not initialized[0m
+[0;33mW (31626) PARSED_DATA: temp_ADC   3227392     = 0.000000[0m
+[0;31mE (31626) mqtt_client: Client was not initialized[0m
+[0;33mW (31636) PARSED_DATA: Light   3227392     = 27[0m
+[0;31mE (31636) mqtt_client: Client was not initialized[0m
+[0;33mW (31646) PARSED_DATA: smoke   3227392     = 0.000000[0m
+[0;31mE (31656) mqtt_client: Client was not initialized[0m
+[0;33mW (32026) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (32206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (32286) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (32296) wifi station: retry to connect to the AP[0m
+[0;33mW (32736) BLE_MESH: Received already received fragment[0m
+[0;32mI (32936) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (32936) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (32936) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (32946) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (32956) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (32956) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (32966) mqtt_client: Client was not initialized[0m
+[0;33mW (32966) PARSED_DATA: Temperature 868096= 0.000000[0m
+[0;31mE (32976) mqtt_client: Client was not initialized[0m
+[0;33mW (32976) PARSED_DATA: Humidity  868096  = 0.000000[0m
+[0;31mE (32986) mqtt_client: Client was not initialized[0m
+[0;33mW (32986) PARSED_DATA: temp_ADC   868096     = 0.000000[0m
+[0;31mE (32996) mqtt_client: Client was not initialized[0m
+[0;33mW (33006) PARSED_DATA: Light   868096     = 27[0m
+[0;31mE (33006) mqtt_client: Client was not initialized[0m
+[0;33mW (33016) PARSED_DATA: smoke   868096     = 0.000000[0m
+[0;31mE (33016) mqtt_client: Client was not initialized[0m
+[0;33mW (33166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (33186) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (33276) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (33426) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (33466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (33666) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (33726) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (33906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (33906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (34006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (34186) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (34386) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (34446) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (34616) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (34616) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (34726) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (34926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (35126) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (35166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (35636) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (35636) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (35636) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (35646) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (35656) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (35656) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (35666) mqtt_client: Client was not initialized[0m
+[0;33mW (35666) PARSED_DATA: Temperature 868096= 0.000000[0m
+[0;31mE (35676) mqtt_client: Client was not initialized[0m
+[0;33mW (35676) PARSED_DATA: Humidity  868096  = 0.000000[0m
+[0;31mE (35686) mqtt_client: Client was not initialized[0m
+[0;33mW (35686) PARSED_DATA: temp_ADC   868096     = 0.000000[0m
+[0;32mI (35696) wifi station: retry to connect to the AP[0m
+[0;31mE (35706) mqtt_client: Client was not initialized[0m
+[0;33mW (35706) PARSED_DATA: Light   868096     = 27[0m
+[0;31mE (35716) mqtt_client: Client was not initialized[0m
+[0;33mW (35716) PARSED_DATA: smoke   868096     = 0.000000[0m
+[0;31mE (35726) mqtt_client: Client was not initialized[0m
+[0;33mW (36126) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (36166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (36326) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (36346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (36426) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (36566) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (36606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (36826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (36886) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (37056) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (37136) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (37286) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (37326) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (37546) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (37596) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (37786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (37866) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (38036) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (38266) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (38326) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (38506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (38586) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (38746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (38766) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (39096) wifi station: retry to connect to the AP[0m
+[0;33mW (39236) BLE_MESH: Received already received fragment[0m
+[0;33mW (39306) BLE_MESH: Received already received fragment[0m
+[0;32mI (39496) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (39496) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (39496) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (39506) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (39516) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (39516) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (39526) mqtt_client: Client was not initialized[0m
+[0;33mW (39526) PARSED_DATA: Temperature 868096= 0.000000[0m
+[0;31mE (39536) mqtt_client: Client was not initialized[0m
+[0;33mW (39536) PARSED_DATA: Humidity  868096  = 0.000000[0m
+[0;31mE (39546) mqtt_client: Client was not initialized[0m
+[0;33mW (39546) PARSED_DATA: temp_ADC   868096     = 0.000000[0m
+[0;31mE (39556) mqtt_client: Client was not initialized[0m
+[0;33mW (39566) PARSED_DATA: Light   868096     = 27[0m
+[0;31mE (39566) mqtt_client: Client was not initialized[0m
+[0;33mW (39576) PARSED_DATA: smoke   868096     = 0.000000[0m
+[0;31mE (39576) mqtt_client: Client was not initialized[0m
+[0;33mW (39586) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (39746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (39766) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (39986) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (40026) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (40206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (40306) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (40466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (40476) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (40706) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (40746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (40946) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (41466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (41486) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (41686) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (41746) BLE_MESH: Received already received fragment[0m
+[0;33mW (41906) BLE_MESH: Received already received fragment[0m
+[0;33mW (41916) BLE_MESH: Received already received fragment[0m
+[0;32mI (42036) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (42036) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (42036) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (42046) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (42056) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (42056) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (42066) mqtt_client: Client was not initialized[0m
+[0;33mW (42066) PARSED_DATA: Temperature 868096= 0.000000[0m
+[0;31mE (42076) mqtt_client: Client was not initialized[0m
+[0;33mW (42076) PARSED_DATA: Humidity  868096  = 0.000000[0m
+[0;31mE (42086) mqtt_client: Client was not initialized[0m
+[0;33mW (42086) PARSED_DATA: temp_ADC   868096     = 0.000000[0m
+[0;31mE (42096) mqtt_client: Client was not initialized[0m
+[0;33mW (42106) PARSED_DATA: Light   868096     = 27[0m
+[0;31mE (42106) mqtt_client: Client was not initialized[0m
+[0;33mW (42116) PARSED_DATA: smoke   868096     = 0.000000[0m
+[0;31mE (42116) mqtt_client: Client was not initialized[0m
+[0;33mW (42166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (42206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (42406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (42496) wifi station: retry to connect to the AP[0m
+[0;33mW (42886) BLE_MESH: Received already received fragment[0m
+[0;32mI (42936) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (42936) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (42936) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (42946) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (42956) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (42956) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (42966) mqtt_client: Client was not initialized[0m
+[0;33mW (42966) PARSED_DATA: Temperature 7159552= 0.000000[0m
+[0;31mE (42976) mqtt_client: Client was not initialized[0m
+[0;33mW (42976) PARSED_DATA: Humidity  7159552  = 0.000000[0m
+[0;31mE (42986) mqtt_client: Client was not initialized[0m
+[0;33mW (42986) PARSED_DATA: temp_ADC   7159552     = 0.000000[0m
+[0;31mE (42996) mqtt_client: Client was not initialized[0m
+[0;33mW (43006) PARSED_DATA: Light   7159552     = 27[0m
+[0;31mE (43006) mqtt_client: Client was not initialized[0m
+[0;33mW (43016) PARSED_DATA: smoke   7159552     = 0.000000[0m
+[0;31mE (43016) mqtt_client: Client was not initialized[0m
+[0;33mW (43176) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (43366) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (43606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (43646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (43866) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (44346) BLE_MESH: Received already received fragment[0m
+[0;32mI (44366) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (44366) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (44376) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (44376) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (44386) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (44386) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (44396) mqtt_client: Client was not initialized[0m
+[0;33mW (44396) PARSED_DATA: Temperature 3489536= 0.000000[0m
+[0;31mE (44406) mqtt_client: Client was not initialized[0m
+[0;33mW (44406) PARSED_DATA: Humidity  3489536  = 0.000000[0m
+[0;31mE (44416) mqtt_client: Client was not initialized[0m
+[0;33mW (44426) PARSED_DATA: temp_ADC   3489536     = 0.000000[0m
+[0;31mE (44426) mqtt_client: Client was not initialized[0m
+[0;33mW (44436) PARSED_DATA: Light   3489536     = 27[0m
+[0;31mE (44436) mqtt_client: Client was not initialized[0m
+[0;33mW (44446) PARSED_DATA: smoke   3489536     = 0.000000[0m
+[0;31mE (44446) mqtt_client: Client was not initialized[0m
+[0;33mW (44646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (44826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (44906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (45096) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (45326) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (45786) BLE_MESH: Received already received fragment[0m
+[0;32mI (45816) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (45816) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (45816) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (45826) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (45836) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (45836) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (45846) mqtt_client: Client was not initialized[0m
+[0;33mW (45846) PARSED_DATA: Temperature 7159552= 0.000000[0m
+[0;31mE (45856) mqtt_client: Client was not initialized[0m
+[0;33mW (45856) PARSED_DATA: Humidity  7159552  = 0.000000[0m
+[0;31mE (45866) mqtt_client: Client was not initialized[0m
+[0;33mW (45866) PARSED_DATA: temp_ADC   7159552     = 0.000000[0m
+[0;31mE (45876) mqtt_client: Client was not initialized[0m
+[0;33mW (45886) PARSED_DATA: Light   7159552     = 27[0m
+[0;31mE (45886) mqtt_client: Client was not initialized[0m
+[0;32mI (45896) wifi station: retry to connect to the AP[0m
+[0;33mW (45906) PARSED_DATA: smoke   2965248     = 0.000000[0m
+[0;31mE (45906) mqtt_client: Client was not initialized[0m
+[0;33mW (46086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (46286) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (46346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (47036) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (47036) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (47036) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (47046) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (47056) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (47056) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (47066) mqtt_client: Client was not initialized[0m
+[0;33mW (47066) PARSED_DATA: Temperature 5848832= 0.000000[0m
+[0;31mE (47076) mqtt_client: Client was not initialized[0m
+[0;33mW (47076) PARSED_DATA: Humidity  5848832  = 0.000000[0m
+[0;31mE (47086) mqtt_client: Client was not initialized[0m
+[0;33mW (47086) PARSED_DATA: temp_ADC   5848832     = 0.000000[0m
+[0;31mE (47096) mqtt_client: Client was not initialized[0m
+[0;33mW (47106) PARSED_DATA: Light   5848832     = 27[0m
+[0;31mE (47106) mqtt_client: Client was not initialized[0m
+[0;33mW (47116) PARSED_DATA: smoke   5848832     = 0.000000[0m
+[0;31mE (47116) mqtt_client: Client was not initialized[0m
+[0;33mW (47246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (47346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (47506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (47526) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (47606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (47746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (47786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (48256) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (48256) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (48256) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (48266) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (48276) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (48276) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (48286) mqtt_client: Client was not initialized[0m
+[0;33mW (48286) PARSED_DATA: Temperature 5848832= 0.000000[0m
+[0;31mE (48296) mqtt_client: Client was not initialized[0m
+[0;33mW (48296) PARSED_DATA: Humidity  5848832  = 0.000000[0m
+[0;31mE (48306) mqtt_client: Client was not initialized[0m
+[0;33mW (48306) PARSED_DATA: temp_ADC   5848832     = 0.000000[0m
+[0;31mE (48316) mqtt_client: Client was not initialized[0m
+[0;33mW (48336) PARSED_DATA: Light   5848832     = 27[0m
+[0;31mE (48336) mqtt_client: Client was not initialized[0m
+[0;33mW (48336) PARSED_DATA: smoke   5848832     = 0.000000[0m
+[0;31mE (48336) mqtt_client: Client was not initialized[0m
+[0;33mW (48726) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (48776) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (48966) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (49046) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (49206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (49226) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (49296) wifi station: retry to connect to the AP[0m
+[0;33mW (49466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (49496) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (50186) BLE_MESH: Received already received fragment[0m
+[0;32mI (50256) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (50256) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (50256) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 21 00 00 00 00 00 [0m
+[0;32mI (50266) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (50276) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (50276) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (50286) mqtt_client: Client was not initialized[0m
+[0;33mW (50286) PARSED_DATA: Temperature 7159552= 0.000000[0m
+[0;31mE (50296) mqtt_client: Client was not initialized[0m
+[0;33mW (50296) PARSED_DATA: Humidity  7159552  = 0.000000[0m
+[0;31mE (50306) mqtt_client: Client was not initialized[0m
+[0;33mW (50306) PARSED_DATA: temp_ADC   7159552     = 0.000000[0m
+[0;31mE (50316) mqtt_client: Client was not initialized[0m
+[0;33mW (50326) PARSED_DATA: Light   7159552     = 33[0m
+[0;31mE (50326) mqtt_client: Client was not initialized[0m
+[0;33mW (50336) PARSED_DATA: smoke   7159552     = 0.000000[0m
+[0;31mE (50336) mqtt_client: Client was not initialized[0m
+[0;33mW (50426) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (50486) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (50666) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (50766) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (50926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (50946) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (51486) BLE_MESH: Received already received fragment[0m
+[0;32mI (51696) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (51696) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (51696) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 22 00 00 00 00 00 [0m
+[0;32mI (51706) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (51716) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (51716) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (51726) mqtt_client: Client was not initialized[0m
+[0;33mW (51726) PARSED_DATA: Temperature 18693888= 0.000000[0m
+[0;31mE (51736) mqtt_client: Client was not initialized[0m
+[0;33mW (51736) PARSED_DATA: Humidity  18693888  = 0.000000[0m
+[0;31mE (51746) mqtt_client: Client was not initialized[0m
+[0;33mW (51746) PARSED_DATA: temp_ADC   18693888     = 0.000000[0m
+[0;31mE (51756) mqtt_client: Client was not initialized[0m
+[0;33mW (51766) PARSED_DATA: Light   18693888     = 34[0m
+[0;31mE (51766) mqtt_client: Client was not initialized[0m
+[0;33mW (51776) PARSED_DATA: smoke   18693888     = 0.000000[0m
+[0;31mE (51776) mqtt_client: Client was not initialized[0m
+[0;33mW (51866) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (51926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (52106) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (52206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (52346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (52386) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (52606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (52646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (52696) wifi station: retry to connect to the AP[0m
+[0;33mW (52846) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (52926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (53096) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (53096) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (53646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (53796) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (53826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (53926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (54046) BLE_MESH: Received already received fragment[0m
+[0;33mW (54106) BLE_MESH: Received already received fragment[0m
+[0;33mW (54306) BLE_MESH: Received already received fragment[0m
+[0;33mW (54366) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (54526) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (54546) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (54646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (54826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (55026) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (55086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (55266) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (55366) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (55526) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (55546) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (55746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (55806) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (55986) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (56076) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (56096) wifi station: retry to connect to the AP[0m
+[0;33mW (56246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (56266) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (56466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (56516) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;33mW (56986) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (57246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (57266) BLE_MESH: Received already received fragment[0m
+[0;33mW (57446) BLE_MESH: Received already received fragment[0m
+[0;33mW (57526) BLE_MESH: Received already received fragment[0m
+[0;33mW (57696) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (57696) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (57806) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (57946) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (57966) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (58186) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (58246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (58406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (58426) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (58646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (58726) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (58906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (59206) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;32mI (59486) wifi station: retry to connect to the AP[0m
+[0;32mI (59636) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (59636) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (59636) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (59646) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (59656) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (59656) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (59666) mqtt_client: Client was not initialized[0m
+[0;33mW (59666) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (59676) mqtt_client: Client was not initialized[0m
+[0;33mW (59676) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (59686) mqtt_client: Client was not initialized[0m
+[0;33mW (59686) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (59696) mqtt_client: Client was not initialized[0m
+[0;33mW (59696) PARSED_DATA: Light   0     = 28[0m
+[0;31mE (59706) mqtt_client: Client was not initialized[0m
+[0;33mW (59706) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (59716) mqtt_client: Client was not initialized[0m
+[0;33mW (59886) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (59906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (60166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (60186) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (60366) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (60446) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (60906) BLE_MESH: Received already received fragment[0m
+[0;32mI (61166) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (61166) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (61166) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (61176) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (61186) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (61186) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (61196) mqtt_client: Client was not initialized[0m
+[0;33mW (61196) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (61206) mqtt_client: Client was not initialized[0m
+[0;33mW (61206) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (61216) mqtt_client: Client was not initialized[0m
+[0;33mW (61216) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (61226) mqtt_client: Client was not initialized[0m
+[0;33mW (61226) PARSED_DATA: Light   0     = 28[0m
+[0;31mE (61236) mqtt_client: Client was not initialized[0m
+[0;33mW (61236) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (61246) mqtt_client: Client was not initialized[0m
+[0;33mW (61346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (61446) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (61606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (62046) BLE_MESH: Received already received fragment[0m
+[0;32mI (62076) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (62076) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (62076) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (62086) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (62096) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (62096) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (62106) mqtt_client: Client was not initialized[0m
+[0;33mW (62106) PARSED_DATA: Temperature 537568512= 0.000000[0m
+[0;31mE (62116) mqtt_client: Client was not initialized[0m
+[0;33mW (62116) PARSED_DATA: Humidity  537568512  = 0.000000[0m
+[0;31mE (62126) mqtt_client: Client was not initialized[0m
+[0;33mW (62126) PARSED_DATA: temp_ADC   537568512     = 0.000000[0m
+[0;31mE (62136) mqtt_client: Client was not initialized[0m
+[0;33mW (62146) PARSED_DATA: Light   537568512     = 28[0m
+[0;31mE (62146) mqtt_client: Client was not initialized[0m
+[0;33mW (62156) PARSED_DATA: smoke   537568512     = 0.000000[0m
+[0;31mE (62156) mqtt_client: Client was not initialized[0m
+[0;33mW (62346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (62526) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (62606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (62786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (62886) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (62886) wifi station: retry to connect to the AP[0m
+[0;33mW (63046) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (63556) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (63556) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (63556) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (63566) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (63576) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (63576) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (63586) mqtt_client: Client was not initialized[0m
+[0;33mW (63586) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (63596) mqtt_client: Client was not initialized[0m
+[0;33mW (63596) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (63606) mqtt_client: Client was not initialized[0m
+[0;33mW (63606) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (63626) mqtt_client: Client was not initialized[0m
+[0;33mW (63626) PARSED_DATA: Light   0     = 28[0m
+[0;31mE (63626) mqtt_client: Client was not initialized[0m
+[0;33mW (63626) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (63636) mqtt_client: Client was not initialized[0m
+[0;33mW (63786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (63866) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (64006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (64046) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (64246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (64326) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (64776) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (64776) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (64776) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (64786) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (64796) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (64796) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (64806) mqtt_client: Client was not initialized[0m
+[0;33mW (64806) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (64816) mqtt_client: Client was not initialized[0m
+[0;33mW (64816) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (64826) mqtt_client: Client was not initialized[0m
+[0;33mW (64826) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (64836) mqtt_client: Client was not initialized[0m
+[0;33mW (64836) PARSED_DATA: Light   0     = 28[0m
+[0;31mE (64846) mqtt_client: Client was not initialized[0m
+[0;33mW (64846) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (64856) mqtt_client: Client was not initialized[0m
+[0;33mW (65246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (65306) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (65456) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (65476) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (65966) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (66026) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (66186) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (66206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (66286) wifi station: retry to connect to the AP[0m
+[0;33mW (66446) BLE_MESH: Received already received fragment[0m
+[0;33mW (66486) BLE_MESH: Received already received fragment[0m
+[0;33mW (66676) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (66746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (66906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (66926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (67026) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (67166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (67206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (67406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (67466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (67666) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (67926) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;33mW (68206) BLE_MESH: Received already received fragment[0m
+[0;33mW (68366) BLE_MESH: Received already received fragment[0m
+[0;32mI (68396) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (68396) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (68396) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (68406) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (68416) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (68416) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (68426) mqtt_client: Client was not initialized[0m
+[0;33mW (68426) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (68436) mqtt_client: Client was not initialized[0m
+[0;33mW (68436) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (68446) mqtt_client: Client was not initialized[0m
+[0;33mW (68446) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (68456) mqtt_client: Client was not initialized[0m
+[0;33mW (68456) PARSED_DATA: Light   0     = 28[0m
+[0;31mE (68466) mqtt_client: Client was not initialized[0m
+[0;33mW (68466) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (68476) mqtt_client: Client was not initialized[0m
+[0;33mW (68606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (68686) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (69326) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (69386) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (69586) BLE_MESH: Received already received fragment[0m
+[0;33mW (69646) BLE_MESH: Received already received fragment[0m
+[0;32mI (69686) wifi station: retry to connect to the AP[0m
+[0;33mW (69826) BLE_MESH: Received already received fragment[0m
+[0;33mW (70066) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (70106) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (70326) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (70366) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (70546) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (70646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (70806) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (70846) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (70906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (71046) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (71086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (71276) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (71366) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;32mI (71636) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (71636) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (71636) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (71646) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (71656) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (71656) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (71666) mqtt_client: Client was not initialized[0m
+[0;33mW (71666) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (71676) mqtt_client: Client was not initialized[0m
+[0;33mW (71676) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (71686) mqtt_client: Client was not initialized[0m
+[0;33mW (71686) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (71696) mqtt_client: Client was not initialized[0m
+[0;33mW (71696) PARSED_DATA: Light   0     = 28[0m
+[0;31mE (71706) mqtt_client: Client was not initialized[0m
+[0;33mW (71706) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (71716) mqtt_client: Client was not initialized[0m
+[0;33mW (72086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (72286) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (72346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (72486) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (72526) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (72726) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (72826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (73006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (73066) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (73086) wifi station: retry to connect to the AP[0m
+[0;33mW (73226) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (73246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (73486) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (73526) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (73726) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (73776) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (73946) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (73966) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (74176) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (74286) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (74446) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (74506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (74976) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (74976) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (74976) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 21 00 00 00 00 00 [0m
+[0;32mI (74986) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (74996) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (74996) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (75006) mqtt_client: Client was not initialized[0m
+[0;33mW (75006) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (75016) mqtt_client: Client was not initialized[0m
+[0;33mW (75016) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (75026) mqtt_client: Client was not initialized[0m
+[0;33mW (75026) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (75036) mqtt_client: Client was not initialized[0m
+[0;33mW (75036) PARSED_DATA: Light   0     = 33[0m
+[0;31mE (75046) mqtt_client: Client was not initialized[0m
+[0;33mW (75046) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (75056) mqtt_client: Client was not initialized[0m
+[0;33mW (75406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (75646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (75686) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (75886) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (75946) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (76126) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (76246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (76386) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (76426) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (76476) wifi station: retry to connect to the AP[0m
+[0;33mW (76626) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (76656) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (76906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (76966) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (77106) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (77396) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (77396) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (77396) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 21 00 00 00 00 00 [0m
+[0;32mI (77406) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (77416) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (77416) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (77426) mqtt_client: Client was not initialized[0m
+[0;33mW (77426) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (77436) mqtt_client: Client was not initialized[0m
+[0;33mW (77436) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (77446) mqtt_client: Client was not initialized[0m
+[0;33mW (77446) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (77456) mqtt_client: Client was not initialized[0m
+[0;33mW (77456) PARSED_DATA: Light   0     = 33[0m
+[0;31mE (77466) mqtt_client: Client was not initialized[0m
+[0;33mW (77466) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (77476) mqtt_client: Client was not initialized[0m
+[0;33mW (77866) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (77926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (78086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (78106) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (78346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (78386) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (78836) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (78836) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (78836) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 24 00 00 00 00 00 [0m
+[0;32mI (78846) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (78856) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (78856) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (78866) mqtt_client: Client was not initialized[0m
+[0;33mW (78866) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (78876) mqtt_client: Client was not initialized[0m
+[0;33mW (78876) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (78886) mqtt_client: Client was not initialized[0m
+[0;33mW (78886) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (78896) mqtt_client: Client was not initialized[0m
+[0;33mW (78896) PARSED_DATA: Light   0     = 36[0m
+[0;31mE (78906) mqtt_client: Client was not initialized[0m
+[0;33mW (78906) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (78916) mqtt_client: Client was not initialized[0m
+[0;33mW (79306) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (79406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (79546) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (79586) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (79876) wifi station: retry to connect to the AP[0m
+[0;33mW (80126) BLE_MESH: Received already received fragment[0m
+[0;33mW (80286) BLE_MESH: Received already received fragment[0m
+[0;32mI (80336) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (80336) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (80336) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1f 00 00 00 00 00 [0m
+[0;32mI (80346) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (80356) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (80356) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (80366) mqtt_client: Client was not initialized[0m
+[0;33mW (80366) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (80376) mqtt_client: Client was not initialized[0m
+[0;33mW (80376) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (80386) mqtt_client: Client was not initialized[0m
+[0;33mW (80386) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (80396) mqtt_client: Client was not initialized[0m
+[0;33mW (80396) PARSED_DATA: Light   0     = 31[0m
+[0;31mE (80406) mqtt_client: Client was not initialized[0m
+[0;33mW (80406) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (80416) mqtt_client: Client was not initialized[0m
+[0;33mW (80506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (80566) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (80766) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (81006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (81046) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (81586) BLE_MESH: Received already received fragment[0m
+[0;33mW (81726) BLE_MESH: Received already received fragment[0m
+[0;32mI (81776) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (81776) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (81776) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1d 00 00 00 00 00 [0m
+[0;32mI (81786) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (81796) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (81796) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (81806) mqtt_client: Client was not initialized[0m
+[0;33mW (81806) PARSED_DATA: Temperature 537568512= 0.000000[0m
+[0;31mE (81816) mqtt_client: Client was not initialized[0m
+[0;33mW (81816) PARSED_DATA: Humidity  537568512  = 0.000000[0m
+[0;33mW (81826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;31mE (81826) mqtt_client: Client was not initialized[0m
+[0;33mW (81836) PARSED_DATA: temp_ADC   537568512     = 0.000000[0m
+[0;31mE (81846) mqtt_client: Client was not initialized[0m
+[0;33mW (81846) PARSED_DATA: Light   537568512     = 29[0m
+[0;31mE (81856) mqtt_client: Client was not initialized[0m
+[0;33mW (81856) PARSED_DATA: smoke   537568512     = 0.000000[0m
+[0;31mE (81866) mqtt_client: Client was not initialized[0m
+[0;33mW (81966) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (82006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (82246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (82286) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (82446) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (82466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (83006) BLE_MESH: Received already received fragment[0m
+[0;32mI (83196) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (83196) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (83196) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (83206) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (83216) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (83216) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (83226) mqtt_client: Client was not initialized[0m
+[0;33mW (83226) PARSED_DATA: Temperature 537568512= 0.000000[0m
+[0;31mE (83236) mqtt_client: Client was not initialized[0m
+[0;33mW (83236) PARSED_DATA: Humidity  537568512  = 0.000000[0m
+[0;31mE (83246) mqtt_client: Client was not initialized[0m
+[0;33mW (83246) PARSED_DATA: temp_ADC   537568512     = 0.000000[0m
+[0;31mE (83256) mqtt_client: Client was not initialized[0m
+[0;33mW (83266) PARSED_DATA: Light   537568512     = 28[0m
+[0;33mW (83276) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (83276) wifi station: retry to connect to the AP[0m
+[0;31mE (83276) mqtt_client: Client was not initialized[0m
+[0;33mW (83286) PARSED_DATA: smoke   537568512     = 0.000000[0m
+[0;31mE (83286) mqtt_client: Client was not initialized[0m
+[0;33mW (83426) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (83486) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (84166) BLE_MESH: Received already received fragment[0m
+[0;32mI (84196) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (84196) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (84196) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (84206) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (84216) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (84216) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (84226) mqtt_client: Client was not initialized[0m
+[0;33mW (84226) PARSED_DATA: Temperature 3227392= 0.000000[0m
+[0;31mE (84236) mqtt_client: Client was not initialized[0m
+[0;33mW (84236) PARSED_DATA: Humidity  3227392  = 0.000000[0m
+[0;31mE (84246) mqtt_client: Client was not initialized[0m
+[0;33mW (84246) PARSED_DATA: temp_ADC   3227392     = 0.000000[0m
+[0;31mE (84256) mqtt_client: Client was not initialized[0m
+[0;33mW (84266) PARSED_DATA: Light   3227392     = 28[0m
+[0;31mE (84266) mqtt_client: Client was not initialized[0m
+[0;33mW (84276) PARSED_DATA: smoke   3227392     = 0.000000[0m
+[0;31mE (84276) mqtt_client: Client was not initialized[0m
+[0;33mW (84386) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (84446) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (84626) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (84746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (84886) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (84926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (84986) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (85126) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (85166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (85366) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (85466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (85606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (85636) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (85706) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (86166) BLE_MESH: Received already received fragment[0m
+[0;33mW (86316) BLE_MESH: Received already received fragment[0m
+[0;32mI (86376) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (86376) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (86376) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (86386) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (86396) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (86396) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (86406) mqtt_client: Client was not initialized[0m
+[0;33mW (86406) PARSED_DATA: Temperature 802560= 0.000000[0m
+[0;31mE (86416) mqtt_client: Client was not initialized[0m
+[0;33mW (86416) PARSED_DATA: Humidity  802560  = 0.000000[0m
+[0;31mE (86426) mqtt_client: Client was not initialized[0m
+[0;33mW (86426) PARSED_DATA: temp_ADC   802560     = 0.000000[0m
+[0;31mE (86436) mqtt_client: Client was not initialized[0m
+[0;33mW (86436) PARSED_DATA: Light   802560     = 28[0m
+[0;31mE (86446) mqtt_client: Client was not initialized[0m
+[0;33mW (86456) PARSED_DATA: smoke   802560     = 0.000000[0m
+[0;31mE (86456) mqtt_client: Client was not initialized[0m
+[0;33mW (86566) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (86606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (86676) wifi station: retry to connect to the AP[0m
+[0;33mW (86806) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (87306) BLE_MESH: Received already received fragment[0m
+[0;32mI (87336) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (87336) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (87336) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (87346) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (87356) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (87356) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (87366) mqtt_client: Client was not initialized[0m
+[0;33mW (87366) PARSED_DATA: Temperature 16858880= 0.000000[0m
+[0;31mE (87376) mqtt_client: Client was not initialized[0m
+[0;33mW (87376) PARSED_DATA: Humidity  16858880  = 0.000000[0m
+[0;31mE (87386) mqtt_client: Client was not initialized[0m
+[0;33mW (87386) PARSED_DATA: temp_ADC   16858880     = 0.000000[0m
+[0;31mE (87396) mqtt_client: Client was not initialized[0m
+[0;33mW (87406) PARSED_DATA: Light   11288320     = 28[0m
+[0;31mE (87406) mqtt_client: Client was not initialized[0m
+[0;33mW (87416) PARSED_DATA: smoke   16858880     = 0.000000[0m
+[0;31mE (87416) mqtt_client: Client was not initialized[0m
+[0;33mW (87616) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (87806) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (87866) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (88046) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (88286) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (88346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (88526) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (88586) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (88766) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (89006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (89066) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (89246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (89306) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (89786) BLE_MESH: Received already received fragment[0m
+[0;32mI (89976) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (89976) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (89976) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (89986) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (89996) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (89996) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (90006) mqtt_client: Client was not initialized[0m
+[0;33mW (90006) PARSED_DATA: Temperature 16858880= 0.000000[0m
+[0;31mE (90016) mqtt_client: Client was not initialized[0m
+[0;33mW (90016) PARSED_DATA: Humidity  16858880  = 0.000000[0m
+[0;31mE (90026) mqtt_client: Client was not initialized[0m
+[0;33mW (90026) PARSED_DATA: temp_ADC   16858880     = 0.000000[0m
+[0;31mE (90036) mqtt_client: Client was not initialized[0m
+[0;33mW (90046) PARSED_DATA: Light   16858880     = 28[0m
+[0;31mE (90046) mqtt_client: Client was not initialized[0m
+[0;33mW (90056) PARSED_DATA: smoke   16858880     = 0.000000[0m
+[0;31mE (90056) mqtt_client: Client was not initialized[0m
+[0;32mI (90076) wifi station: retry to connect to the AP[0m
+[0;33mW (90266) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (90466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (90506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (90706) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (90786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (90946) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (90966) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (91206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (91266) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (91446) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (91506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (91666) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (91686) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (91986) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (92166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (92216) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (92386) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (92406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (92646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (93136) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (93136) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (93136) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (93146) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (93156) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (93156) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (93166) mqtt_client: Client was not initialized[0m
+[0;33mW (93166) PARSED_DATA: Temperature 18693888= 0.000000[0m
+[0;31mE (93176) mqtt_client: Client was not initialized[0m
+[0;33mW (93176) PARSED_DATA: Humidity  18693888  = 0.000000[0m
+[0;31mE (93186) mqtt_client: Client was not initialized[0m
+[0;33mW (93186) PARSED_DATA: temp_ADC   18693888     = 0.000000[0m
+[0;31mE (93196) mqtt_client: Client was not initialized[0m
+[0;33mW (93206) PARSED_DATA: Light   18693888     = 28[0m
+[0;31mE (93206) mqtt_client: Client was not initialized[0m
+[0;33mW (93216) PARSED_DATA: smoke   18693888     = 0.000000[0m
+[0;31mE (93216) mqtt_client: Client was not initialized[0m
+[0;33mW (93406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (93466) wifi station: retry to connect to the AP[0m
+[0;33mW (93616) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (93666) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (93846) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (94096) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (94136) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (94206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (94346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (94386) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (94586) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (94686) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (94826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (95116) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (95116) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (95116) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (95126) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (95136) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (95136) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (95146) mqtt_client: Client was not initialized[0m
+[0;33mW (95146) PARSED_DATA: Temperature 16858880= 0.000000[0m
+[0;31mE (95156) mqtt_client: Client was not initialized[0m
+[0;33mW (95156) PARSED_DATA: Humidity  16858880  = 0.000000[0m
+[0;31mE (95166) mqtt_client: Client was not initialized[0m
+[0;33mW (95166) PARSED_DATA: temp_ADC   16858880     = 0.000000[0m
+[0;31mE (95176) mqtt_client: Client was not initialized[0m
+[0;33mW (95186) PARSED_DATA: Light   16858880     = 28[0m
+[0;31mE (95186) mqtt_client: Client was not initialized[0m
+[0;33mW (95196) PARSED_DATA: smoke   16858880     = 0.000000[0m
+[0;31mE (95196) mqtt_client: Client was not initialized[0m
+[0;33mW (95586) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (95646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (95786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (95826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (96026) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (96086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (96786) BLE_MESH: Received already received fragment[0m
+[0;32mI (96816) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (96816) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (96816) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (96826) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (96836) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (96836) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (96846) mqtt_client: Client was not initialized[0m
+[0;33mW (96846) PARSED_DATA: Temperature 16858880= 0.000000[0m
+[0;31mE (96856) mqtt_client: Client was not initialized[0m
+[0;33mW (96856) PARSED_DATA: Humidity  16858880  = 0.000000[0m
+[0;32mI (96866) wifi station: retry to connect to the AP[0m
+[0;31mE (96876) mqtt_client: Client was not initialized[0m
+[0;33mW (96876) PARSED_DATA: temp_ADC   16858880     = 0.000000[0m
+[0;31mE (96886) mqtt_client: Client was not initialized[0m
+[0;33mW (96886) PARSED_DATA: Light   16858880     = 28[0m
+[0;31mE (96896) mqtt_client: Client was not initialized[0m
+[0;33mW (96896) PARSED_DATA: smoke   16858880     = 0.000000[0m
+[0;31mE (96906) mqtt_client: Client was not initialized[0m
+[0;33mW (97026) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (97086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (97246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (97266) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (97366) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (97506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (97566) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (98086) BLE_MESH: Received already received fragment[0m
+[0;33mW (98246) BLE_MESH: Received already received fragment[0m
+[0;32mI (98276) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (98276) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (98276) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (98286) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (98296) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (98296) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (98306) mqtt_client: Client was not initialized[0m
+[0;33mW (98306) PARSED_DATA: Temperature 16858880= 0.000000[0m
+[0;31mE (98316) mqtt_client: Client was not initialized[0m
+[0;33mW (98316) PARSED_DATA: Humidity  16858880  = 0.000000[0m
+[0;31mE (98326) mqtt_client: Client was not initialized[0m
+[0;33mW (98326) PARSED_DATA: temp_ADC   16858880     = 0.000000[0m
+[0;31mE (98336) mqtt_client: Client was not initialized[0m
+[0;33mW (98346) PARSED_DATA: Light   16858880     = 28[0m
+[0;31mE (98346) mqtt_client: Client was not initialized[0m
+[0;33mW (98356) PARSED_DATA: smoke   16858880     = 0.000000[0m
+[0;31mE (98356) mqtt_client: Client was not initialized[0m
+[0;33mW (98466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (98526) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (98746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (98806) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (98956) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (98986) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (99526) BLE_MESH: Received already received fragment[0m
+[0;33mW (99666) BLE_MESH: Received already received fragment[0m
+[0;32mI (99716) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (99716) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (99716) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (99726) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (99736) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (99736) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (99746) mqtt_client: Client was not initialized[0m
+[0;33mW (99746) PARSED_DATA: Temperature 16858880= 0.000000[0m
+[0;31mE (99756) mqtt_client: Client was not initialized[0m
+[0;33mW (99756) PARSED_DATA: Humidity  16858880  = 0.000000[0m
+[0;31mE (99766) mqtt_client: Client was not initialized[0m
+[0;33mW (99766) PARSED_DATA: temp_ADC   16858880     = 0.000000[0m
+[0;31mE (99776) mqtt_client: Client was not initialized[0m
+[0;33mW (99786) PARSED_DATA: Light   16858880     = 28[0m
+[0;31mE (99786) mqtt_client: Client was not initialized[0m
+[0;33mW (99796) PARSED_DATA: smoke   16858880     = 0.000000[0m
+[0;31mE (99796) mqtt_client: Client was not initialized[0m
+[0;33mW (99926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (100006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (100186) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (100246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (100266) wifi station: retry to connect to the AP[0m
+[0;33mW (100406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (100426) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (100656) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (100746) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (100906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (101386) BLE_MESH: Received already received fragment[0m
+[0;32mI (101656) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (101656) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (101656) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (101666) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (101676) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (101676) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (101686) BLE_MESH: Ignoring old SeqAuth[0m
+[0;31mE (101686) mqtt_client: Client was not initialized[0m
+[0;33mW (101696) PARSED_DATA: Temperature 537568512= 0.000000[0m
+[0;31mE (101696) mqtt_client: Client was not initialized[0m
+[0;33mW (101706) PARSED_DATA: Humidity  537568512  = 0.000000[0m
+[0;31mE (101706) mqtt_client: Client was not initialized[0m
+[0;33mW (101716) PARSED_DATA: temp_ADC   537568512     = 0.000000[0m
+[0;31mE (101726) mqtt_client: Client was not initialized[0m
+[0;33mW (101726) PARSED_DATA: Light   537568512     = 28[0m
+[0;31mE (101736) mqtt_client: Client was not initialized[0m
+[0;33mW (101736) PARSED_DATA: smoke   537568512     = 0.000000[0m
+[0;31mE (101746) mqtt_client: Client was not initialized[0m
+[0;33mW (101866) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (102106) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (102166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (102346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (102846) BLE_MESH: Received already received fragment[0m
+[0;33mW (102946) BLE_MESH: Received already received fragment[0m
+[0;32mI (103096) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (103096) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (103096) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (103106) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (103116) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (103116) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;33mW (103126) BLE_MESH: Ignoring old SeqAuth[0m
+[0;31mE (103126) mqtt_client: Client was not initialized[0m
+[0;33mW (103136) PARSED_DATA: Temperature 537568512= 0.000000[0m
+[0;31mE (103136) mqtt_client: Client was not initialized[0m
+[0;33mW (103146) PARSED_DATA: Humidity  537568512  = 0.000000[0m
+[0;31mE (103146) mqtt_client: Client was not initialized[0m
+[0;33mW (103156) PARSED_DATA: temp_ADC   537568512     = 0.000000[0m
+[0;31mE (103166) mqtt_client: Client was not initialized[0m
+[0;33mW (103166) PARSED_DATA: Light   537568512     = 28[0m
+[0;31mE (103176) mqtt_client: Client was not initialized[0m
+[0;33mW (103176) PARSED_DATA: smoke   537568512     = 0.000000[0m
+[0;31mE (103186) mqtt_client: Client was not initialized[0m
+[0;33mW (103326) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (103666) wifi station: retry to connect to the AP[0m
+[0;32mI (103816) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (103816) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (103816) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1d 00 00 00 00 00 [0m
+[0;32mI (103826) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (103836) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (103836) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (103846) mqtt_client: Client was not initialized[0m
+[0;33mW (103846) PARSED_DATA: Temperature 16334592= 0.000000[0m
+[0;31mE (103856) mqtt_client: Client was not initialized[0m
+[0;33mW (103856) PARSED_DATA: Humidity  16334592  = 0.000000[0m
+[0;31mE (103866) mqtt_client: Client was not initialized[0m
+[0;33mW (103866) PARSED_DATA: temp_ADC   16334592     = 0.000000[0m
+[0;31mE (103876) mqtt_client: Client was not initialized[0m
+[0;33mW (103886) PARSED_DATA: Light   16334592     = 29[0m
+[0;31mE (103886) mqtt_client: Client was not initialized[0m
+[0;33mW (103896) PARSED_DATA: smoke   16334592     = 0.000000[0m
+[0;31mE (103896) mqtt_client: Client was not initialized[0m
+[0;33mW (104326) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (104376) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (104566) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (104786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (104826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (105286) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (105526) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (105586) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (105746) BLE_MESH: Received already received fragment[0m
+[0;33mW (106046) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (106246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (106286) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (106486) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (106586) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (106716) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (106766) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (106826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (106966) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (107006) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (107066) wifi station: retry to connect to the AP[0m
+[0;33mW (107236) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (107486) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (107546) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (107686) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (107726) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (107926) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;33mW (108226) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (108256) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (108426) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (108446) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (108666) BLE_MESH: Received already received fragment[0m
+[0;33mW (108746) BLE_MESH: Received already received fragment[0m
+[0;33mW (108926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (108986) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (109186) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (109406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (109456) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (109646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (109906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (109906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (110126) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (110186) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (110346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (110366) BLE_MESH: Duplicate SDU from src 0x0031[0m
+[0;32mI (110466) wifi station: retry to connect to the AP[0m
+[0;32mI (110856) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (110856) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (110856) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (110866) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (110876) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (110876) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (110886) mqtt_client: Client was not initialized[0m
+[0;33mW (110886) PARSED_DATA: Temperature 16334592= 0.000000[0m
+[0;31mE (110896) mqtt_client: Client was not initialized[0m
+[0;33mW (110896) PARSED_DATA: Humidity  16334592  = 0.000000[0m
+[0;31mE (110906) mqtt_client: Client was not initialized[0m
+[0;33mW (110916) PARSED_DATA: temp_ADC   16334592     = 0.000000[0m
+[0;31mE (110916) mqtt_client: Client was not initialized[0m
+[0;33mW (110926) PARSED_DATA: Light   16334592     = 30[0m
+[0;31mE (110926) mqtt_client: Client was not initialized[0m
+[0;33mW (110936) PARSED_DATA: smoke   16334592     = 0.000000[0m
+[0;31mE (110936) mqtt_client: Client was not initialized[0m
+[0;33mW (111086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (111346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (111386) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (111586) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (111626) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (111826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (111926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (112056) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (112066) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (112166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (112306) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (112346) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (112546) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (112786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (112826) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (113266) BLE_MESH: Received already received fragment[0m
+[0;33mW (113326) BLE_MESH: Received already received fragment[0m
+[0;32mI (113556) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (113556) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (113556) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (113566) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (113576) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (113576) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (113586) mqtt_client: Client was not initialized[0m
+[0;33mW (113586) PARSED_DATA: Temperature 16334592= 0.000000[0m
+[0;31mE (113596) mqtt_client: Client was not initialized[0m
+[0;33mW (113596) PARSED_DATA: Humidity  16334592  = 0.000000[0m
+[0;33mW (113606) BLE_MESH: Ignoring old SeqAuth[0m
+[0;31mE (113616) mqtt_client: Client was not initialized[0m
+[0;33mW (113616) PARSED_DATA: temp_ADC   16334592     = 0.000000[0m
+[0;31mE (113626) mqtt_client: Client was not initialized[0m
+[0;33mW (113626) PARSED_DATA: Light   16334592     = 30[0m
+[0;31mE (113636) mqtt_client: Client was not initialized[0m
+[0;33mW (113636) PARSED_DATA: smoke   16334592     = 0.000000[0m
+[0;31mE (113646) mqtt_client: Client was not initialized[0m
+[0;33mW (113786) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (113856) wifi station: retry to connect to the AP[0m
+[0;33mW (114046) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (114086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (114266) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (114746) BLE_MESH: Received already received fragment[0m
+[0;32mI (114996) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (114996) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (114996) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1f 00 00 00 00 00 [0m
+[0;32mI (115006) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (115016) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (115016) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (115026) mqtt_client: Client was not initialized[0m
+[0;33mW (115026) PARSED_DATA: Temperature 16334592= 0.000000[0m
+[0;31mE (115036) mqtt_client: Client was not initialized[0m
+[0;33mW (115046) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (115046) PARSED_DATA: Humidity  16334592  = 0.000000[0m
+[0;31mE (115046) mqtt_client: Client was not initialized[0m
+[0;33mW (115056) PARSED_DATA: temp_ADC   16334592     = 0.000000[0m
+[0;31mE (115066) mqtt_client: Client was not initialized[0m
+[0;33mW (115066) PARSED_DATA: Light   16334592     = 31[0m
+[0;31mE (115076) mqtt_client: Client was not initialized[0m
+[0;33mW (115076) PARSED_DATA: smoke   16334592     = 0.000000[0m
+[0;31mE (115086) mqtt_client: Client was not initialized[0m
+[0;33mW (115226) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (115766) BLE_MESH: Received already received fragment[0m
+[0;33mW (115926) BLE_MESH: Received already received fragment[0m
+[0;32mI (115956) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (115956) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (115956) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 0f 00 00 00 00 00 [0m
+[0;32mI (115966) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (115976) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (115976) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (115986) mqtt_client: Client was not initialized[0m
+[0;33mW (115986) PARSED_DATA: Temperature 16334592= 0.000000[0m
+[0;31mE (115996) mqtt_client: Client was not initialized[0m
+[0;33mW (115996) PARSED_DATA: Humidity  16334592  = 0.000000[0m
+[0;31mE (116006) mqtt_client: Client was not initialized[0m
+[0;33mW (116006) PARSED_DATA: temp_ADC   16334592     = 0.000000[0m
+[0;31mE (116016) mqtt_client: Client was not initialized[0m
+[0;33mW (116026) PARSED_DATA: Light   16334592     = 15[0m
+[0;31mE (116026) mqtt_client: Client was not initialized[0m
+[0;33mW (116036) PARSED_DATA: smoke   16334592     = 0.000000[0m
+[0;31mE (116046) mqtt_client: Client was not initialized[0m
+[0;33mW (116186) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (116246) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (116426) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (116486) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (116666) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (117206) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (117256) wifi station: retry to connect to the AP[0m
+[0;33mW (117406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (117506) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (117646) BLE_MESH: Received already received fragment[0m
+[0;33mW (117686) BLE_MESH: Received already received fragment[0m
+[0;32mI (117756) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (117756) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (117756) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 0f 00 00 00 00 00 [0m
+[0;32mI (117766) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (117776) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (117776) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (117786) mqtt_client: Client was not initialized[0m
+[0;33mW (117786) PARSED_DATA: Temperature 16334592= 0.000000[0m
+[0;31mE (117796) mqtt_client: Client was not initialized[0m
+[0;33mW (117796) PARSED_DATA: Humidity  16334592  = 0.000000[0m
+[0;31mE (117806) mqtt_client: Client was not initialized[0m
+[0;33mW (117816) PARSED_DATA: temp_ADC   16334592     = 0.000000[0m
+[0;31mE (117816) mqtt_client: Client was not initialized[0m
+[0;33mW (117826) PARSED_DATA: Light   16334592     = 15[0m
+[0;31mE (117826) mqtt_client: Client was not initialized[0m
+[0;33mW (117836) PARSED_DATA: smoke   16334592     = 0.000000[0m
+[0;31mE (117836) mqtt_client: Client was not initialized[0m
+[0;33mW (117926) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (118166) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (118226) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (118366) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (118406) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (118466) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (118626) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (118646) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (118846) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (118946) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (119386) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (119386) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (119396) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 0d 00 00 00 00 00 [0m
+[0;32mI (119396) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (119406) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (119406) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (119416) mqtt_client: Client was not initialized[0m
+[0;33mW (119416) PARSED_DATA: Temperature 3489536= 0.000000[0m
+[0;31mE (119426) mqtt_client: Client was not initialized[0m
+[0;33mW (119436) PARSED_DATA: Humidity  3489536  = 0.000000[0m
+[0;31mE (119436) mqtt_client: Client was not initialized[0m
+[0;33mW (119446) PARSED_DATA: temp_ADC   3489536     = 0.000000[0m
+[0;31mE (119446) mqtt_client: Client was not initialized[0m
+[0;33mW (119456) PARSED_DATA: Light   3489536     = 13[0m
+[0;31mE (119456) mqtt_client: Client was not initialized[0m
+[0;33mW (119466) PARSED_DATA: smoke   3489536     = 0.000000[0m
+[0;31mE (119466) mqtt_client: Client was not initialized[0m
+[0;33mW (119846) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (119906) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (120086) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (120316) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (120386) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (120546) BLE_MESH: Ignoring old SeqAuth[0m
+[0;33mW (120626) BLE_MESH: Ignoring old SeqAuth[0m
+[0;32mI (120656) wifi station: retry to connect to the AP[0m
+[0;32mI (121076) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (121076) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (121076) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 21 00 00 00 00 00 [0m
+[0;32mI (121086) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (121096) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (121096) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (121106) mqtt_client: Client was not initialized[0m
+[0;33mW (121106) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (121116) mqtt_client: Client was not initialized[0m
+[0;33mW (121116) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (121126) mqtt_client: Client was not initialized[0m
+[0;33mW (121126) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (121136) mqtt_client: Client was not initialized[0m
+[0;33mW (121136) PARSED_DATA: Light   0     = 33[0m
+[0;31mE (121146) mqtt_client: Client was not initialized[0m
+[0;33mW (121146) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (121156) mqtt_client: Client was not initialized[0m
+[0;32mI (124046) wifi station: retry to connect to the AP[0m
+[0;32mI (127426) wifi station: retry to connect to the AP[0m
+[0;32mI (130816) wifi station: retry to connect to the AP[0m
+[0;32mI (134206) wifi station: retry to connect to the AP[0m
+[0;32mI (137586) wifi station: retry to connect to the AP[0m
+[0;32mI (140976) wifi station: retry to connect to the AP[0m
+[0;32mI (144356) wifi station: retry to connect to the AP[0m
+[0;32mI (147746) wifi station: retry to connect to the AP[0m
+[0;32mI (151136) wifi station: retry to connect to the AP[0m
+[0;32mI (154516) wifi station: retry to connect to the AP[0m
+[0;32mI (157906) wifi station: retry to connect to the AP[0m
+[0;32mI (161286) wifi station: retry to connect to the AP[0m
+[0;32mI (164676) wifi station: retry to connect to the AP[0m
+[0;32mI (168056) wifi station: retry to connect to the AP[0m
+[0;33mW (169266) BLE_MESH: Received already received fragment[0m
+[0;33mW (169406) BLE_MESH: Received already received fragment[0m
+[0;32mI (169476) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (169476) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (169476) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 0f 00 00 00 00 00 [0m
+[0;32mI (169486) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (169496) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (169496) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (169506) mqtt_client: Client was not initialized[0m
+[0;33mW (169506) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (169516) mqtt_client: Client was not initialized[0m
+[0;33mW (169516) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (169526) mqtt_client: Client was not initialized[0m
+[0;33mW (169526) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (169536) mqtt_client: Client was not initialized[0m
+[0;33mW (169536) PARSED_DATA: Light   0     = 15[0m
+[0;31mE (169546) mqtt_client: Client was not initialized[0m
+[0;33mW (169556) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (169556) mqtt_client: Client was not initialized[0m
+[0;32mI (171456) wifi station: retry to connect to the AP[0m
+[0;32mI (174846) wifi station: retry to connect to the AP[0m
+[0;32mI (176476) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (176476) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (176476) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 0f 00 00 00 00 00 [0m
+[0;32mI (176486) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (176496) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (176496) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (176506) mqtt_client: Client was not initialized[0m
+[0;33mW (176506) PARSED_DATA: Temperature 868096= 0.000000[0m
+[0;31mE (176516) mqtt_client: Client was not initialized[0m
+[0;33mW (176516) PARSED_DATA: Humidity  868096  = 0.000000[0m
+[0;31mE (176526) mqtt_client: Client was not initialized[0m
+[0;33mW (176526) PARSED_DATA: temp_ADC   868096     = 0.000000[0m
+[0;31mE (176536) mqtt_client: Client was not initialized[0m
+[0;33mW (176546) PARSED_DATA: Light   868096     = 15[0m
+[0;31mE (176546) mqtt_client: Client was not initialized[0m
+[0;33mW (176556) PARSED_DATA: smoke   868096     = 0.000000[0m
+[0;31mE (176556) mqtt_client: Client was not initialized[0m
+[0;32mI (178236) wifi station: retry to connect to the AP[0m
+[0;32mI (181626) wifi station: retry to connect to the AP[0m
+[0;33mW (183726) BLE_MESH: Received already received fragment[0m
+[0;32mI (183756) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (183756) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (183756) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 0f 00 00 00 00 00 [0m
+[0;32mI (183766) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (183776) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (183776) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (183786) mqtt_client: Client was not initialized[0m
+[0;33mW (183786) PARSED_DATA: Temperature 868096= 0.000000[0m
+[0;31mE (183796) mqtt_client: Client was not initialized[0m
+[0;33mW (183806) PARSED_DATA: Humidity  868096  = 0.000000[0m
+[0;31mE (183806) mqtt_client: Client was not initialized[0m
+[0;33mW (183806) PARSED_DATA: temp_ADC   802560     = 0.000000[0m
+[0;31mE (183816) mqtt_client: Client was not initialized[0m
+[0;33mW (183826) PARSED_DATA: Light   802560     = 15[0m
+[0;31mE (183826) mqtt_client: Client was not initialized[0m
+[0;33mW (183836) PARSED_DATA: smoke   802560     = 0.000000[0m
+[0;31mE (183836) mqtt_client: Client was not initialized[0m
+[0;32mI (185016) wifi station: retry to connect to the AP[0m
+[0;32mI (188406) wifi station: retry to connect to the AP[0m
+[0;32mI (190756) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (190756) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (190756) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 12 00 00 00 00 00 [0m
+[0;32mI (190766) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (190776) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (190776) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (190786) mqtt_client: Client was not initialized[0m
+[0;33mW (190786) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (190796) mqtt_client: Client was not initialized[0m
+[0;33mW (190796) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (190806) mqtt_client: Client was not initialized[0m
+[0;33mW (190806) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (190816) mqtt_client: Client was not initialized[0m
+[0;33mW (190826) PARSED_DATA: Light   0     = 18[0m
+[0;31mE (190826) mqtt_client: Client was not initialized[0m
+[0;33mW (190826) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (190836) mqtt_client: Client was not initialized[0m
+[0;32mI (191796) wifi station: retry to connect to the AP[0m
+[0;32mI (195186) wifi station: retry to connect to the AP[0m
+[0;32mI (198046) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (198046) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (198046) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (198056) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (198066) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (198066) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (198076) mqtt_client: Client was not initialized[0m
+[0;33mW (198076) PARSED_DATA: Temperature 15810304= 0.000000[0m
+[0;31mE (198086) mqtt_client: Client was not initialized[0m
+[0;33mW (198086) PARSED_DATA: Humidity  15810304  = 0.000000[0m
+[0;31mE (198096) mqtt_client: Client was not initialized[0m
+[0;33mW (198096) PARSED_DATA: temp_ADC   15810304     = 0.000000[0m
+[0;31mE (198106) mqtt_client: Client was not initialized[0m
+[0;33mW (198106) PARSED_DATA: Light   15810304     = 30[0m
+[0;31mE (198116) mqtt_client: Client was not initialized[0m
+[0;33mW (198126) PARSED_DATA: smoke   15810304     = 0.000000[0m
+[0;31mE (198126) mqtt_client: Client was not initialized[0m
+[0;32mI (198586) wifi station: retry to connect to the AP[0m
+[0;32mI (201976) wifi station: retry to connect to the AP[0m
+[0;32mI (205136) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (205136) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (205136) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1d 00 00 00 00 00 [0m
+[0;32mI (205146) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (205156) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (205156) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (205166) mqtt_client: Client was not initialized[0m
+[0;33mW (205166) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (205176) mqtt_client: Client was not initialized[0m
+[0;33mW (205176) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (205186) mqtt_client: Client was not initialized[0m
+[0;33mW (205186) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (205196) mqtt_client: Client was not initialized[0m
+[0;33mW (205196) PARSED_DATA: Light   0     = 29[0m
+[0;31mE (205206) mqtt_client: Client was not initialized[0m
+[0;33mW (205216) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (205216) mqtt_client: Client was not initialized[0m
+[0;32mI (205366) wifi station: retry to connect to the AP[0m
+[0;32mI (208756) wifi station: retry to connect to the AP[0m
+[0;32mI (212146) wifi station: retry to connect to the AP[0m
+[0;32mI (212336) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (212336) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (212336) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1e 00 00 00 00 00 [0m
+[0;32mI (212346) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (212356) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (212356) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (212366) mqtt_client: Client was not initialized[0m
+[0;33mW (212366) PARSED_DATA: Temperature 1392384= 0.000000[0m
+[0;31mE (212376) mqtt_client: Client was not initialized[0m
+[0;33mW (212376) PARSED_DATA: Humidity  1392384  = 0.000000[0m
+[0;31mE (212386) mqtt_client: Client was not initialized[0m
+[0;33mW (212396) PARSED_DATA: temp_ADC   1392384     = 0.000000[0m
+[0;31mE (212396) mqtt_client: Client was not initialized[0m
+[0;33mW (212406) PARSED_DATA: Light   1392384     = 30[0m
+[0;31mE (212406) mqtt_client: Client was not initialized[0m
+[0;33mW (212416) PARSED_DATA: smoke   1392384     = 0.000000[0m
+[0;31mE (212416) mqtt_client: Client was not initialized[0m
+[0;32mI (215546) wifi station: retry to connect to the AP[0m
+[0;32mI (218926) wifi station: retry to connect to the AP[0m
+[0;32mI (219576) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (219576) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (219576) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 20 00 00 00 00 00 [0m
+[0;32mI (219586) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (219596) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (219596) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (219606) mqtt_client: Client was not initialized[0m
+[0;33mW (219606) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (219616) mqtt_client: Client was not initialized[0m
+[0;33mW (219616) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (219626) mqtt_client: Client was not initialized[0m
+[0;33mW (219626) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (219636) mqtt_client: Client was not initialized[0m
+[0;33mW (219636) PARSED_DATA: Light   0     = 32[0m
+[0;31mE (219646) mqtt_client: Client was not initialized[0m
+[0;33mW (219646) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (219656) mqtt_client: Client was not initialized[0m
+[0;32mI (222316) wifi station: retry to connect to the AP[0m
+[0;32mI (225706) wifi station: retry to connect to the AP[0m
+[0;33mW (226806) BLE_MESH: Received already received fragment[0m
+[0;33mW (226886) BLE_MESH: Received already received fragment[0m
+[0;32mI (227076) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (227076) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (227076) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 0c 00 00 00 00 00 [0m
+[0;32mI (227086) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (227096) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (227096) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (227106) mqtt_client: Client was not initialized[0m
+[0;33mW (227106) PARSED_DATA: Temperature 1392384= 0.000000[0m
+[0;31mE (227116) mqtt_client: Client was not initialized[0m
+[0;33mW (227116) PARSED_DATA: Humidity  1392384  = 0.000000[0m
+[0;31mE (227126) mqtt_client: Client was not initialized[0m
+[0;33mW (227126) PARSED_DATA: temp_ADC   1392384     = 0.000000[0m
+[0;31mE (227136) mqtt_client: Client was not initialized[0m
+[0;33mW (227146) PARSED_DATA: Light   1392384     = 12[0m
+[0;31mE (227146) mqtt_client: Client was not initialized[0m
+[0;33mW (227156) PARSED_DATA: smoke   1392384     = 0.000000[0m
+[0;31mE (227166) mqtt_client: Client was not initialized[0m
+[0;32mI (229096) wifi station: retry to connect to the AP[0m
+[0;32mI (232486) wifi station: retry to connect to the AP[0m
+[0;32mI (234096) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (234096) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (234096) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (234106) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (234116) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (234116) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (234126) mqtt_client: Client was not initialized[0m
+[0;33mW (234126) PARSED_DATA: Temperature 868096= 0.000000[0m
+[0;31mE (234136) mqtt_client: Client was not initialized[0m
+[0;33mW (234136) PARSED_DATA: Humidity  868096  = 0.000000[0m
+[0;31mE (234146) mqtt_client: Client was not initialized[0m
+[0;33mW (234146) PARSED_DATA: temp_ADC   802560     = 0.000000[0m
+[0;31mE (234156) mqtt_client: Client was not initialized[0m
+[0;33mW (234166) PARSED_DATA: Light   802560     = 28[0m
+[0;31mE (234166) mqtt_client: Client was not initialized[0m
+[0;33mW (234176) PARSED_DATA: smoke   802560     = 0.000000[0m
+[0;31mE (234186) mqtt_client: Client was not initialized[0m
+[0;32mI (235876) wifi station: retry to connect to the AP[0m
+[0;32mI (239266) wifi station: retry to connect to the AP[0m
+[0;33mW (241166) BLE_MESH: Received already received fragment[0m
+[0;32mI (241356) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (241356) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (241356) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 19 00 00 00 00 00 [0m
+[0;32mI (241366) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (241376) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (241376) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (241386) mqtt_client: Client was not initialized[0m
+[0;33mW (241386) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (241396) mqtt_client: Client was not initialized[0m
+[0;33mW (241396) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (241406) mqtt_client: Client was not initialized[0m
+[0;33mW (241406) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (241416) mqtt_client: Client was not initialized[0m
+[0;33mW (241416) PARSED_DATA: Light   0     = 25[0m
+[0;31mE (241426) mqtt_client: Client was not initialized[0m
+[0;33mW (241436) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (241436) mqtt_client: Client was not initialized[0m
+[0;32mI (242656) wifi station: retry to connect to the AP[0m
+[0;32mI (246046) wifi station: retry to connect to the AP[0m
+[0;33mW (248446) BLE_MESH: Received already received fragment[0m
+[0;33mW (248606) BLE_MESH: Received already received fragment[0m
+[0;32mI (248636) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (248636) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (248636) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 19 00 00 00 00 00 [0m
+[0;32mI (248646) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (248656) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (248656) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (248666) mqtt_client: Client was not initialized[0m
+[0;33mW (248666) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (248676) mqtt_client: Client was not initialized[0m
+[0;33mW (248676) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (248686) mqtt_client: Client was not initialized[0m
+[0;33mW (248686) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (248696) mqtt_client: Client was not initialized[0m
+[0;33mW (248696) PARSED_DATA: Light   0     = 25[0m
+[0;31mE (248706) mqtt_client: Client was not initialized[0m
+[0;33mW (248716) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (248716) mqtt_client: Client was not initialized[0m
+[0;32mI (249436) wifi station: retry to connect to the AP[0m
+[0;32mI (252826) wifi station: retry to connect to the AP[0m
+[0;33mW (255626) BLE_MESH: Received already received fragment[0m
+[0;32mI (255656) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (255656) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (255656) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 19 00 00 00 00 00 [0m
+[0;32mI (255666) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (255676) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (255676) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (255686) mqtt_client: Client was not initialized[0m
+[0;33mW (255686) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (255696) mqtt_client: Client was not initialized[0m
+[0;33mW (255696) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (255706) mqtt_client: Client was not initialized[0m
+[0;33mW (255706) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (255716) mqtt_client: Client was not initialized[0m
+[0;33mW (255716) PARSED_DATA: Light   0     = 25[0m
+[0;31mE (255726) mqtt_client: Client was not initialized[0m
+[0;33mW (255726) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (255736) mqtt_client: Client was not initialized[0m
+[0;32mI (256216) wifi station: retry to connect to the AP[0m
+[0;32mI (259606) wifi station: retry to connect to the AP[0m
+[0;33mW (262906) BLE_MESH: Received already received fragment[0m
+[0;32mI (262936) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (262936) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (262936) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 19 00 00 00 00 00 [0m
+[0;32mI (262946) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (262956) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (262956) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (262966) mqtt_client: Client was not initialized[0m
+[0;33mW (262966) PARSED_DATA: Temperature 537568512= 0.000000[0m
+[0;31mE (262976) mqtt_client: Client was not initialized[0m
+[0;33mW (262976) PARSED_DATA: Humidity  537568512  = 0.000000[0m
+[0;31mE (262986) mqtt_client: Client was not initialized[0m
+[0;32mI (262996) wifi station: retry to connect to the AP[0m
+[0;33mW (262996) PARSED_DATA: temp_ADC   537568512     = 0.000000[0m
+[0;31mE (263006) mqtt_client: Client was not initialized[0m
+[0;33mW (263006) PARSED_DATA: Light   537568512     = 25[0m
+[0;31mE (263016) mqtt_client: Client was not initialized[0m
+[0;33mW (263016) PARSED_DATA: smoke   537568512     = 0.000000[0m
+[0;31mE (263026) mqtt_client: Client was not initialized[0m
+[0;32mI (266386) wifi station: retry to connect to the AP[0m
+[0;32mI (269776) wifi station: retry to connect to the AP[0m
+[0;32mI (269936) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (269936) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (269936) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (269946) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (269956) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (269956) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (269966) mqtt_client: Client was not initialized[0m
+[0;33mW (269966) PARSED_DATA: Temperature 20004608= 0.000000[0m
+[0;31mE (269976) mqtt_client: Client was not initialized[0m
+[0;33mW (269976) PARSED_DATA: Humidity  20004608  = 0.000000[0m
+[0;31mE (269986) mqtt_client: Client was not initialized[0m
+[0;33mW (269986) PARSED_DATA: temp_ADC   20004608     = 0.000000[0m
+[0;31mE (269996) mqtt_client: Client was not initialized[0m
+[0;33mW (270006) PARSED_DATA: Light   20004608     = 27[0m
+[0;31mE (270006) mqtt_client: Client was not initialized[0m
+[0;33mW (270016) PARSED_DATA: smoke   11288320     = 0.000000[0m
+[0;31mE (270016) mqtt_client: Client was not initialized[0m
+[0;32mI (273166) wifi station: retry to connect to the AP[0m
+[0;32mI (276546) wifi station: retry to connect to the AP[0m
+[0;32mI (277046) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (277046) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (277046) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1b 00 00 00 00 00 [0m
+[0;32mI (277056) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (277056) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (277066) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (277066) mqtt_client: Client was not initialized[0m
+[0;33mW (277076) PARSED_DATA: Temperature 16128= 0.000000[0m
+[0;31mE (277076) mqtt_client: Client was not initialized[0m
+[0;33mW (277086) PARSED_DATA: Humidity  16128  = 0.000000[0m
+[0;31mE (277086) mqtt_client: Client was not initialized[0m
+[0;33mW (277096) PARSED_DATA: temp_ADC   16128     = 0.000000[0m
+[0;31mE (277096) mqtt_client: Client was not initialized[0m
+[0;33mW (277106) PARSED_DATA: Light   16128     = 27[0m
+[0;31mE (277116) mqtt_client: Client was not initialized[0m
+[0;33mW (277116) PARSED_DATA: smoke   16128     = 0.000000[0m
+[0;31mE (277126) mqtt_client: Client was not initialized[0m
+[0;32mI (279966) wifi station: retry to connect to the AP[0m
+[0;32mI (283346) wifi station: retry to connect to the AP[0m
+[0;33mW (284296) BLE_MESH: Received already received fragment[0m
+[0;32mI (284486) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (284486) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (284486) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1c 00 00 00 00 00 [0m
+[0;32mI (284496) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (284506) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (284506) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (284516) mqtt_client: Client was not initialized[0m
+[0;33mW (284516) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (284526) mqtt_client: Client was not initialized[0m
+[0;33mW (284526) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (284536) mqtt_client: Client was not initialized[0m
+[0;33mW (284536) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (284546) mqtt_client: Client was not initialized[0m
+[0;33mW (284556) PARSED_DATA: Light   0     = 28[0m
+[0;31mE (284556) mqtt_client: Client was not initialized[0m
+[0;33mW (284566) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (284566) mqtt_client: Client was not initialized[0m
+[0;32mI (286746) wifi station: retry to connect to the AP[0m
+[0;32mI (290126) wifi station: retry to connect to the AP[0m
+[0;32mI (291536) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (291536) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (291536) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 1a 00 00 00 00 00 [0m
+[0;32mI (291546) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (291556) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (291556) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (291566) mqtt_client: Client was not initialized[0m
+[0;33mW (291566) PARSED_DATA: Temperature 868096= 0.000000[0m
+[0;31mE (291576) mqtt_client: Client was not initialized[0m
+[0;33mW (291576) PARSED_DATA: Humidity  868096  = 0.000000[0m
+[0;31mE (291586) mqtt_client: Client was not initialized[0m
+[0;33mW (291586) PARSED_DATA: temp_ADC   868096     = 0.000000[0m
+[0;31mE (291596) mqtt_client: Client was not initialized[0m
+[0;33mW (291606) PARSED_DATA: Light   868096     = 26[0m
+[0;31mE (291606) mqtt_client: Client was not initialized[0m
+[0;33mW (291616) PARSED_DATA: smoke   868096     = 0.000000[0m
+[0;31mE (291616) mqtt_client: Client was not initialized[0m
+[0;32mI (293526) wifi station: retry to connect to the AP[0m
+[0;32mI (296906) wifi station: retry to connect to the AP[0m
+[0;33mW (298766) BLE_MESH: Received already received fragment[0m
+[0;32mI (298996) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (298996) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (298996) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 2b 00 00 00 00 00 [0m
+[0;32mI (299006) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (299016) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (299016) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (299026) mqtt_client: Client was not initialized[0m
+[0;33mW (299026) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (299036) mqtt_client: Client was not initialized[0m
+[0;33mW (299036) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (299046) mqtt_client: Client was not initialized[0m
+[0;33mW (299046) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (299056) mqtt_client: Client was not initialized[0m
+[0;33mW (299056) PARSED_DATA: Light   0     = 43[0m
+[0;31mE (299066) mqtt_client: Client was not initialized[0m
+[0;33mW (299076) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (299076) mqtt_client: Client was not initialized[0m
+[0;32mI (300296) wifi station: retry to connect to the AP[0m
+[0;32mI (303686) wifi station: retry to connect to the AP[0m
+[0;32mI (305786) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (305786) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (305786) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 13 00 00 00 00 00 [0m
+[0;32mI (305796) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (305806) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (305806) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (305816) mqtt_client: Client was not initialized[0m
+[0;33mW (305816) PARSED_DATA: Temperature 0= 0.000000[0m
+[0;31mE (305826) mqtt_client: Client was not initialized[0m
+[0;33mW (305826) PARSED_DATA: Humidity  0  = 0.000000[0m
+[0;31mE (305836) mqtt_client: Client was not initialized[0m
+[0;33mW (305836) PARSED_DATA: temp_ADC   0     = 0.000000[0m
+[0;31mE (305846) mqtt_client: Client was not initialized[0m
+[0;33mW (305856) PARSED_DATA: Light   0     = 19[0m
+[0;31mE (305856) mqtt_client: Client was not initialized[0m
+[0;33mW (305866) PARSED_DATA: smoke   0     = 0.000000[0m
+[0;31mE (305866) mqtt_client: Client was not initialized[0m
+[0;32mI (307076) wifi station: retry to connect to the AP[0m
+[0;32mI (310466) wifi station: retry to connect to the AP[0m
+[0;32mI (313036) MESH_CLIENT: OPCODE_STATUS received: 0xc202e5[0m
+[0;32mI (313036) MESH_CLIENT: src: 0x0031, dst: 0xffff,ttl recv: 3[0m
+[0;32mI (313036) MESH_CLIENT: 65 73 70 5f 33 00 00 00 00 00 2e 00 00 00 00 00 [0m
+[0;32mI (313046) MESH_CLIENT: 00 00 00 00 00 00 00 00 00 00 00 00 00 00 03 00 [0m
+[0;32mI (313056) MESH_CLIENT: 00 00 00 [0m
+[0;33mW (313056) PARSED_DATA: DEVICE NAME = esp_3[0m
+[0;31mE (313066) mqtt_client: Client was not initialized[0m
+[0;33mW (313066) PARSED_DATA: Temperature 1392384= 0.000000[0m
+[0;31mE (313076) mqtt_client: Client was not initialized[0m
+[0;33mW (313076) PARSED_DATA: Humidity  1392384  = 0.000000[0m
+[0;31mE (313086) mqtt_client: Client was not initialized[0m
+[0;33mW (313086) PARSED_DATA: temp_ADC   1392384     = 0.000000[0m
+[0;31mE (313096) mqtt_client: Client was not initialized[0m
+[0;33mW (313106) PARSED_DATA: Light   1392384     = 46[0m
+[0;31mE (313106) mqtt_client: Client was not initialized[0m
+[0;33mW (313116) PARSED_DATA: smoke   1392384     = 0.000000[0m
+[0;31mE (313116) mqtt_client: Client was not initialized[0m
+[0;32mI (313856) wifi station: retry to connect to the AP[0m

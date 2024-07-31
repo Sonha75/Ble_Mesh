@@ -1,0 +1,254 @@
+[0/1] Re-running CMake...
+-- ccache will be used for faster recompilation
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/sdkconfig
+Loading defaults file D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/sdkconfig.defaults...
+-- App "BLE_MESH_Gate" version: aa62094-dirty
+-- Adding linker script D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/esp-idf/esp_system/ld/memory.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system/ld/esp32/sections.ld.in
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.newlib-data.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.syscalls.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/soc/esp32/ld/esp32.peripherals.ld
+-- Components: app_trace app_update bootloader bootloader_support bt button cmock console cxx driver efuse esp-tls esp_adc esp_app_format esp_coex esp_common esp_eth esp_event esp_gdbstub esp_hid esp_http_client esp_http_server esp_https_ota esp_https_server esp_hw_support esp_lcd esp_local_ctrl esp_mm esp_netif esp_netif_stack esp_partition esp_phy esp_pm esp_psram esp_ringbuf esp_rom esp_system esp_timer esp_wifi espcoredump esptool_py example_init example_nvs fatfs freertos hal heap http_parser idf_test ieee802154 json log lwip main mbedtls mqtt newlib nvs_flash openthread partition_table perfmon protobuf-c protocomm pthread sdmmc soc spi_flash spiffs tcp_transport ulp unity usb vfs wear_levelling wifi_provisioning wpa_supplicant xtensa
+-- Component paths: D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/app_trace D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/app_update D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader_support D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/bt D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/examples/bluetooth/esp_ble_mesh/common_components/button D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/cmock D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/console D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/cxx D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/driver D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/efuse D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp-tls D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_adc D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_app_format D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_coex D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_common D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_eth D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_event D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_gdbstub D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hid D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_client D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_http_server D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_https_ota D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_https_server D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_lcd D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_local_ctrl D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_mm D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_netif D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_netif_stack D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_partition D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_phy D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_pm D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_psram D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_ringbuf D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_timer D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_wifi D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/espcoredump D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/examples/bluetooth/esp_ble_mesh/common_components/example_init D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/examples/bluetooth/esp_ble_mesh/common_components/example_nvs D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/fatfs D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/freertos D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/hal D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/heap D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/http_parser D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/idf_test D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/ieee802154 D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/json D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/lwip D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/mbedtls D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/mqtt D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/newlib D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/nvs_flash D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/openthread D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/perfmon D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/protobuf-c D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/protocomm D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/pthread D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/sdmmc D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/soc D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/spi_flash D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/spiffs D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/tcp_transport D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/ulp D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/unity D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/usb D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/vfs D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/wear_levelling D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/wifi_provisioning D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/wpa_supplicant D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build
+[1/10] Building C object esp-idf/main/CMakeFiles/__idf_main.dir/mqtt.c.obj
+In file included from D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c:9:
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c: In function 'mqtt_event_handler':
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:265:27: warning: format '%d' expects argument of type 'int', but argument 7 has type 'int32_t' {aka 'long int'} [-Wformat=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:268:27: note: in expansion of macro 'LOG_COLOR'
+  268 | #define LOG_COLOR_E       LOG_COLOR(LOG_COLOR_RED)
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_E'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:410:86: note: in expansion of macro 'LOG_FORMAT'
+  410 |         if (level==ESP_LOG_ERROR )          { esp_log_write(ESP_LOG_ERROR,      tag, LOG_FORMAT(E, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:343:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  343 | #define ESP_LOGD( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c:24:5: note: in expansion of macro 'ESP_LOGD'
+   24 |     ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%d", base, event_id);
+      |     ^~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:265:27: warning: format '%d' expects argument of type 'int', but argument 7 has type 'int32_t' {aka 'long int'} [-Wformat=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:269:27: note: in expansion of macro 'LOG_COLOR'
+  269 | #define LOG_COLOR_W       LOG_COLOR(LOG_COLOR_BROWN)
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_W'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:411:86: note: in expansion of macro 'LOG_FORMAT'
+  411 |         else if (level==ESP_LOG_WARN )      { esp_log_write(ESP_LOG_WARN,       tag, LOG_FORMAT(W, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:343:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  343 | #define ESP_LOGD( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c:24:5: note: in expansion of macro 'ESP_LOGD'
+   24 |     ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%d", base, event_id);
+      |     ^~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c:24:1: warning: format '%d' expects argument of type 'int', but argument 7 has type 'int32_t' {aka 'long int'} [-Wformat=]
+   24 |     ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%d", base, event_id);
+      | ^   ~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:343:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  343 | #define ESP_LOGD( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c:24:5: note: in expansion of macro 'ESP_LOGD'
+   24 |     ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%d", base, event_id);
+      |     ^~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c:24:1: warning: format '%d' expects argument of type 'int', but argument 7 has type 'int32_t' {aka 'long int'} [-Wformat=]
+   24 |     ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%d", base, event_id);
+      | ^   ~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:282:59: note: in definition of macro 'LOG_FORMAT'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                                           ^~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:343:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  343 | #define ESP_LOGD( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c:24:5: note: in expansion of macro 'ESP_LOGD'
+   24 |     ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%d", base, event_id);
+      |     ^~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:265:27: warning: format '%d' expects argument of type 'int', but argument 7 has type 'int32_t' {aka 'long int'} [-Wformat=]
+  265 | #define LOG_COLOR(COLOR)  "\033[0;" COLOR "m"
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:270:27: note: in expansion of macro 'LOG_COLOR'
+  270 | #define LOG_COLOR_I       LOG_COLOR(LOG_COLOR_GREEN)
+      |                           ^~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:282:37: note: in expansion of macro 'LOG_COLOR_I'
+  282 | #define LOG_FORMAT(letter, format)  LOG_COLOR_ ## letter #letter " (%" PRIu32 ") %s: " format LOG_RESET_COLOR "\n"
+      |                                     ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:414:86: note: in expansion of macro 'LOG_FORMAT'
+  414 |         else                                { esp_log_write(ESP_LOG_INFO,       tag, LOG_FORMAT(I, format), esp_log_timestamp(), tag, ##__VA_ARGS__); } \
+      |                                                                                      ^~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:432:41: note: in expansion of macro 'ESP_LOG_LEVEL'
+  432 |         if ( LOG_LOCAL_LEVEL >= level ) ESP_LOG_LEVEL(level, tag, format, ##__VA_ARGS__); \
+      |                                         ^~~~~~~~~~~~~
+D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log/include/esp_log.h:343:38: note: in expansion of macro 'ESP_LOG_LEVEL_LOCAL'
+  343 | #define ESP_LOGD( tag, format, ... ) ESP_LOG_LEVEL_LOCAL(ESP_LOG_DEBUG,   tag, format, ##__VA_ARGS__)
+      |                                      ^~~~~~~~~~~~~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c:24:5: note: in expansion of macro 'ESP_LOGD'
+   24 |     ESP_LOGD(TAG, "Event dispatched from event loop base=%s, event_id=%d", base, event_id);
+      |     ^~~~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c:27:10: warning: unused variable 'msg_id' [-Wunused-variable]
+   27 |      int msg_id;
+      |          ^~~~~~
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c: In function 'mqtt_client_sta':
+D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/main/mqtt.c:106:13: warning: unused variable 'broker' [-Wunused-variable]
+  106 |     uint8_t broker[50] = {0};
+      |             ^~~~~~
+[2/10] Linking C static library esp-idf\main\libmain.a
+[3/10] Performing build step for 'bootloader'
+[0/1] Re-running CMake...
+-- Building ESP-IDF components for target esp32
+-- Project sdkconfig file D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/sdkconfig
+Compiler supported targets: xtensa-esp32-elf
+
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/soc/esp32/ld/esp32.peripherals.ld
+-- App "bootloader" version: v5.1.2-dirty
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.api.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.libgcc.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom/esp32/ld/esp32.rom.newlib-funcs.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader/subproject/main/ld/esp32/bootloader.ld
+-- Adding linker script D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader/subproject/main/ld/esp32/bootloader.rom.ld
+-- Components: bootloader bootloader_support efuse esp_app_format esp_common esp_hw_support esp_rom esp_system esptool_py freertos hal log main micro-ecc newlib partition_table soc spi_flash xtensa
+-- Component paths: D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader_support D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/efuse D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_app_format D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_common D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_hw_support D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_rom D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esp_system D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/freertos D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/hal D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/log D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader/subproject/main D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/bootloader/subproject/components/micro-ecc D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/newlib D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/soc D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/spi_flash D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/xtensa
+-- Configuring done
+-- Generating done
+-- Build files have been written to: D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/bootloader
+[1/1] cmd.exe /C "cd /D "D:\ESP_IDF\Ble mesh\esp32_btmesh\ble-mesh-custom-sensor-model-code\BLE_MESH_Gate\build\bootloader\esp-idf\esptool_py" && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 bootloader 0x1000 "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/bootloader/bootloader.bin""
+Bootloader binary size 0x6810 bytes. 0x7f0 bytes (7%) free.
+[4/8] Generating ld/sections.ld
+[5/8] Linking CXX executable BLE_MESH_Gate.elf
+[6/8] Generating binary image from built executable
+esptool.py v4.7.dev3
+Creating esp32 image...
+Merged 27 ELF sections
+Successfully created esp32 image.
+Generated D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/BLE_MESH_Gate.bin
+[7/8] cmd.exe /C "cd /D "D:\ESP_IDF\Ble mesh\esp32_btmesh\ble-mesh-custom-sensor-model-code\BLE_MESH_Gate\build\esp-idf\esptool_py" && D:\ESP_IDF\Espressif\python_env\idf5.1_py3.11_env\Scripts\python.exe D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/partition_table/check_sizes.py --offset 0x8000 partition --type app "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/partition_table/partition-table.bin" "D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build/BLE_MESH_Gate.bin""
+BLE_MESH_Gate.bin binary size 0x189b90 bytes. Smallest app partition is 0x220000 bytes. 0x96470 bytes (28%) free.
+[7/8] cmd.exe /C "cd /D D:\ESP_IDF\Espressif\frameworks\esp-idf-v5.1.2\components\esptool_py && D:\ESP_IDF\Espressif\tools\cmake\3.24.0\bin\cmake.exe -D IDF_PATH=D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2 -D SERIAL_TOOL=D:/ESP_IDF/Espressif/python_env/idf5.1_py3.11_env/Scripts/python.exe;;D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/esptool/esptool.py;--chip;esp32 -D SERIAL_TOOL_ARGS=--before=default_reset;--after=hard_reset;write_flash;@flash_args -D "WORKING_DIRECTORY=D:/ESP_IDF/Ble mesh/esp32_btmesh/ble-mesh-custom-sensor-model-code/BLE_MESH_Gate/build" -P D:/ESP_IDF/Espressif/frameworks/esp-idf-v5.1.2/components/esptool_py/run_serial_tool.cmake"
+esptool.py --chip esp32 -p COM18 -b 460800 --before=default_reset --after=hard_reset write_flash --flash_mode dio --flash_freq 40m --flash_size 4MB 0x1000 bootloader/bootloader.bin 0x20000 BLE_MESH_Gate.bin 0x8000 partition_table/partition-table.bin 0xf000 ota_data_initial.bin
+esptool.py v4.7.dev3
+Serial port COM18
+Connecting.....
+Chip is ESP32-D0WD-V3 (revision v3.1)
+Features: WiFi, BT, Dual Core, 240MHz, VRef calibration in efuse, Coding Scheme None
+Crystal is 40MHz
+MAC: b0:a7:32:28:23:8c
+Uploading stub...
+Running stub...
+Stub running...
+Changing baud rate to 460800
+Changed.
+Configuring flash size...
+Flash will be erased from 0x00001000 to 0x00007fff...
+Flash will be erased from 0x00020000 to 0x001a9fff...
+Flash will be erased from 0x00008000 to 0x00008fff...
+Flash will be erased from 0x0000f000 to 0x00010fff...
+Compressed 26640 bytes to 16691...
+Writing at 0x00001000... (50 %)
+Writing at 0x0000768a... (100 %)
+Wrote 26640 bytes (16691 compressed) at 0x00001000 in 0.5 seconds (effective 401.4 kbit/s)...
+Hash of data verified.
+Compressed 1612688 bytes to 990071...
+Writing at 0x00020000... (1 %)
+Writing at 0x0002cea5... (3 %)
+Writing at 0x0003e201... (4 %)
+Writing at 0x0004b81c... (6 %)
+Writing at 0x0005409e... (8 %)
+Writing at 0x0005912f... (9 %)
+Writing at 0x00062f9a... (11 %)
+Writing at 0x0006f3d5... (13 %)
+Writing at 0x0007535d... (14 %)
+Writing at 0x0007aebd... (16 %)
+Writing at 0x000808de... (18 %)
+Writing at 0x00085e5e... (19 %)
+Writing at 0x0008bad7... (21 %)
+Writing at 0x00091a1e... (22 %)
+Writing at 0x0009768f... (24 %)
+Writing at 0x0009d8a5... (26 %)
+Writing at 0x000a5445... (27 %)
+Writing at 0x000abdce... (29 %)
+Writing at 0x000b1ea7... (31 %)
+Writing at 0x000b7a61... (32 %)
+Writing at 0x000bd38f... (34 %)
+Writing at 0x000c2b23... (36 %)
+Writing at 0x000c8957... (37 %)
+Writing at 0x000cf4d2... (39 %)
+Writing at 0x000d5565... (40 %)
+Writing at 0x000db4b8... (42 %)
+Writing at 0x000e160d... (44 %)
+Writing at 0x000e7266... (45 %)
+Writing at 0x000ed5da... (47 %)
+Writing at 0x000f352d... (49 %)
+Writing at 0x000f96c0... (50 %)
+Writing at 0x000ff229... (52 %)
+Writing at 0x00104dfb... (54 %)
+Writing at 0x0010a88a... (55 %)
+Writing at 0x00110dff... (57 %)
+Writing at 0x001168ec... (59 %)
+Writing at 0x0011c21a... (60 %)
+Writing at 0x001218b7... (62 %)
+Writing at 0x00126b7d... (63 %)
+Writing at 0x0012c06a... (65 %)
+Writing at 0x0013135a... (67 %)
+Writing at 0x001369c1... (68 %)
+Writing at 0x0013c135... (70 %)
+Writing at 0x00142046... (72 %)
+Writing at 0x00147784... (73 %)
+Writing at 0x0014ccf8... (75 %)
+Writing at 0x0015245f... (77 %)
+Writing at 0x00157e65... (78 %)
+Writing at 0x0015d51c... (80 %)
+Writing at 0x00162f27... (81 %)
+Writing at 0x001689aa... (83 %)
+Writing at 0x0016e13b... (85 %)
+Writing at 0x001771eb... (86 %)
+Writing at 0x0017d52b... (88 %)
+Writing at 0x00185726... (90 %)
+Writing at 0x0018b42a... (91 %)
+Writing at 0x00190de7... (93 %)
+Writing at 0x00196b6e... (95 %)
+Writing at 0x0019c52b... (96 %)
+Writing at 0x001a2076... (98 %)
+Writing at 0x001a72c8... (100 %)
+Wrote 1612688 bytes (990071 compressed) at 0x00020000 in 22.4 seconds (effective 575.9 kbit/s)...
+Hash of data verified.
+Compressed 3072 bytes to 103...
+Writing at 0x00008000... (100 %)
+Wrote 3072 bytes (103 compressed) at 0x00008000 in 0.0 seconds (effective 1159.7 kbit/s)...
+Hash of data verified.
+Compressed 8192 bytes to 31...
+Writing at 0x0000f000... (100 %)
+Wrote 8192 bytes (31 compressed) at 0x0000f000 in 0.0 seconds (effective 2210.8 kbit/s)...
+Hash of data verified.
+
+Leaving...
+Hard resetting via RTS pin...
